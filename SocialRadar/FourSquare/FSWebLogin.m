@@ -54,8 +54,9 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
         return YES;
     }
     
-    NSError *error;
-	if ([urlString rangeOfString:@"error="].length != 0) {
+    NSError *error = nil;
+	if ([urlString rangeOfString:@"error="].length != 0)
+    {
 		NSArray *array = [urlString componentsSeparatedByString:@"="];
         NSDictionary *userInfo = @{NSLocalizedFailureReasonErrorKey:array[1]};
         error = [NSError errorWithDomain:@"Foursquare2" code:-1 userInfo:userInfo];
