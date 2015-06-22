@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>12935083-86EA-46C7-893D-F967ED33A3B4</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SocialStorm</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>35310545-9c28-b04c-94d0-fe4ea56c6e9a++7267</key>
+		<string>http://10.91.0.1:81/svn/iPhone/Mohit/CLX_SocialRadarUpdated_CLIENT</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SocialRadar_New/SocialStorm.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>35310545-9c28-b04c-94d0-fe4ea56c6e9a++7267</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>35310545-9c28-b04c-94d0-fe4ea56c6e9a++7267</key>
+		<string>http://10.91.0.1:81/svn/iPhone</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>http://10.91.0.1:81/svn/iPhone/Mohit/CLX_SocialRadarUpdated_CLIENT/SocialRadar_New/SocialStorm.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>35310545-9c28-b04c-94d0-fe4ea56c6e9a++7267</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>35310545-9c28-b04c-94d0-fe4ea56c6e9a++7267</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CLX_SocialRadarUpdated_CLIENT%202</string>
+		</dict>
+	</array>
+</dict>
+</plist>
