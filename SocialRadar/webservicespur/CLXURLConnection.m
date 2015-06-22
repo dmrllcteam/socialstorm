@@ -4,7 +4,7 @@
 //  WannaChat
 //
 //  Created by Mohit Singh on 11/09/13.
-//  Copyright (c) 2013 Mohit Singh. All rights reserved.
+//  Copyright (c) RRInnovation LLC. All rights reserved.
 //
 
 #import "CLXURLConnection.h"
@@ -161,7 +161,8 @@
    
     
     id json = [NSJSONSerialization JSONObjectWithData:dataResponse options:0 error:nil];
-    id objectTyping = nil;
+//  DAJ 20150622 remove unused variable
+//    id objectTyping = nil;
     
 //    if ([NSJSONSerialization isValidJSONObject:json])
 //    {
@@ -203,11 +204,9 @@
         
         if(callerMethod)
         {
-            [callerDelegate performSelector:callerMethod
-                                 withObject:data];
-            // [callerDelegate release];
-            callerDelegate=nil;
-            callerMethod=nil;
+            [callerDelegate performSelector:callerMethod withObject:data]; // selector part of CLXURLConnection
+            callerDelegate = nil;       // Keep instance
+            callerMethod = nil;         // Keep instance
         }
     }else
     {
