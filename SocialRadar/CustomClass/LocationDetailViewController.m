@@ -221,21 +221,29 @@
           
 
         }
-        else{
+        else
+        {
             locationImageView.image = [UIImage imageNamed:@"no_image_location.png"];
         }
         
-        if (locationObj.FoursquareID.length>0) {
+        if (locationObj.FoursquareID.length>0)
+        {
            
-            if (locationObj.LocationAddress!=nil) {
+            if (locationObj.LocationAddress!=nil)
+            {
                 
                 NSData *phoneData=[UIImage base64DataFromString:locationObj.LocationAddress];
                 NSString *decodedString = [[NSString alloc] initWithData:phoneData encoding:NSUTF8StringEncoding];
                 phoneNumber_Outlet.text = decodedString;
                 
-                if ([phoneNumber_Outlet.text length]>0) {
+                if ([phoneNumber_Outlet.text length] > 0)
+                {
                     //Adjusting the phone number label width
-                    CGSize textSize = [phoneNumber_Outlet.text sizeWithFont:[phoneNumber_Outlet font] forWidth:phoneNumber_Outlet.bounds.size.width lineBreakMode:UILineBreakModeWordWrap];
+// depricated  CGSize textSize = [phoneNumber_Outlet.text sizeWithFont:[phoneNumber_Outlet font] forWidth:phoneNumber_Outlet.bounds.size.width   lineBreakMode:NSLineBreakByWordWrapping];
+                    
+    // DAJ 20150622 replace depricated sizeWithFont
+                    CGRect textRect = [phoneNumber_Outlet.text  boundingRectWithSize:phoneNumber_Outlet.frame.size  options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:phoneNumber_Outlet.font} context:nil];
+                    CGSize textSize = textRect.size;
                     phone_outlet.frame=CGRectMake(phone_outlet.frame.origin.x,phone_outlet.frame.origin.y, textSize.width, phone_outlet.frame.size.height);
                     phoneNumber_Outlet.frame=CGRectMake(phoneNumber_Outlet.frame.origin.x,phoneNumber_Outlet.frame.origin.y, textSize.width, phoneNumber_Outlet.frame.size.height);
                     
@@ -353,7 +361,13 @@
                 if ([phoneNumber_Outlet.text length] > 0)
                 {
                     //Adjusting the phone number label width
-                    CGSize textSize = [phoneNumber_Outlet.text sizeWithFont:[phoneNumber_Outlet font] forWidth:phoneNumber_Outlet.bounds.size.width lineBreakMode:UILineBreakModeWordWrap];
+                    //CGSize textSize = [phoneNumber_Outlet.text sizeWithFont:[phoneNumber_Outlet font] forWidth:phoneNumber_Outlet.bounds.size.width lineBreakMode:UILineBreakModeWordWrap];
+ 
+                    // DAJ 20150622 replace depricated sizeWithFont
+                    CGRect textRect = [phoneNumber_Outlet.text  boundingRectWithSize:phoneNumber_Outlet.frame.size  options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:phoneNumber_Outlet.font} context:nil];
+                    CGSize textSize = textRect.size;
+
+                    
                     phone_outlet.frame=CGRectMake(phone_outlet.frame.origin.x,phone_outlet.frame.origin.y, textSize.width, phone_outlet.frame.size.height);
                     phoneNumber_Outlet.frame=CGRectMake(phoneNumber_Outlet.frame.origin.x,phoneNumber_Outlet.frame.origin.y, textSize.width, phoneNumber_Outlet.frame.size.height);
                     
@@ -722,9 +736,18 @@
      emailAddress_Outlet.text=@"";
      phoneNumber_Outlet.text = [dataarray valueForKey:@"formatted_phone_number"];
     
-    if ([phoneNumber_Outlet.text length]>0) {
+    if ([phoneNumber_Outlet.text length]>0)
+    {
         //Adjusting the phone number label width
-        CGSize textSize = [phoneNumber_Outlet.text sizeWithFont:[phoneNumber_Outlet font] forWidth:phoneNumber_Outlet.bounds.size.width lineBreakMode:UILineBreakModeWordWrap];
+//        CGSize textSize = [phoneNumber_Outlet.text sizeWithFont:[phoneNumber_Outlet font] forWidth:phoneNumber_Outlet.bounds.size.width lineBreakMode:UILineBreakModeWordWrap];
+
+        // DAJ 20150622 replace depricated sizeWithFont
+        CGRect textRect = [phoneNumber_Outlet.text  boundingRectWithSize:phoneNumber_Outlet.frame.size  options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:phoneNumber_Outlet.font} context:nil];
+        CGSize textSize = textRect.size;
+
+        
+        
+        
         phone_outlet.frame=CGRectMake(phone_outlet.frame.origin.x,phone_outlet.frame.origin.y, textSize.width, phone_outlet.frame.size.height);
         phoneNumber_Outlet.frame=CGRectMake(phoneNumber_Outlet.frame.origin.x,phoneNumber_Outlet.frame.origin.y, textSize.width, phoneNumber_Outlet.frame.size.height);
     
