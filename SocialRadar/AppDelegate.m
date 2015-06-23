@@ -775,7 +775,10 @@ AppDelegate* appDelegate = nil;
     }
     else
     {
-        [account requestAccessToAccountsWithType:accountType withCompletionHandler:handler];
+//        [account requestAccessToAccountsWithType:accountType withCompletionHandler:handler];
+
+        // DAJ replace facebook deprecated method above
+        [account requestAccessToAccountsWithType:accountType options:nil completion:handler];
     }
     
     
