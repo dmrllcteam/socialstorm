@@ -287,7 +287,6 @@
 		180E60231A0226230037E49D /* icon57@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18154D481A00CB6C00C83880 /* icon57@2x.png */; };
 		18154D451A00ADDA00C83880 /* icon57.png in Resources */ = {isa = PBXBuildFile; fileRef = 926FEB441812AD6E0057E64A /* icon57.png */; };
 		18154D471A00AE3C00C83880 /* icon114.png in Resources */ = {isa = PBXBuildFile; fileRef = 926FEB461812AD760057E64A /* icon114.png */; };
-		18234D5B1A444588000B6851 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18234D5A1A444588000B6851 /* FacebookSDK.framework */; };
 		182733A918F9074F001D0488 /* FSOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 182733A818F9074F001D0488 /* FSOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		182733AC18F907C9001D0488 /* FSOAuthNoAppStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 182733AB18F907C9001D0488 /* FSOAuthNoAppStore.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		182733AF18F907FC001D0488 /* FSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 182733AE18F907FC001D0488 /* FSKeychain.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
@@ -306,6 +305,7 @@
 		633226221B3894580002D4F7 /* Target Field.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 633226211B3894580002D4F7 /* Target Field.gpx */; };
 		633226241B38946E0002D4F7 /* Bush Stadium.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 633226231B38946E0002D4F7 /* Bush Stadium.gpx */; };
 		633226261B3894840002D4F7 /* Billy G's.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 633226251B3894840002D4F7 /* Billy G's.gpx */; };
+		633226281B399E040002D4F7 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 633226271B399E040002D4F7 /* FacebookSDK.framework */; };
 		63927D4A1B2C9EF8005FCD57 /* Globals.m in Sources */ = {isa = PBXBuildFile; fileRef = 63927D491B2C9EF8005FCD57 /* Globals.m */; };
 		920069E117A298F900BF9438 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 920069E017A298F900BF9438 /* Default-568h@2x.png */; };
 		923F9F6517E18D8500F7AF36 /* cancel_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 923F9F6417E18D8500F7AF36 /* cancel_btn@2x.png */; };
@@ -670,8 +670,6 @@
 		13FA44EF1760B5D800122D97 /* saveSetting@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "saveSetting@2x.png"; sourceTree = "<group>"; };
 		13FA44F11760B5DE00122D97 /* saveSetting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = saveSetting.png; sourceTree = "<group>"; };
 		18154D481A00CB6C00C83880 /* icon57@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon57@2x.png"; sourceTree = "<group>"; };
-		18234D581A44454A000B6851 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../../../FacebookSDK_3.20/FacebookSDK.framework; sourceTree = "<group>"; };
-		18234D5A1A444588000B6851 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../../../FacebookSDK_3.21/FacebookSDK.framework; sourceTree = "<group>"; };
 		182733A718F9074F001D0488 /* FSOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSOperation.h; sourceTree = "<group>"; };
 		182733A818F9074F001D0488 /* FSOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSOperation.m; sourceTree = "<group>"; };
 		182733AA18F907C9001D0488 /* FSOAuthNoAppStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSOAuthNoAppStore.h; sourceTree = "<group>"; };
@@ -694,6 +692,7 @@
 		633226211B3894580002D4F7 /* Target Field.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Target Field.gpx"; path = "../Target Field.gpx"; sourceTree = "<group>"; };
 		633226231B38946E0002D4F7 /* Bush Stadium.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Bush Stadium.gpx"; path = "../Bush Stadium.gpx"; sourceTree = "<group>"; };
 		633226251B3894840002D4F7 /* Billy G's.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Billy G's.gpx"; path = "../Billy G's.gpx"; sourceTree = "<group>"; };
+		633226271B399E040002D4F7 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = SocialRadar/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		63355E011B21046A00601E4C /* Globals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Globals.h; path = ../Common/Globals.h; sourceTree = "<group>"; };
 		63927D491B2C9EF8005FCD57 /* Globals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Globals.m; path = SocialRadar/Common/Globals.m; sourceTree = SOURCE_ROOT; };
 		920069E017A298F900BF9438 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -731,7 +730,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18234D5B1A444588000B6851 /* FacebookSDK.framework in Frameworks */,
 				13C2F99317B385D2005034B1 /* MediaPlayer.framework in Frameworks */,
 				1366A1EC17847369002148BB /* ImageIO.framework in Frameworks */,
 				1366A1EA1784735F002148BB /* CoreImage.framework in Frameworks */,
@@ -750,6 +748,7 @@
 				130832EE1754C76B00B6F5D5 /* SystemConfiguration.framework in Frameworks */,
 				13EF788A1738D19200373232 /* UIKit.framework in Frameworks */,
 				13C34F83174A346300020E4D /* MapKit.framework in Frameworks */,
+				633226281B399E040002D4F7 /* FacebookSDK.framework in Frameworks */,
 				13EF788C1738D19200373232 /* Foundation.framework in Frameworks */,
 				13EF788E1738D19200373232 /* CoreGraphics.framework in Frameworks */,
 			);
@@ -1105,14 +1104,13 @@
 		13EF787D1738D19200373232 = {
 			isa = PBXGroup;
 			children = (
+				633226271B399E040002D4F7 /* FacebookSDK.framework */,
 				633226251B3894840002D4F7 /* Billy G's.gpx */,
 				633226231B38946E0002D4F7 /* Bush Stadium.gpx */,
 				6332261D1B3894240002D4F7 /* Citizens Bank Park.gpx */,
 				6332261B1B3893C20002D4F7 /* Home.gpx */,
 				6332261F1B38943E0002D4F7 /* Miller Park.gpx */,
 				633226211B3894580002D4F7 /* Target Field.gpx */,
-				18234D5A1A444588000B6851 /* FacebookSDK.framework */,
-				18234D581A44454A000B6851 /* FacebookSDK.framework */,
 				A9515A7319E3F45100ED7832 /* FBUserSettingsViewResources.bundle */,
 				A9515A7119E3F42A00ED7832 /* FacebookSDK.framework */,
 				13C2F99217B385D2005034B1 /* MediaPlayer.framework */,
@@ -1713,6 +1711,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-Wno-arc-performSelector-leaks";
 				PROVISIONING_PROFILE = "d5447d84-e3f6-4bf3-a810-2f9818e2042e";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "d5447d84-e3f6-4bf3-a810-2f9818e2042e";
 				SDKROOT = iphoneos;
@@ -1738,7 +1737,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_CFLAGS = "-Wno-arc-performSelector-leaks";
 				PROVISIONING_PROFILE = "d5447d84-e3f6-4bf3-a810-2f9818e2042e";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "d5447d84-e3f6-4bf3-a810-2f9818e2042e";
 				SDKROOT = iphoneos;
@@ -1756,11 +1755,12 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
+					"$(SRCROOT)",
 					"\"$(SRCROOT)/SocialRadar\"",
 					"\"$(SRCROOT)/SocialRadar/FacebookSDK\"",
 					"\"$(SRCROOT)/../../../../../FacebookSDK_3.20\"",
 					"\"$(SRCROOT)/../../../../../FacebookSDK_3.21\"",
+					"$(PROJECT_DIR)/SocialRadar/FacebookSDK",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SocialRadar/SocialRadar-Prefix.pch";
@@ -1770,6 +1770,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/SocialRadar/cml\"",
 				);
+				New_Setting = "";
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -1791,11 +1792,12 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
+					"$(SRCROOT)",
 					"\"$(SRCROOT)/SocialRadar\"",
 					"\"$(SRCROOT)/SocialRadar/FacebookSDK\"",
 					"\"$(SRCROOT)/../../../../../FacebookSDK_3.20\"",
 					"\"$(SRCROOT)/../../../../../FacebookSDK_3.21\"",
+					"$(PROJECT_DIR)/SocialRadar/FacebookSDK",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SocialRadar/SocialRadar-Prefix.pch";
@@ -1805,6 +1807,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/SocialRadar/cml\"",
 				);
+				New_Setting = "";
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
