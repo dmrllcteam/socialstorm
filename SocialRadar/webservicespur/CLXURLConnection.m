@@ -35,16 +35,21 @@
     NSMutableString *output = [NSMutableString string];
     const unsigned char *source = (const unsigned char *)[str UTF8String];
     int sourceLen = strlen((const char *)source);
-    for (int i = 0; i < sourceLen; ++i) {
+    for (int i = 0; i < sourceLen; ++i)
+    {
         const unsigned char thisChar = source[i];
-        if (thisChar == ' '){
+        if (thisChar == ' ')
+        {
             [output appendString:@"+"];
-        } else if (thisChar == '.' || thisChar == '-' || thisChar == '_' || thisChar == '~' ||
+        }
+        else if (thisChar == '.' || thisChar == '-' || thisChar == '_' || thisChar == '~' ||
                    (thisChar >= 'a' && thisChar <= 'z') ||
                    (thisChar >= 'A' && thisChar <= 'Z') ||
                    (thisChar >= '0' && thisChar <= '9')) {
             [output appendFormat:@"%c", thisChar];
-        } else {
+        }
+        else
+        {
             [output appendFormat:@"%%%02X", thisChar];
         }
     }
@@ -55,15 +60,19 @@
 {
     NSMutableString *prams = [[NSMutableString alloc] init] ;
     NSString *removeLastChar =nil;
-    for (id keys in parameterDic) {
+    for (id keys in parameterDic)
+    {
         [prams appendFormat:@"%@=%@&",keys,[parameterDic objectForKey:keys]];
     }
     
     NSString *urlString = nil;
-    if (parameterDic){
+    if (parameterDic)
+    {
         removeLastChar = [prams substringWithRange:NSMakeRange(0, [prams length]-1)];
         urlString = [NSString stringWithFormat:@"%@?%@",urlPath, removeLastChar];
-    }else{
+    }
+    else
+    {
         removeLastChar = [prams substringWithRange:NSMakeRange(0, 0)];
         urlString = [NSString stringWithFormat:@"%@%@",urlPath, removeLastChar];
     }
@@ -77,7 +86,8 @@
         callerMethod=selector;
         callerDelegate=caller;
         
-    }else
+    }
+    else
     {
         [appDelegate stopAnimatingIndicatorView];
         //[appDelegate showAlertMessage:ALERT_NETWORK tittle:nil];
@@ -201,7 +211,9 @@
     if([NSJSONSerialization isValidJSONObject:json])
     {
         NSDictionary *data=[[NSDictionary alloc] initWithDictionary:json];
-        
+        // DAJ 20150622 not a code issue it is a compiler issue.
+        // compiler will gererate an error message of type unkonw selector.
+        // addressed in a future release. For now compiler statment added to ingnore warning
         if(callerMethod)
         {
             [callerDelegate performSelector:callerMethod withObject:data]; // selector part of CLXURLConnection
