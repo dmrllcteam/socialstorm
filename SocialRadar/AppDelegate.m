@@ -729,9 +729,14 @@ AppDelegate* appDelegate = nil;
                     
                     NSDictionary *params = [NSDictionary dictionaryWithObject:twitterAccount.username
                                                                        forKey:@"screen_name"];
-                    TWRequest *request = [[TWRequest alloc] initWithURL:url
-                                                             parameters:params
-                                                          requestMethod:TWRequestMethodGET];
+//                    TWRequest *request = [[TWRequest alloc] initWithURL:url
+//                                                             parameters:params
+//                                                          requestMethod:TWRequestMethodGET];
+
+                    // DAJ 20150623 replace above deprecated TWRequest with SocialServices call
+                    SLRequest* request = [SLRequest requestForServiceType:SLServiceTypeTwitter requestMethod:SLRequestMethodGET URL:url parameters:params];
+                    
+                    
                     request.account=twitterAccount;
                     
                     [request performRequestWithHandler:
@@ -792,7 +797,9 @@ AppDelegate* appDelegate = nil;
 
 -(void)TwitterLogin
 {
-    if ([TWTweetComposeViewController canSendTweet])
+//    if ([TWTweetComposeViewController canSendTweet])
+    // DAJ 20150622 replace above depricated method use Social framwork
+    if([SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter])
     {
         
         [self TwitterVerification];
