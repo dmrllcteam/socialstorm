@@ -36,7 +36,8 @@
 #import <Foundation/Foundation.h>
 
 @protocol CXConnectionDelegate <NSObject>
--(void)didReceiveCLXURLResponse:(id)object methodName:(NSString*)methodName;
+// DAJ not implemented causeing warning
+//-(void)didReceiveCLXURLResponse:(id)object methodName:(NSString*)methodName;
 
 
 @end
