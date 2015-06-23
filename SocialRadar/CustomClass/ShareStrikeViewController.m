@@ -3,7 +3,7 @@
 //  SocialRadar
 //
 //  Created by Mohit Singh on 21/06/13.
-//  Copyright (c) 2013 Mohit Singh. All rights reserved.
+//  Copyright (c) RRInnovation LLC. All rights reserved.
 // https://developers.facebook.com/docs/ios/upgrading#30to31
 
 #import "ShareStrikeViewController.h"
@@ -307,24 +307,31 @@ static bool checkShareTweet;
 -(IBAction)twitterAction:(id)sender
 {
     NSString *userName;
-    if (appDelegate.appdelegateUser.Name.length>0) {
+    if (appDelegate.appdelegateUser.Name.length>0)
+    {
         userName=appDelegate.appdelegateUser.Name;
-    } else {
+    } else
+    {
         userName=appDelegate.appdelegateUser.UserName;
     }
     
     NSString *text_str=[NSString stringWithFormat:@"%@ shared a strike at %@ with SocialStorm.",userName,location.LocationName];
-    if ([TWTweetComposeViewController canSendTweet])
+
+// DAJ 20150622 update section replacing deprecated TW methods to use Social framework
+//    if ([TWTweetComposeViewController canSendTweet])
+    if([SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter])
     {
-        TWTweetComposeViewController *tweetSheet =
-        [[TWTweetComposeViewController alloc] init];
+//        TWTweetComposeViewController *tweetSheet =
+//        [[TWTweetComposeViewController alloc] init];
+        SLComposeViewController* tweetSheet =[SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter ];
         [tweetSheet setInitialText:text_str];
 //	    [self presentModalViewController:tweetSheet animated:YES];
 
         // DAJ 20150622 replace above deprecated method
         [self presentViewController:tweetSheet animated:YES completion:nil];
         
-        tweetSheet.completionHandler = ^(TWTweetComposeViewControllerResult result) {
+        tweetSheet.completionHandler = ^(TWTweetComposeViewControllerResult result)
+        {
             //NSString *title = @"Tweet";
             NSString *msg = nil;
             
@@ -351,7 +358,9 @@ static bool checkShareTweet;
             
            
             
-            [self dismissModalViewControllerAnimated:YES];
+//            [self dismissModalViewControllerAnimated:YES];
+            // DAJ 20150622 replace above deprecated method
+            [self.navigationController dismissViewControllerAnimated:YES completion:nil];
         };
         _RELEASE(tweetSheet);
 
