@@ -604,7 +604,9 @@ AppDelegate* appDelegate = nil;
                  
                  self.profilePictureView = [[FBProfilePictureView alloc] init];
                  self.profilePictureView.frame = CGRectMake(0.0, 0.0, 130, 153);
-                 self.profilePictureView.profileID = user.id;
+                 
+                 // DAJ 20150622 change depricated id to objecID
+                 self.profilePictureView.profileID = user.objectID;
                  [self startAnimatingIndicatorView];
                  [self.Loginobj LoginthroughFacebook];
              }
