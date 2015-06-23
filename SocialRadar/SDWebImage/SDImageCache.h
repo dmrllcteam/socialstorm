@@ -122,10 +122,11 @@
  */
 - (int)getSize;
 
+// DAJ 20150622 remove unused method
 /**
  * Get the number of images in the disk cache
  */
-- (int)getDiskCount;
+//- (int)getDiskCount;
 
 /**
  * Get the total size of images in memory cache
