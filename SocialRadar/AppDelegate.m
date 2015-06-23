@@ -159,10 +159,14 @@ AppDelegate* appDelegate = nil;
 -(void)createTabView
 {
     
-//  Added by Rich: code that changes the selected color of UI items ex:profile, settings, ect
-   [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
-   [UIColor whiteColor], UITextAttributeTextColor, nil] forState:UIControlStateNormal];
-//    [UIColor whiteColor], @{NSForegroundColorAttributeName: [UIColor whiteColor]}, nil] forState:UIControlStateNormal];
+//   [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+//   [UIColor whiteColor], UITextAttributeTextColor, nil] forState:UIControlStateNormal];
+    
+    //  Added by Rich: code that changes the selected color of UI items ex:profile, settings, ect
+    // DAJ 20150623 replace above deprecated UITextAttributeColor
+    
+    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+                                                       [UIColor whiteColor], NSForegroundColorAttributeName, nil] forState:UIControlStateNormal];
 
     
     [UITabBarItem.appearance setTitleTextAttributes:
@@ -318,7 +322,11 @@ AppDelegate* appDelegate = nil;
     switch (tabBarController.selectedIndex)
     {
         case 0:
-            [viewController.tabBarItem setFinishedSelectedImage:[UIImage imageNamed:@"profile_active.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"profile_icn.png"]];
+//            [viewController.tabBarItem setFinishedSelectedImage:[UIImage imageNamed:@"profile_active.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"profile_icn.png"]];
+
+            // DAJ 2015 replace deprecated setFinishedSeledImage
+            [viewController.tabBarItem setSelectedImage:[[UIImage imageNamed:@"profile_active.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];// imageWithRederingMode:UIImageRenderingModeAlwaysOriginal ]];
+            
             break;
             
         case 1:
@@ -328,12 +336,21 @@ AppDelegate* appDelegate = nil;
                 }
                 else
                 {
-                    [viewController.tabBarItem setFinishedSelectedImage:[UIImage imageNamed:@"strike_button.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"strike_button.png"]];
+//                    [viewController.tabBarItem setFinishedSelectedImage:[UIImage imageNamed:@"strike_button.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"strike_button.png"]];
+
+                    // DAJ 2015 replace deprecated setFinishedSeledImage
+                    [viewController.tabBarItem setSelectedImage:[[UIImage imageNamed:@"strike_button.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+              
                 }
             break;
             
         case 2:
-            [viewController.tabBarItem setFinishedSelectedImage:[UIImage imageNamed:@"settings_active.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"settings_icn.png"]];
+//            [viewController.tabBarItem setFinishedSelectedImage:[UIImage imageNamed:@"settings_active.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"settings_icn.png"]];
+
+            // DAJ 2015 replace deprecated setFinishedSeledImage
+            [viewController.tabBarItem setSelectedImage:[[UIImage imageNamed:@"settings_active.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal ]];
+
+            
             break;
         default:
             break;
@@ -531,7 +548,8 @@ AppDelegate* appDelegate = nil;
     
     
     
-    if (error) {
+    if (error)
+    {
         UIAlertView *alertView = [[UIAlertView alloc]
                                   initWithTitle:@"Error"
                                   message:@"Please check Facebook Account from phone settings."
@@ -577,12 +595,15 @@ AppDelegate* appDelegate = nil;
 
 - (void)getUserDetails
 {
-    if (FBSession.activeSession.isOpen) {
+    if (FBSession.activeSession.isOpen)
+    {
         [[FBRequest requestForMe] startWithCompletionHandler:
          ^(FBRequestConnection *connection,
            NSDictionary<FBGraphUser> *user,
-           NSError *error) {
-             if (!error) {
+           NSError *error)
+           {
+             if (!error)
+             {
                  NSLog(@"Username is %@",user.username);
                 FaceBookArray = [[NSMutableArray alloc]init];
               [FaceBookArray insertObject:[user valueForKey:@"name"] atIndex:0];
@@ -664,12 +685,14 @@ AppDelegate* appDelegate = nil;
 - (BOOL)application:(UIApplication *)application
             openURL:(NSURL *)url
   sourceApplication:(NSString *)sourceApplication
-         annotation:(id)annotation {
+         annotation:(id)annotation
+    {
     // Handle incoming app links
     return [FBAppCall handleOpenURL:url
                   sourceApplication:sourceApplication
                         withSession:FBSession.activeSession
-                    fallbackHandler:^(FBAppCall *call) {
+                    fallbackHandler:^(FBAppCall *call)
+                    {
                       
                     }];
     
@@ -712,9 +735,11 @@ AppDelegate* appDelegate = nil;
                     request.account=twitterAccount;
                     
                     [request performRequestWithHandler:
-                     ^(NSData *responseData, NSHTTPURLResponse *urlResponse, NSError *error) {
+                     ^(NSData *responseData, NSHTTPURLResponse *urlResponse, NSError *error)
+                    {
                          
-                         if (responseData) {
+                         if (responseData)
+                         {
                              NSDictionary *user =
                              [NSJSONSerialization JSONObjectWithData:responseData
                                                              options:NSJSONReadingAllowFragments
@@ -744,10 +769,12 @@ AppDelegate* appDelegate = nil;
     
     
     //  This method changed in iOS6. If the new version isn't available, fall back to the original (which means that we're running on iOS5+).
-    if ([account respondsToSelector:@selector(requestAccessToAccountsWithType:options:completion:)]) {
+    if ([account respondsToSelector:@selector(requestAccessToAccountsWithType:options:completion:)])
+    {
         [account requestAccessToAccountsWithType:accountType options:nil completion:handler];
     }
-    else {
+    else
+    {
         [account requestAccessToAccountsWithType:accountType withCompletionHandler:handler];
     }
     
