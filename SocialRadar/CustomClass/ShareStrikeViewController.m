@@ -319,7 +319,11 @@ static bool checkShareTweet;
         TWTweetComposeViewController *tweetSheet =
         [[TWTweetComposeViewController alloc] init];
         [tweetSheet setInitialText:text_str];
-	    [self presentModalViewController:tweetSheet animated:YES];
+//	    [self presentModalViewController:tweetSheet animated:YES];
+
+        // DAJ 20150622 replace above deprecated method
+        [self presentViewController:tweetSheet animated:YES completion:nil];
+        
         tweetSheet.completionHandler = ^(TWTweetComposeViewControllerResult result) {
             //NSString *title = @"Tweet";
             NSString *msg = nil;
