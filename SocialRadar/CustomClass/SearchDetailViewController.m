@@ -28,7 +28,8 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
+    if (self)
+    {
         // Custom initialization
     }
     return self;
@@ -57,7 +58,8 @@
     ////
     UIImage* buttonImage2 = nil;
     
-    if (!location.IsFavorite) {
+    if (!location.IsFavorite)
+    {
         buttonImage2 = [UIImage imageNamed:@"favorite_icn.png"];
         hybridCheckBox = NO;
     }else
@@ -121,7 +123,8 @@
         {
             searchLocationImageView.image = [UIImage imageNamed:@"no_image_location.png"];
             [appDelegate stopAnimatingIndicatorView];
-        }else
+        }
+        else
         {
            /* //Uncomment this when use google API for showing search result
             NSURL *myURL = [NSURL URLWithString:[NSString stringWithFormat:@"https://maps.googleapis.com/maps/api/place/photo?maxwidth=100&photoreference=%@&sensor=false&key=AIzaSyAfXbpScWudV9n79teEzazPNkhqGZjjVJA",locationObj.photos_Refrence]];
@@ -131,12 +134,10 @@
             // Load images async
             dispatch_queue_t queue = dispatch_queue_create("com.app.task",NULL);
             dispatch_queue_t main = dispatch_get_main_queue();
-            dispatch_async(queue, ^{
-                NSString *ImageURL = [[NSString alloc] initWithData:[UIImage base64DataFromString:locationObj.photos_Refrence] encoding:NSUTF8StringEncoding];
-                NSURL *url = [NSURL URLWithString:ImageURL];
-                UIImage *backgroundImage = [UIImage imageWithData:[NSData dataWithContentsOfURL:url]];
-                dispatch_async(main, ^{
-                    searchLocationImageView.image = backgroundImage;
+            dispatch_async(queue, ^{NSString *ImageURL = [[NSString alloc] initWithData:[UIImage base64DataFromString:locationObj.photos_Refrence] encoding:NSUTF8StringEncoding];
+            NSURL *url = [NSURL URLWithString:ImageURL];
+            UIImage *backgroundImage = [UIImage imageWithData:[NSData dataWithContentsOfURL:url]];
+                dispatch_async(main, ^{searchLocationImageView.image = backgroundImage;
                     [appDelegate stopAnimatingIndicatorView];
                 });
             });
@@ -147,7 +148,8 @@
         {
             searchLocationPhone_lbl.text = @"";
             searchEmailAddress_lbl.text = @"";
-        }else
+        }
+        else
         {
           /* //Uncomment this when use google API for showing search result
            NSURL *myURL1 = [NSURL URLWithString:[NSString stringWithFormat:@"https://maps.googleapis.com/maps/api/place/details/json?reference=%@&sensor=false&key=AIzaSyAfXbpScWudV9n79teEzazPNkhqGZjjVJA",locationObj.contact_Refrence]];
@@ -163,37 +165,37 @@
             NSString *decodedString = [[NSString alloc] initWithData:phoneData encoding:NSUTF8StringEncoding];
             searchLocationPhone_lbl.text = decodedString;
             
-            if ([searchLocationPhone_lbl.text length]>0) {
+            if ([searchLocationPhone_lbl.text length] > 0)
+            {
                 //Adjusting the phone number label width
-                CGSize textSize = [searchLocationPhone_lbl.text sizeWithFont:[searchLocationPhone_lbl font] forWidth:searchLocationPhone_lbl.bounds.size.width lineBreakMode:UILineBreakModeWordWrap];
+//                CGSize textSize = [searchLocationPhone_lbl.text sizeWithFont:[searchLocationPhone_lbl font] forWidth:searchLocationPhone_lbl.bounds.size.width lineBreakMode:UILineBreakModeWordWrap];
+                
+                // DAJ 20150622 replace depricated sizeWithFont
+                CGRect textRect = [searchLocationPhone_lbl.text  boundingRectWithSize:searchLocationPhone_lbl.frame.size  options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:searchLocationPhone_lbl.font} context:nil];
+                CGSize textSize = textRect.size;
+                
                 phone_outlet.frame=CGRectMake(phone_outlet.frame.origin.x,phone_outlet.frame.origin.y, textSize.width, phone_outlet.frame.size.height);
                 searchLocationPhone_lbl.frame=CGRectMake(searchLocationPhone_lbl.frame.origin.x,searchLocationPhone_lbl.frame.origin.y, textSize.width, searchLocationPhone_lbl.frame.size.height);
                 
             }
-         
-
-            
-            
         }
-        
-
-        
-        
     }
-    
 }
 
 #pragma mark NSURLCONNECTIONDELEGATE
 
-- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
+- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
+{
     responseData = [[NSMutableData alloc] init];
 }
 
-- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
+{
     [responseData appendData:data];
 }
 
-- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
+- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
+{
     [responseData release];
     [connection release];
     //[textView setString:@"Unable to fetch data"];
@@ -213,15 +215,19 @@
         
     searchEmailAddress_lbl.text = @"";
     searchLocationPhone_lbl.text = [dataarray valueForKey:@"formatted_phone_number"];
-    if ([searchLocationPhone_lbl.text length]>0) {
+    if ([searchLocationPhone_lbl.text length] > 0)
+    {
         //Adjusting the phone number label width
-        CGSize textSize = [searchLocationPhone_lbl.text sizeWithFont:[searchLocationPhone_lbl font] forWidth:searchLocationPhone_lbl.bounds.size.width lineBreakMode:UILineBreakModeWordWrap];
+//        CGSize textSize = [searchLocationPhone_lbl.text sizeWithFont:[searchLocationPhone_lbl font] forWidth:searchLocationPhone_lbl.bounds.size.width lineBreakMode:UILineBreakModeWordWrap];
+
+        // DAJ 20150622 replace depricated sizeWithFont
+        CGRect textRect = [searchLocationPhone_lbl.text  boundingRectWithSize:searchLocationPhone_lbl.frame.size  options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:searchLocationPhone_lbl.font} context:nil];
+        CGSize textSize = textRect.size;
+        
         phone_outlet.frame=CGRectMake(phone_outlet.frame.origin.x,phone_outlet.frame.origin.y, textSize.width, phone_outlet.frame.size.height);
         searchLocationPhone_lbl.frame=CGRectMake(searchLocationPhone_lbl.frame.origin.x,searchLocationPhone_lbl.frame.origin.y, textSize.width, searchLocationPhone_lbl.frame.size.height);
         
     }
-    
-    
 }
 
 #pragma mark favourite unfavourite
@@ -259,7 +265,8 @@
         SEL selector = @selector(getFavResponse:);
         [temp postParseInfoWithUrlPath:KUnFavoriteLocation WithSelector:selector callerClass:self parameterDic:localDoct showloader:NO];
         
-    }else
+    }
+    else
     {
         
         
@@ -302,7 +309,8 @@
 //        [appDelegate showAlertMessage:[response objectForKey:kMessage] tittle:nil];
 //        [self.navigationController popViewControllerAnimated:YES];
 //        return;
-    }else
+    }
+    else
     {
         Location *locationShow = [[Location alloc] initWithNode:[response mutableCopy]];
 //        if (!locationShow.IsFavorite) {
@@ -349,7 +357,8 @@
         {
             searchLocationImageView.image = [UIImage imageNamed:@"no_image_location.png"];
             [appDelegate stopAnimatingIndicatorView];
-        }else
+        }
+        else
         {
            /* 
             //Uncomment this when use google API for showing search result
@@ -379,7 +388,8 @@
         {
             searchLocationPhone_lbl.text = @"";
             searchEmailAddress_lbl.text = @"";
-        }else
+        }
+        else
         {
            /* //Uncomment this when use google API for showing search result
             NSURL *myURL1 = [NSURL URLWithString:[NSString stringWithFormat:@"https://maps.googleapis.com/maps/api/place/details/json?reference=%@&sensor=false&key=AIzaSyAfXbpScWudV9n79teEzazPNkhqGZjjVJA",locationShow.LocationAddress]];
@@ -395,19 +405,27 @@
              NSString *decodedString = [[NSString alloc] initWithData:phoneData encoding:NSUTF8StringEncoding];
              searchLocationPhone_lbl.text = decodedString;
              
-             if ([searchLocationPhone_lbl.text length]>0) {
+             if ([searchLocationPhone_lbl.text length] > 0)
+             {
              //Adjusting the phone number label width
-             CGSize textSize = [searchLocationPhone_lbl.text sizeWithFont:[searchLocationPhone_lbl font] forWidth:searchLocationPhone_lbl.bounds.size.width lineBreakMode:UILineBreakModeWordWrap];
+//             CGSize textSize = [searchLocationPhone_lbl.text sizeWithFont:[searchLocationPhone_lbl font] forWidth:searchLocationPhone_lbl.bounds.size.width lineBreakMode:UILineBreakModeWordWrap];
+
+             // DAJ 20150622 replace depricated sizeWithFont
+             CGRect textRect = [searchLocationPhone_lbl.text  boundingRectWithSize:searchLocationPhone_lbl.frame.size  options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:searchLocationPhone_lbl.font} context:nil];
+             CGSize textSize = textRect.size;
+                 
+                 
+                 
              phone_outlet.frame=CGRectMake(phone_outlet.frame.origin.x,phone_outlet.frame.origin.y, textSize.width, phone_outlet.frame.size.height);
              searchLocationPhone_lbl.frame=CGRectMake(searchLocationPhone_lbl.frame.origin.x,searchLocationPhone_lbl.frame.origin.y, textSize.width, searchLocationPhone_lbl.frame.size.height);
              
              }
-
+        }
     }
-         
 }
-}
--(void)getFavResponse:(NSDictionary*)response{
+
+-(void)getFavResponse:(NSDictionary*)response
+{
     
     [appDelegate stopAnimatingIndicatorView];
     
@@ -415,7 +433,8 @@
     {
         [appDelegate showAlertMessage:@"Unfavorited  successfully" tittle:nil];
         return;
-    }else
+    }
+    else
     {
         //[appDelegate showAlertMessage:[response objectForKey:kMessage] tittle:nil];
         [appDelegate showAlertMessage:@"Unfavorited  successfully" tittle:nil];
@@ -424,16 +443,16 @@
     
 }
 
--(void)getUnFavResponse:(NSDictionary*)response{
-    
-    
+-(void)getUnFavResponse:(NSDictionary*)response
+{
     [appDelegate stopAnimatingIndicatorView];
     
     if(![[response objectForKey:kStatus] isEqualToString:@"SUCCESS"])
     {
         [appDelegate showAlertMessage:@"Favorited successfully" tittle:nil];
         return;
-    }else
+    }
+    else
     {
         //[appDelegate showAlertMessage:[response objectForKey:kMessage] tittle:nil];
         
@@ -535,7 +554,8 @@ Author:Sanjay
     // Dispose of any resources that can be recreated.
 }
 
-- (void)dealloc {
+- (void)dealloc
+{
     [searchLocationName_lbl release];
     [search_lbl release];
     [searchTotalStrike_lbl release];
@@ -550,7 +570,9 @@ Author:Sanjay
     [searchLocationImageView release];
     [super dealloc];
 }
-- (void)viewDidUnload {
+
+- (void)viewDidUnload
+{
     [searchLocationName_lbl release];
     searchLocationName_lbl = nil;
     [search_lbl release];
@@ -577,7 +599,9 @@ Author:Sanjay
     searchLocationImageView = nil;
     [super viewDidUnload];
 }
-- (IBAction)searchChaseitAction:(id)sender {
+
+- (IBAction)searchChaseitAction:(id)sender
+{
     
     CLLocation *myLocation = appDelegate.currentlocation;
     CLLocationCoordinate2D locationCoordinate = CLLocationCoordinate2DMake(myLocation.coordinate.latitude, myLocation.coordinate.longitude);
@@ -590,7 +614,8 @@ Author:Sanjay
     {
         [googleAppleMapsURLString setString:[NSString stringWithFormat:@"http://maps.google.com/?saddr=%1.6f,%1.6f&daddr=%1.6f,%1.6f",locationCoordinate.latitude, locationCoordinate.longitude, destination.latitude, destination.longitude] ];
         
-    }else
+    }
+    else
     {
         //https://developer.apple.com/library/ios/featuredarticles/iPhoneURLScheme_Reference/MapLinks/MapLinks.html
         //[googleAppleMapsURLString setString:[NSString stringWithFormat:@"http://maps.apple.com/maps?daddr=%1.6f,%1.6f&saddr=%1.6f,%1.6f",locationCoordinate.latitude, locationCoordinate.longitude, destination.latitude, destination.longitude]];
@@ -607,12 +632,15 @@ Author:Sanjay
 -(IBAction)makeCall:(id)sender
 {
     BOOL canCall = [[UIApplication sharedApplication]canOpenURL:[NSURL URLWithString:[[NSString stringWithFormat:@"tel:%@",searchLocationPhone_lbl.text] stringByReplacingOccurrencesOfString:@" " withString:@""]]];
-    if (canCall) {
-        if ([searchLocationPhone_lbl.text length]>0) {
+    if (canCall)
+    {
+        if ([searchLocationPhone_lbl.text length]>0)
+        {
             [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[[NSString stringWithFormat:@"tel:%@",searchLocationPhone_lbl.text] stringByReplacingOccurrencesOfString:@" " withString:@""]]];
         }
     }
-    else{
+    else
+    {
         [appDelegate showAlertMessage:@"Phone calling not exist" tittle:nil];
     }
     
