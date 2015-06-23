@@ -399,17 +399,19 @@ static natural_t get_free_memory(void)
     return size;
 }
 
-- (int)getDiskCount
+// DAJ 2015 remove unused method
+/*- (int)getDiskCount
 {
     int count = 0;
-    NSDirectoryEnumerator *fileEnumerator = [[NSFileManager defaultManager] enumeratorAtPath:diskCachePath];
-    for (NSString *fileName in fileEnumerator)
+//    NSDirectoryEnumerator *fileEnumerator = [[NSFileManager defaultManager] enumeratorAtPath:diskCachePath];
+//    for (NSString *fileName in fileEnumerator)
     {
         count += 1;
     }
     
     return count;
 }
+*/
 
 - (int)getMemorySize
 {
