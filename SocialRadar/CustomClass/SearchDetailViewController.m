@@ -172,10 +172,8 @@
                 
                 // DAJ 20150622 replace depricated sizeWithFont
                 CGRect textRect = [searchLocationPhone_lbl.text  boundingRectWithSize:searchLocationPhone_lbl.frame.size  options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:searchLocationPhone_lbl.font} context:nil];
-                CGSize textSize = textRect.size;
-                
-                phone_outlet.frame=CGRectMake(phone_outlet.frame.origin.x,phone_outlet.frame.origin.y, textSize.width, phone_outlet.frame.size.height);
-                searchLocationPhone_lbl.frame=CGRectMake(searchLocationPhone_lbl.frame.origin.x,searchLocationPhone_lbl.frame.origin.y, textSize.width, searchLocationPhone_lbl.frame.size.height);
+                phone_outlet.frame=CGRectMake(phone_outlet.frame.origin.x,phone_outlet.frame.origin.y, textRect.size.width, phone_outlet.frame.size.height);
+                searchLocationPhone_lbl.frame=CGRectMake(searchLocationPhone_lbl.frame.origin.x,searchLocationPhone_lbl.frame.origin.y, textRect.size.width, searchLocationPhone_lbl.frame.size.height);
                 
             }
         }
@@ -222,10 +220,8 @@
 
         // DAJ 20150622 replace depricated sizeWithFont
         CGRect textRect = [searchLocationPhone_lbl.text  boundingRectWithSize:searchLocationPhone_lbl.frame.size  options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:searchLocationPhone_lbl.font} context:nil];
-        CGSize textSize = textRect.size;
-        
-        phone_outlet.frame=CGRectMake(phone_outlet.frame.origin.x,phone_outlet.frame.origin.y, textSize.width, phone_outlet.frame.size.height);
-        searchLocationPhone_lbl.frame=CGRectMake(searchLocationPhone_lbl.frame.origin.x,searchLocationPhone_lbl.frame.origin.y, textSize.width, searchLocationPhone_lbl.frame.size.height);
+        phone_outlet.frame=CGRectMake(phone_outlet.frame.origin.x,phone_outlet.frame.origin.y, textRect.size.width, phone_outlet.frame.size.height);
+        searchLocationPhone_lbl.frame=CGRectMake(searchLocationPhone_lbl.frame.origin.x,searchLocationPhone_lbl.frame.origin.y, textRect.size.width, searchLocationPhone_lbl.frame.size.height);
         
     }
 }
@@ -412,12 +408,8 @@
 
              // DAJ 20150622 replace depricated sizeWithFont
              CGRect textRect = [searchLocationPhone_lbl.text  boundingRectWithSize:searchLocationPhone_lbl.frame.size  options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:searchLocationPhone_lbl.font} context:nil];
-             CGSize textSize = textRect.size;
-                 
-                 
-                 
-             phone_outlet.frame=CGRectMake(phone_outlet.frame.origin.x,phone_outlet.frame.origin.y, textSize.width, phone_outlet.frame.size.height);
-             searchLocationPhone_lbl.frame=CGRectMake(searchLocationPhone_lbl.frame.origin.x,searchLocationPhone_lbl.frame.origin.y, textSize.width, searchLocationPhone_lbl.frame.size.height);
+             phone_outlet.frame=CGRectMake(phone_outlet.frame.origin.x,phone_outlet.frame.origin.y, textRect.size.width, phone_outlet.frame.size.height);
+             searchLocationPhone_lbl.frame=CGRectMake(searchLocationPhone_lbl.frame.origin.x,searchLocationPhone_lbl.frame.origin.y, textRect.size.width, searchLocationPhone_lbl.frame.size.height);
              
              }
         }
