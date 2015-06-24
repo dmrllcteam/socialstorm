@@ -243,9 +243,8 @@
                     
     // DAJ 20150622 replace depricated sizeWithFont
                     CGRect textRect = [phoneNumber_Outlet.text  boundingRectWithSize:phoneNumber_Outlet.frame.size  options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:phoneNumber_Outlet.font} context:nil];
-                    CGSize textSize = textRect.size;
-                    phone_outlet.frame=CGRectMake(phone_outlet.frame.origin.x,phone_outlet.frame.origin.y, textSize.width, phone_outlet.frame.size.height);
-                    phoneNumber_Outlet.frame=CGRectMake(phoneNumber_Outlet.frame.origin.x,phoneNumber_Outlet.frame.origin.y, textSize.width, phoneNumber_Outlet.frame.size.height);
+                    phone_outlet.frame=CGRectMake(phone_outlet.frame.origin.x,phone_outlet.frame.origin.y, textRect.size.width, phone_outlet.frame.size.height);
+                    phoneNumber_Outlet.frame=CGRectMake(phoneNumber_Outlet.frame.origin.x,phoneNumber_Outlet.frame.origin.y, textRect.size.width, phoneNumber_Outlet.frame.size.height);
                     
                 }
             }
@@ -365,11 +364,8 @@
  
                     // DAJ 20150622 replace depricated sizeWithFont
                     CGRect textRect = [phoneNumber_Outlet.text  boundingRectWithSize:phoneNumber_Outlet.frame.size  options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:phoneNumber_Outlet.font} context:nil];
-                    CGSize textSize = textRect.size;
-
-                    
-                    phone_outlet.frame=CGRectMake(phone_outlet.frame.origin.x,phone_outlet.frame.origin.y, textSize.width, phone_outlet.frame.size.height);
-                    phoneNumber_Outlet.frame=CGRectMake(phoneNumber_Outlet.frame.origin.x,phoneNumber_Outlet.frame.origin.y, textSize.width, phoneNumber_Outlet.frame.size.height);
+                    phone_outlet.frame=CGRectMake(phone_outlet.frame.origin.x,phone_outlet.frame.origin.y, textRect.size.width, phone_outlet.frame.size.height);
+                    phoneNumber_Outlet.frame=CGRectMake(phoneNumber_Outlet.frame.origin.x,phoneNumber_Outlet.frame.origin.y, textRect.size.width, phoneNumber_Outlet.frame.size.height);
                     
                 }
 
@@ -743,13 +739,8 @@
 
         // DAJ 20150622 replace depricated sizeWithFont
         CGRect textRect = [phoneNumber_Outlet.text  boundingRectWithSize:phoneNumber_Outlet.frame.size  options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:phoneNumber_Outlet.font} context:nil];
-        CGSize textSize = textRect.size;
-
-        
-        
-        
-        phone_outlet.frame=CGRectMake(phone_outlet.frame.origin.x,phone_outlet.frame.origin.y, textSize.width, phone_outlet.frame.size.height);
-        phoneNumber_Outlet.frame=CGRectMake(phoneNumber_Outlet.frame.origin.x,phoneNumber_Outlet.frame.origin.y, textSize.width, phoneNumber_Outlet.frame.size.height);
+        phone_outlet.frame=CGRectMake(phone_outlet.frame.origin.x,phone_outlet.frame.origin.y, textRect.size.width, phone_outlet.frame.size.height);
+        phoneNumber_Outlet.frame=CGRectMake(phoneNumber_Outlet.frame.origin.x,phoneNumber_Outlet.frame.origin.y, textRect.size.width, phoneNumber_Outlet.frame.size.height);
     
     }
     
