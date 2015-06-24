@@ -287,6 +287,7 @@
 		636A35291B3B55F200464E15 /* Cleveland Indians Progressive Field.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 636A35271B3B55F200464E15 /* Cleveland Indians Progressive Field.gpx */; };
 		636A352B1B3B570800464E15 /* SSImages in Resources */ = {isa = PBXBuildFile; fileRef = 636A352A1B3B570800464E15 /* SSImages */; };
 		63927D4A1B2C9EF8005FCD57 /* Globals.m in Sources */ = {isa = PBXBuildFile; fileRef = 63927D491B2C9EF8005FCD57 /* Globals.m */; };
+		63CBEF8F1B3B729F0058BAFD /* Marlins Park.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 63CBEF8E1B3B729F0058BAFD /* Marlins Park.gpx */; };
 		923F9F6517E18D8500F7AF36 /* cancel_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 923F9F6417E18D8500F7AF36 /* cancel_btn@2x.png */; };
 		923F9F6917E191A800F7AF36 /* bgMap.png in Resources */ = {isa = PBXBuildFile; fileRef = 923F9F6717E191A800F7AF36 /* bgMap.png */; };
 		923F9F6A17E191A800F7AF36 /* bgMap@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 923F9F6817E191A800F7AF36 /* bgMap@2x.png */; };
@@ -656,6 +657,7 @@
 		636A35271B3B55F200464E15 /* Cleveland Indians Progressive Field.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Cleveland Indians Progressive Field.gpx"; path = "../Cleveland Indians Progressive Field.gpx"; sourceTree = "<group>"; };
 		636A352A1B3B570800464E15 /* SSImages */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SSImages; sourceTree = "<group>"; };
 		63927D491B2C9EF8005FCD57 /* Globals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Globals.m; path = SocialRadar/Common/Globals.m; sourceTree = SOURCE_ROOT; };
+		63CBEF8E1B3B729F0058BAFD /* Marlins Park.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Marlins Park.gpx"; path = "../Marlins Park.gpx"; sourceTree = "<group>"; };
 		923F9F6417E18D8500F7AF36 /* cancel_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cancel_btn@2x.png"; sourceTree = "<group>"; };
 		923F9F6717E191A800F7AF36 /* bgMap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgMap.png; sourceTree = "<group>"; };
 		923F9F6817E191A800F7AF36 /* bgMap@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bgMap@2x.png"; sourceTree = "<group>"; };
@@ -1062,6 +1064,7 @@
 		13EF787D1738D19200373232 = {
 			isa = PBXGroup;
 			children = (
+				63CBEF8E1B3B729F0058BAFD /* Marlins Park.gpx */,
 				633226251B3894840002D4F7 /* Billy G's.gpx */,
 				633226231B38946E0002D4F7 /* Bush Stadium.gpx */,
 				636A35271B3B55F200464E15 /* Cleveland Indians Progressive Field.gpx */,
@@ -1454,6 +1457,7 @@
 				A9889800177DB13D00109C76 /* FSWebLogin.xib in Resources */,
 				1388DEA0177DBD450073A0BF /* green_bubble.png in Resources */,
 				1388DEA1177DBD450073A0BF /* no_image.png in Resources */,
+				63CBEF8F1B3B729F0058BAFD /* Marlins Park.gpx in Resources */,
 				1388DEA2177DBD450073A0BF /* red_bubble.png in Resources */,
 				1388DEA3177DBD450073A0BF /* yellow_bubble.png in Resources */,
 				1388DEA8177DBE2E0073A0BF /* green_bubble@2x.png in Resources */,
