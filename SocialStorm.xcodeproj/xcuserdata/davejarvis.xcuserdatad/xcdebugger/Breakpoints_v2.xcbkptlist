@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SocialRadar/CustomClass/LocationDetailViewController.m"
-            timestampString = "455986967.428286"
+            timestampString = "456706991.638795"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "232"
-            endingLineNumber = "232"
+            startingLineNumber = "235"
+            endingLineNumber = "235"
             landmarkName = "-getupdateResponse:"
             landmarkType = "5">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SocialRadar/CustomClass/LocationDetailViewController.m"
-            timestampString = "455989461.543939"
+            timestampString = "456706991.638795"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "354"
-            endingLineNumber = "354"
+            startingLineNumber = "362"
+            endingLineNumber = "362"
             landmarkName = "-getupdateResponse:"
             landmarkType = "5">
          </BreakpointContent>

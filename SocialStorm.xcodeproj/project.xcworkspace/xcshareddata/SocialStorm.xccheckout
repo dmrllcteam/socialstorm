@@ -7,39 +7,34 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>12935083-86EA-46C7-893D-F967ED33A3B4</string>
 	<key>IDESourceControlProjectName</key>
-	<string>SocialStorm</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>35310545-9c28-b04c-94d0-fe4ea56c6e9a++7267</key>
-		<string>http://10.91.0.1:81/svn/iPhone/Mohit/CLX_SocialRadarUpdated_CLIENT</string>
+		<key>8021771A1A942667E4FCEC08CC4353429CE09C03</key>
+		<string>https://github.com/dmrllcteam/socialstorm.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>SocialRadar_New/SocialStorm.xcodeproj</string>
+	<string>SocialStorm.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>35310545-9c28-b04c-94d0-fe4ea56c6e9a++7267</key>
-		<string>../../..</string>
-	</dict>
-	<key>IDESourceControlProjectRepositoryRootDictionary</key>
-	<dict>
-		<key>35310545-9c28-b04c-94d0-fe4ea56c6e9a++7267</key>
-		<string>http://10.91.0.1:81/svn/iPhone</string>
+		<key>8021771A1A942667E4FCEC08CC4353429CE09C03</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>http://10.91.0.1:81/svn/iPhone/Mohit/CLX_SocialRadarUpdated_CLIENT/SocialRadar_New/SocialStorm.xcodeproj</string>
+	<string>https://github.com/dmrllcteam/socialstorm.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>35310545-9c28-b04c-94d0-fe4ea56c6e9a++7267</string>
+	<string>8021771A1A942667E4FCEC08CC4353429CE09C03</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.subversion</string>
+			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>35310545-9c28-b04c-94d0-fe4ea56c6e9a++7267</string>
+			<string>8021771A1A942667E4FCEC08CC4353429CE09C03</string>
 			<key>IDESourceControlWCCName</key>
-			<string>CLX_SocialRadarUpdated_CLIENT%202</string>
+			<string>SocialRadar_New</string>
 		</dict>
 	</array>
 </dict>
