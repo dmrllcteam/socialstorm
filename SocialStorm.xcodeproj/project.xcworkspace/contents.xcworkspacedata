@@ -2,12 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../../Cleveland Indians Progressive Field.gpx">
-   </FileRef>
-   <FileRef
-      location = "group:../../New York Yankee Stadium.gpx">
-   </FileRef>
-   <FileRef
       location = "self:SocialStorm.xcodeproj">
    </FileRef>
 </Workspace>

@@ -283,7 +283,9 @@
 		633226241B38946E0002D4F7 /* Bush Stadium.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 633226231B38946E0002D4F7 /* Bush Stadium.gpx */; };
 		633226261B3894840002D4F7 /* Billy G's.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 633226251B3894840002D4F7 /* Billy G's.gpx */; };
 		633226281B399E040002D4F7 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 633226271B399E040002D4F7 /* FacebookSDK.framework */; };
-		6378DD6A1B3B3F9E005A4290 /* SSImages in Resources */ = {isa = PBXBuildFile; fileRef = 6378DD691B3B3F9E005A4290 /* SSImages */; };
+		636A35281B3B55F200464E15 /* New York Yankee Stadium.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 636A35261B3B55F200464E15 /* New York Yankee Stadium.gpx */; };
+		636A35291B3B55F200464E15 /* Cleveland Indians Progressive Field.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 636A35271B3B55F200464E15 /* Cleveland Indians Progressive Field.gpx */; };
+		636A352B1B3B570800464E15 /* SSImages in Resources */ = {isa = PBXBuildFile; fileRef = 636A352A1B3B570800464E15 /* SSImages */; };
 		63927D4A1B2C9EF8005FCD57 /* Globals.m in Sources */ = {isa = PBXBuildFile; fileRef = 63927D491B2C9EF8005FCD57 /* Globals.m */; };
 		923F9F6517E18D8500F7AF36 /* cancel_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 923F9F6417E18D8500F7AF36 /* cancel_btn@2x.png */; };
 		923F9F6917E191A800F7AF36 /* bgMap.png in Resources */ = {isa = PBXBuildFile; fileRef = 923F9F6717E191A800F7AF36 /* bgMap.png */; };
@@ -650,7 +652,9 @@
 		633226251B3894840002D4F7 /* Billy G's.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Billy G's.gpx"; path = "../Billy G's.gpx"; sourceTree = "<group>"; };
 		633226271B399E040002D4F7 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = SocialRadar/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		63355E011B21046A00601E4C /* Globals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Globals.h; path = ../Common/Globals.h; sourceTree = "<group>"; };
-		6378DD691B3B3F9E005A4290 /* SSImages */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SSImages; sourceTree = "<group>"; };
+		636A35261B3B55F200464E15 /* New York Yankee Stadium.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "New York Yankee Stadium.gpx"; path = "../New York Yankee Stadium.gpx"; sourceTree = "<group>"; };
+		636A35271B3B55F200464E15 /* Cleveland Indians Progressive Field.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Cleveland Indians Progressive Field.gpx"; path = "../Cleveland Indians Progressive Field.gpx"; sourceTree = "<group>"; };
+		636A352A1B3B570800464E15 /* SSImages */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SSImages; sourceTree = "<group>"; };
 		63927D491B2C9EF8005FCD57 /* Globals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Globals.m; path = SocialRadar/Common/Globals.m; sourceTree = SOURCE_ROOT; };
 		923F9F6417E18D8500F7AF36 /* cancel_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cancel_btn@2x.png"; sourceTree = "<group>"; };
 		923F9F6717E191A800F7AF36 /* bgMap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgMap.png; sourceTree = "<group>"; };
@@ -1058,15 +1062,16 @@
 		13EF787D1738D19200373232 = {
 			isa = PBXGroup;
 			children = (
-				6378DD691B3B3F9E005A4290 /* SSImages */,
-				633226271B399E040002D4F7 /* FacebookSDK.framework */,
 				633226251B3894840002D4F7 /* Billy G's.gpx */,
 				633226231B38946E0002D4F7 /* Bush Stadium.gpx */,
+				636A35271B3B55F200464E15 /* Cleveland Indians Progressive Field.gpx */,
 				6332261D1B3894240002D4F7 /* Citizens Bank Park.gpx */,
 				6332261B1B3893C20002D4F7 /* Home.gpx */,
 				6332261F1B38943E0002D4F7 /* Miller Park.gpx */,
+				636A35261B3B55F200464E15 /* New York Yankee Stadium.gpx */,
 				633226211B3894580002D4F7 /* Target Field.gpx */,
 				A9515A7319E3F45100ED7832 /* FBUserSettingsViewResources.bundle */,
+				633226271B399E040002D4F7 /* FacebookSDK.framework */,
 				A9515A7119E3F42A00ED7832 /* FacebookSDK.framework */,
 				13C2F99217B385D2005034B1 /* MediaPlayer.framework */,
 				1366A1EB17847368002148BB /* ImageIO.framework */,
@@ -1115,6 +1120,7 @@
 		13EF788F1738D19200373232 /* SocialRadar */ = {
 			isa = PBXGroup;
 			children = (
+				636A352A1B3B570800464E15 /* SSImages */,
 				1366A1CC1784729B002148BB /* SDWebImage */,
 				1388DE87177DA7990073A0BF /* FourSquare */,
 				139AFBE51770684000BB1DDC /* ModelClass */,
@@ -1308,6 +1314,7 @@
 				13328672173CCB1700788D37 /* fb_icn_active.png in Resources */,
 				13328673173CCB1700788D37 /* fblogin_btn.png in Resources */,
 				13328674173CCB1700788D37 /* key.png in Resources */,
+				636A352B1B3B570800464E15 /* SSImages in Resources */,
 				13328675173CCB1700788D37 /* lightningbolt.png in Resources */,
 				13328676173CCB1700788D37 /* login_btn.png in Resources */,
 				13328677173CCB1700788D37 /* login_table.png in Resources */,
@@ -1318,6 +1325,7 @@
 				1332867C173CCB1700788D37 /* search_icn.png in Resources */,
 				1332867D173CCB1700788D37 /* settings_active.png in Resources */,
 				1332867E173CCB1700788D37 /* settings_icn.png in Resources */,
+				636A35281B3B55F200464E15 /* New York Yankee Stadium.gpx in Resources */,
 				6332261C1B3893C20002D4F7 /* Home.gpx in Resources */,
 				1332867F173CCB1700788D37 /* socialradar_navicon.png in Resources */,
 				13328680173CCB1700788D37 /* splash.png in Resources */,
@@ -1330,7 +1338,6 @@
 				13328686173CCB1700788D37 /* twitter_icn.png in Resources */,
 				13328687173CCB1700788D37 /* twitter_icn_active.png in Resources */,
 				13328688173CCB1700788D37 /* twittterlogin_btn.png in Resources */,
-				6378DD6A1B3B3F9E005A4290 /* SSImages in Resources */,
 				13328689173CCB1700788D37 /* back_btn@2x.png in Resources */,
 				1332868A173CCB1700788D37 /* bg@2x.png in Resources */,
 				1332868B173CCB1700788D37 /* blue_overlay@2x.png in Resources */,
@@ -1425,6 +1432,7 @@
 				13928C86175F5F9C00B70A8D /* bottom_strip.png in Resources */,
 				13FA44EC1760B27A00122D97 /* doneSetting@2x.png in Resources */,
 				13FA44EE1760B29000122D97 /* doneSetting.png in Resources */,
+				636A35291B3B55F200464E15 /* Cleveland Indians Progressive Field.gpx in Resources */,
 				13FA44F01760B5D800122D97 /* saveSetting@2x.png in Resources */,
 				13FA44F21760B5DE00122D97 /* saveSetting.png in Resources */,
 				138F9FDB1761074100C899B0 /* default_women_ldpi.png in Resources */,
