@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>12935083-86EA-46C7-893D-F967ED33A3B4</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>SocialStorm</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>8021771A1A942667E4FCEC08CC4353429CE09C03</key>
 		<string>https://github.com/dmrllcteam/socialstorm.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>SocialStorm.xcodeproj/project.xcworkspace</string>
+	<string>SocialStorm.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>8021771A1A942667E4FCEC08CC4353429CE09C03</key>
