@@ -388,22 +388,17 @@
     [appDelegate stopAnimatingIndicatorView];
     
     //Remove the existing anootation
-    
-    
-  
+    // DAJ 20150623 Add globals class
+//    SSGlobals *globalSS = [[SSGlobals alloc] init];
 
-    
-    
     if ([[response objectForKey:kStatus] isKindOfClass:[NSNull class]])
     {
-        
-       
-
         CLLocation *myLocation = appDelegate.currentlocation;
         CLLocationCoordinate2D locationCoordinate = CLLocationCoordinate2DMake(myLocation.coordinate.latitude, myLocation.coordinate.longitude);
        
         //comment todo This is Venues/Search
-        [Foursquare2 venueSearchNearByLatitude:[NSNumber numberWithFloat:locationCoordinate.latitude] longitude:[NSNumber numberWithFloat:locationCoordinate.longitude] query:nil limit:[NSNumber numberWithInt:50] intent:intentBrowse radius:@(19312.08) categoryId:nil callback:^(BOOL success, id result)
+        [Foursquare2 venueSearchNearByLatitude:[NSNumber numberWithFloat:locationCoordinate.latitude] longitude:[NSNumber numberWithFloat:locationCoordinate.longitude] query:nil limit:[NSNumber numberWithInt:50] intent:intentBrowse radius:@(19312.123) categoryId:nil callback:^(BOOL success, id result)
+      
         {
             if (success)
             {
@@ -462,6 +457,7 @@
 
         }];
         return;
+    
     }
     
   
@@ -471,6 +467,7 @@
     }
     
     
+    
     if (arrayOfStrorm)
     {
         [arrayOfStrorm release];
@@ -478,15 +475,15 @@
     }
     
     arrayOfStrorm = [[NSMutableArray alloc] init];
-    
+
     NSMutableArray *arrayOfLocationList = [response objectForKey:kLocationList];
-    NSNumber* NSNumVenueSearch = [NSNumber numberWithFloat:19312.123]; //19312.123 venue search radius (1609.344 meter/mile)
     //here call the foursquare api to get list of trending venues and replace it with the SR venue with matched foursquare id, combing venues of FS and SR
     CLLocation *myLocation = appDelegate.currentlocation;
     CLLocationCoordinate2D locationCoordinate = CLLocationCoordinate2DMake(myLocation.coordinate.latitude, myLocation.coordinate.longitude);
     //comment todo
     
-    [Foursquare2 venueSearchNearByLatitude:[NSNumber numberWithFloat:locationCoordinate.latitude] longitude:[NSNumber numberWithFloat:locationCoordinate.longitude] query:nil limit:[NSNumber numberWithInt:50] intent:intentBrowse radius:NSNumVenueSearch categoryId:nil callback:^(BOOL success, id result) {
+    [Foursquare2 venueSearchNearByLatitude:[NSNumber numberWithFloat:locationCoordinate.latitude] longitude:[NSNumber numberWithFloat:locationCoordinate.longitude] query:nil limit:[NSNumber numberWithInt:50] intent:intentBrowse radius:@(19312.123) categoryId:nil callback:^(BOOL success, id result)
+    {
 //        [Foursquare2 venueSearchNearByLatitude:[NSNumber numberWithFloat:locationCoordinate.latitude] longitude:[NSNumber ////numberWithFloat:locationCoordinate.longitude] query:nil limit:[NSNumber numberWithInt:50] intent:intentBrowse radius:@(19312.08) categoryId:nil callback:^(BOOL success, id result) {
 
         

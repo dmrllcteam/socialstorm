@@ -276,6 +276,7 @@
 		186E65021A35CAC600C47089 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 186E65011A35CAC600C47089 /* Images.xcassets */; };
 		1870B81419DA791E003B40D2 /* filter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1870B81319DA791E003B40D2 /* filter@2x.png */; };
 		1870B81619DA7926003B40D2 /* filter.png in Resources */ = {isa = PBXBuildFile; fileRef = 1870B81519DA7926003B40D2 /* filter.png */; };
+		632B45B11B3DF50600E1F572 /* Montcon Stadium.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 632B45B01B3DF50500E1F572 /* Montcon Stadium.gpx */; };
 		6332261C1B3893C20002D4F7 /* Home.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 6332261B1B3893C20002D4F7 /* Home.gpx */; };
 		6332261E1B3894240002D4F7 /* Citizens Bank Park.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 6332261D1B3894240002D4F7 /* Citizens Bank Park.gpx */; };
 		633226201B38943E0002D4F7 /* Miller Park.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 6332261F1B38943E0002D4F7 /* Miller Park.gpx */; };
@@ -285,9 +286,35 @@
 		633226281B399E040002D4F7 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 633226271B399E040002D4F7 /* FacebookSDK.framework */; };
 		636A35281B3B55F200464E15 /* New York Yankee Stadium.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 636A35261B3B55F200464E15 /* New York Yankee Stadium.gpx */; };
 		636A35291B3B55F200464E15 /* Cleveland Indians Progressive Field.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 636A35271B3B55F200464E15 /* Cleveland Indians Progressive Field.gpx */; };
-		636A352B1B3B570800464E15 /* SSImages in Resources */ = {isa = PBXBuildFile; fileRef = 636A352A1B3B570800464E15 /* SSImages */; };
 		63927D4A1B2C9EF8005FCD57 /* Globals.m in Sources */ = {isa = PBXBuildFile; fileRef = 63927D491B2C9EF8005FCD57 /* Globals.m */; };
+		63B6BD2F1B417E5E00C271C2 /* 29x29.png in Resources */ = {isa = PBXBuildFile; fileRef = 63B6BD151B417E5D00C271C2 /* 29x29.png */; };
+		63B6BD301B417E5E00C271C2 /* 36X36.png in Resources */ = {isa = PBXBuildFile; fileRef = 63B6BD161B417E5D00C271C2 /* 36X36.png */; };
+		63B6BD311B417E5E00C271C2 /* 40x40.png in Resources */ = {isa = PBXBuildFile; fileRef = 63B6BD171B417E5D00C271C2 /* 40x40.png */; };
+		63B6BD321B417E5E00C271C2 /* 50x50.png in Resources */ = {isa = PBXBuildFile; fileRef = 63B6BD181B417E5D00C271C2 /* 50x50.png */; };
+		63B6BD331B417E5E00C271C2 /* 57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 63B6BD191B417E5E00C271C2 /* 57x57.png */; };
+		63B6BD341B417E5E00C271C2 /* 58x58.png in Resources */ = {isa = PBXBuildFile; fileRef = 63B6BD1A1B417E5E00C271C2 /* 58x58.png */; };
+		63B6BD351B417E5E00C271C2 /* 60x60.png in Resources */ = {isa = PBXBuildFile; fileRef = 63B6BD1B1B417E5E00C271C2 /* 60x60.png */; };
+		63B6BD361B417E5E00C271C2 /* 72x72.png in Resources */ = {isa = PBXBuildFile; fileRef = 63B6BD1C1B417E5E00C271C2 /* 72x72.png */; };
+		63B6BD371B417E5E00C271C2 /* 76x76.png in Resources */ = {isa = PBXBuildFile; fileRef = 63B6BD1D1B417E5E00C271C2 /* 76x76.png */; };
+		63B6BD381B417E5E00C271C2 /* 80x80.png in Resources */ = {isa = PBXBuildFile; fileRef = 63B6BD1E1B417E5E00C271C2 /* 80x80.png */; };
+		63B6BD391B417E5E00C271C2 /* 87x87.png in Resources */ = {isa = PBXBuildFile; fileRef = 63B6BD1F1B417E5E00C271C2 /* 87x87.png */; };
+		63B6BD3A1B417E5E00C271C2 /* 100x100.png in Resources */ = {isa = PBXBuildFile; fileRef = 63B6BD201B417E5E00C271C2 /* 100x100.png */; };
+		63B6BD3B1B417E5E00C271C2 /* 114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 63B6BD211B417E5E00C271C2 /* 114x114.png */; };
+		63B6BD3C1B417E5E00C271C2 /* 120x120.png in Resources */ = {isa = PBXBuildFile; fileRef = 63B6BD221B417E5E00C271C2 /* 120x120.png */; };
+		63B6BD3D1B417E5E00C271C2 /* 144x144.png in Resources */ = {isa = PBXBuildFile; fileRef = 63B6BD231B417E5E00C271C2 /* 144x144.png */; };
+		63B6BD3E1B417E5E00C271C2 /* 152x152.png in Resources */ = {isa = PBXBuildFile; fileRef = 63B6BD241B417E5E00C271C2 /* 152x152.png */; };
+		63B6BD3F1B417E5E00C271C2 /* 180x180.png in Resources */ = {isa = PBXBuildFile; fileRef = 63B6BD251B417E5E00C271C2 /* 180x180.png */; };
+		63B6BD401B417E5E00C271C2 /* 198X198.png in Resources */ = {isa = PBXBuildFile; fileRef = 63B6BD261B417E5E00C271C2 /* 198X198.png */; };
+		63B6BD411B417E5E00C271C2 /* 512x512.png in Resources */ = {isa = PBXBuildFile; fileRef = 63B6BD271B417E5E00C271C2 /* 512x512.png */; };
+		63B6BD421B417E5E00C271C2 /* 1024x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 63B6BD281B417E5E00C271C2 /* 1024x1024.png */; };
+		63B6BD431B417E5E00C271C2 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 63B6BD291B417E5E00C271C2 /* Default-568h@2x.png */; };
+		63B6BD441B417E5E00C271C2 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 63B6BD2A1B417E5E00C271C2 /* Default.png */; };
+		63B6BD451B417E5E00C271C2 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 63B6BD2B1B417E5E00C271C2 /* Default@2x.png */; };
+		63B6BD461B417E5E00C271C2 /* icon57.png in Resources */ = {isa = PBXBuildFile; fileRef = 63B6BD2C1B417E5E00C271C2 /* icon57.png */; };
+		63B6BD471B417E5E00C271C2 /* icon57@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 63B6BD2D1B417E5E00C271C2 /* icon57@2x.png */; };
+		63B6BD481B417E5E00C271C2 /* icon114.png in Resources */ = {isa = PBXBuildFile; fileRef = 63B6BD2E1B417E5E00C271C2 /* icon114.png */; };
 		63CBEF8F1B3B729F0058BAFD /* Marlins Park.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 63CBEF8E1B3B729F0058BAFD /* Marlins Park.gpx */; };
+		63CBEF911B3CA8480058BAFD /* San Francisco Giants AT&T Park.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 63CBEF901B3CA8480058BAFD /* San Francisco Giants AT&T Park.gpx */; };
 		923F9F6517E18D8500F7AF36 /* cancel_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 923F9F6417E18D8500F7AF36 /* cancel_btn@2x.png */; };
 		923F9F6917E191A800F7AF36 /* bgMap.png in Resources */ = {isa = PBXBuildFile; fileRef = 923F9F6717E191A800F7AF36 /* bgMap.png */; };
 		923F9F6A17E191A800F7AF36 /* bgMap@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 923F9F6817E191A800F7AF36 /* bgMap@2x.png */; };
@@ -645,6 +672,7 @@
 		186E65011A35CAC600C47089 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1870B81319DA791E003B40D2 /* filter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "filter@2x.png"; sourceTree = "<group>"; };
 		1870B81519DA7926003B40D2 /* filter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = filter.png; sourceTree = "<group>"; };
+		632B45B01B3DF50500E1F572 /* Montcon Stadium.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Montcon Stadium.gpx"; path = "../Montcon Stadium.gpx"; sourceTree = "<group>"; };
 		6332261B1B3893C20002D4F7 /* Home.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Home.gpx; path = ../Home.gpx; sourceTree = "<group>"; };
 		6332261D1B3894240002D4F7 /* Citizens Bank Park.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Citizens Bank Park.gpx"; path = "../Citizens Bank Park.gpx"; sourceTree = "<group>"; };
 		6332261F1B38943E0002D4F7 /* Miller Park.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Miller Park.gpx"; path = "../Miller Park.gpx"; sourceTree = "<group>"; };
@@ -655,9 +683,35 @@
 		63355E011B21046A00601E4C /* Globals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Globals.h; path = ../Common/Globals.h; sourceTree = "<group>"; };
 		636A35261B3B55F200464E15 /* New York Yankee Stadium.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "New York Yankee Stadium.gpx"; path = "../New York Yankee Stadium.gpx"; sourceTree = "<group>"; };
 		636A35271B3B55F200464E15 /* Cleveland Indians Progressive Field.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Cleveland Indians Progressive Field.gpx"; path = "../Cleveland Indians Progressive Field.gpx"; sourceTree = "<group>"; };
-		636A352A1B3B570800464E15 /* SSImages */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SSImages; sourceTree = "<group>"; };
 		63927D491B2C9EF8005FCD57 /* Globals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Globals.m; path = SocialRadar/Common/Globals.m; sourceTree = SOURCE_ROOT; };
+		63B6BD151B417E5D00C271C2 /* 29x29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 29x29.png; sourceTree = "<group>"; };
+		63B6BD161B417E5D00C271C2 /* 36X36.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 36X36.png; sourceTree = "<group>"; };
+		63B6BD171B417E5D00C271C2 /* 40x40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 40x40.png; sourceTree = "<group>"; };
+		63B6BD181B417E5D00C271C2 /* 50x50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 50x50.png; sourceTree = "<group>"; };
+		63B6BD191B417E5E00C271C2 /* 57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 57x57.png; sourceTree = "<group>"; };
+		63B6BD1A1B417E5E00C271C2 /* 58x58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 58x58.png; sourceTree = "<group>"; };
+		63B6BD1B1B417E5E00C271C2 /* 60x60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 60x60.png; sourceTree = "<group>"; };
+		63B6BD1C1B417E5E00C271C2 /* 72x72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 72x72.png; sourceTree = "<group>"; };
+		63B6BD1D1B417E5E00C271C2 /* 76x76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 76x76.png; sourceTree = "<group>"; };
+		63B6BD1E1B417E5E00C271C2 /* 80x80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 80x80.png; sourceTree = "<group>"; };
+		63B6BD1F1B417E5E00C271C2 /* 87x87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 87x87.png; sourceTree = "<group>"; };
+		63B6BD201B417E5E00C271C2 /* 100x100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 100x100.png; sourceTree = "<group>"; };
+		63B6BD211B417E5E00C271C2 /* 114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 114x114.png; sourceTree = "<group>"; };
+		63B6BD221B417E5E00C271C2 /* 120x120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 120x120.png; sourceTree = "<group>"; };
+		63B6BD231B417E5E00C271C2 /* 144x144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 144x144.png; sourceTree = "<group>"; };
+		63B6BD241B417E5E00C271C2 /* 152x152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 152x152.png; sourceTree = "<group>"; };
+		63B6BD251B417E5E00C271C2 /* 180x180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 180x180.png; sourceTree = "<group>"; };
+		63B6BD261B417E5E00C271C2 /* 198X198.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 198X198.png; sourceTree = "<group>"; };
+		63B6BD271B417E5E00C271C2 /* 512x512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 512x512.png; sourceTree = "<group>"; };
+		63B6BD281B417E5E00C271C2 /* 1024x1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1024x1024.png; sourceTree = "<group>"; };
+		63B6BD291B417E5E00C271C2 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		63B6BD2A1B417E5E00C271C2 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		63B6BD2B1B417E5E00C271C2 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		63B6BD2C1B417E5E00C271C2 /* icon57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon57.png; sourceTree = "<group>"; };
+		63B6BD2D1B417E5E00C271C2 /* icon57@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon57@2x.png"; sourceTree = "<group>"; };
+		63B6BD2E1B417E5E00C271C2 /* icon114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon114.png; sourceTree = "<group>"; };
 		63CBEF8E1B3B729F0058BAFD /* Marlins Park.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Marlins Park.gpx"; path = "../Marlins Park.gpx"; sourceTree = "<group>"; };
+		63CBEF901B3CA8480058BAFD /* San Francisco Giants AT&T Park.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "San Francisco Giants AT&T Park.gpx"; path = "../San Francisco Giants AT&T Park.gpx"; sourceTree = "<group>"; };
 		923F9F6417E18D8500F7AF36 /* cancel_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cancel_btn@2x.png"; sourceTree = "<group>"; };
 		923F9F6717E191A800F7AF36 /* bgMap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgMap.png; sourceTree = "<group>"; };
 		923F9F6817E191A800F7AF36 /* bgMap@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bgMap@2x.png"; sourceTree = "<group>"; };
@@ -1064,6 +1118,8 @@
 		13EF787D1738D19200373232 = {
 			isa = PBXGroup;
 			children = (
+				632B45B01B3DF50500E1F572 /* Montcon Stadium.gpx */,
+				63CBEF901B3CA8480058BAFD /* San Francisco Giants AT&T Park.gpx */,
 				63CBEF8E1B3B729F0058BAFD /* Marlins Park.gpx */,
 				633226251B3894840002D4F7 /* Billy G's.gpx */,
 				633226231B38946E0002D4F7 /* Bush Stadium.gpx */,
@@ -1073,6 +1129,32 @@
 				6332261F1B38943E0002D4F7 /* Miller Park.gpx */,
 				636A35261B3B55F200464E15 /* New York Yankee Stadium.gpx */,
 				633226211B3894580002D4F7 /* Target Field.gpx */,
+				63B6BD151B417E5D00C271C2 /* 29x29.png */,
+				63B6BD161B417E5D00C271C2 /* 36X36.png */,
+				63B6BD171B417E5D00C271C2 /* 40x40.png */,
+				63B6BD181B417E5D00C271C2 /* 50x50.png */,
+				63B6BD191B417E5E00C271C2 /* 57x57.png */,
+				63B6BD1A1B417E5E00C271C2 /* 58x58.png */,
+				63B6BD1B1B417E5E00C271C2 /* 60x60.png */,
+				63B6BD1C1B417E5E00C271C2 /* 72x72.png */,
+				63B6BD1D1B417E5E00C271C2 /* 76x76.png */,
+				63B6BD1E1B417E5E00C271C2 /* 80x80.png */,
+				63B6BD1F1B417E5E00C271C2 /* 87x87.png */,
+				63B6BD201B417E5E00C271C2 /* 100x100.png */,
+				63B6BD211B417E5E00C271C2 /* 114x114.png */,
+				63B6BD221B417E5E00C271C2 /* 120x120.png */,
+				63B6BD231B417E5E00C271C2 /* 144x144.png */,
+				63B6BD241B417E5E00C271C2 /* 152x152.png */,
+				63B6BD251B417E5E00C271C2 /* 180x180.png */,
+				63B6BD261B417E5E00C271C2 /* 198X198.png */,
+				63B6BD271B417E5E00C271C2 /* 512x512.png */,
+				63B6BD281B417E5E00C271C2 /* 1024x1024.png */,
+				63B6BD291B417E5E00C271C2 /* Default-568h@2x.png */,
+				63B6BD2A1B417E5E00C271C2 /* Default.png */,
+				63B6BD2B1B417E5E00C271C2 /* Default@2x.png */,
+				63B6BD2C1B417E5E00C271C2 /* icon57.png */,
+				63B6BD2D1B417E5E00C271C2 /* icon57@2x.png */,
+				63B6BD2E1B417E5E00C271C2 /* icon114.png */,
 				A9515A7319E3F45100ED7832 /* FBUserSettingsViewResources.bundle */,
 				633226271B399E040002D4F7 /* FacebookSDK.framework */,
 				A9515A7119E3F42A00ED7832 /* FacebookSDK.framework */,
@@ -1123,7 +1205,6 @@
 		13EF788F1738D19200373232 /* SocialRadar */ = {
 			isa = PBXGroup;
 			children = (
-				636A352A1B3B570800464E15 /* SSImages */,
 				1366A1CC1784729B002148BB /* SDWebImage */,
 				1388DE87177DA7990073A0BF /* FourSquare */,
 				139AFBE51770684000BB1DDC /* ModelClass */,
@@ -1302,6 +1383,7 @@
 			files = (
 				13EF78941738D19200373232 /* InfoPlist.strings in Resources */,
 				13EF78C31738DD1100373232 /* ViewController.xib in Resources */,
+				63B6BD3B1B417E5E00C271C2 /* 114x114.png in Resources */,
 				13EF795A17392A0E00373232 /* LoginViewController.xib in Resources */,
 				130F4AA5173A7362007550EB /* RegisterViewController.xib in Resources */,
 				130F4AA7173A8AAE007550EB /* RegisterViewCell.xib in Resources */,
@@ -1314,10 +1396,12 @@
 				1332866F173CCB1700788D37 /* favorite_icn.png in Resources */,
 				13328670173CCB1700788D37 /* favorited_icn.png in Resources */,
 				13328671173CCB1700788D37 /* fb_icn.png in Resources */,
+				63B6BD361B417E5E00C271C2 /* 72x72.png in Resources */,
+				63B6BD411B417E5E00C271C2 /* 512x512.png in Resources */,
 				13328672173CCB1700788D37 /* fb_icn_active.png in Resources */,
 				13328673173CCB1700788D37 /* fblogin_btn.png in Resources */,
+				63B6BD3D1B417E5E00C271C2 /* 144x144.png in Resources */,
 				13328674173CCB1700788D37 /* key.png in Resources */,
-				636A352B1B3B570800464E15 /* SSImages in Resources */,
 				13328675173CCB1700788D37 /* lightningbolt.png in Resources */,
 				13328676173CCB1700788D37 /* login_btn.png in Resources */,
 				13328677173CCB1700788D37 /* login_table.png in Resources */,
@@ -1327,6 +1411,7 @@
 				1332867B173CCB1700788D37 /* profile_icn.png in Resources */,
 				1332867C173CCB1700788D37 /* search_icn.png in Resources */,
 				1332867D173CCB1700788D37 /* settings_active.png in Resources */,
+				63B6BD451B417E5E00C271C2 /* Default@2x.png in Resources */,
 				1332867E173CCB1700788D37 /* settings_icn.png in Resources */,
 				636A35281B3B55F200464E15 /* New York Yankee Stadium.gpx in Resources */,
 				6332261C1B3893C20002D4F7 /* Home.gpx in Resources */,
@@ -1336,9 +1421,11 @@
 				633226201B38943E0002D4F7 /* Miller Park.gpx in Resources */,
 				13328682173CCB1700788D37 /* strike_btn_pressed.png in Resources */,
 				13328683173CCB1700788D37 /* strike_btn_release.png in Resources */,
+				63B6BD3C1B417E5E00C271C2 /* 120x120.png in Resources */,
 				13328684173CCB1700788D37 /* strike_button.png in Resources */,
 				13328685173CCB1700788D37 /* tabbar.png in Resources */,
 				13328686173CCB1700788D37 /* twitter_icn.png in Resources */,
+				63B6BD481B417E5E00C271C2 /* icon114.png in Resources */,
 				13328687173CCB1700788D37 /* twitter_icn_active.png in Resources */,
 				13328688173CCB1700788D37 /* twittterlogin_btn.png in Resources */,
 				13328689173CCB1700788D37 /* back_btn@2x.png in Resources */,
@@ -1353,6 +1440,7 @@
 				13328692173CCB1700788D37 /* fb_icn@2x.png in Resources */,
 				13328693173CCB1700788D37 /* fb_icn_active@2x.png in Resources */,
 				13328694173CCB1700788D37 /* fblogin_btn@2x.png in Resources */,
+				63B6BD331B417E5E00C271C2 /* 57x57.png in Resources */,
 				13328695173CCB1700788D37 /* key@2x.png in Resources */,
 				13328696173CCB1700788D37 /* lightningbolt@2x.png in Resources */,
 				13328697173CCB1700788D37 /* login_btn@2x.png in Resources */,
@@ -1363,6 +1451,7 @@
 				1332869C173CCB1700788D37 /* profile_icn@2x.png in Resources */,
 				1332869D173CCB1700788D37 /* records_icn@2x.png in Resources */,
 				1332869E173CCB1700788D37 /* search_icn@2x.png in Resources */,
+				63B6BD311B417E5E00C271C2 /* 40x40.png in Resources */,
 				1332869F173CCB1700788D37 /* settings_active@2x.png in Resources */,
 				133286A0173CCB1700788D37 /* settings_icn@2x.png in Resources */,
 				133286A1173CCB1700788D37 /* socialradar_navicon@2x.png in Resources */,
@@ -1376,23 +1465,28 @@
 				133286A8173CCB1700788D37 /* twitter_icn@2x.png in Resources */,
 				133286A9173CCB1700788D37 /* twitter_icn_active@2x.png in Resources */,
 				133286AA173CCB1700788D37 /* twittterlogin_btn@2x.png in Resources */,
+				63B6BD471B417E5E00C271C2 /* icon57@2x.png in Resources */,
 				133286AB173CCB1700788D37 /* back_btn-568h@2x.png in Resources */,
 				133286AC173CCB1700788D37 /* bg-568h@2x.png in Resources */,
 				133286AD173CCB1700788D37 /* blue_overlay-568h@2x.png in Resources */,
 				133286AE173CCB1700788D37 /* bolt_icn-568h@2x.png in Resources */,
 				133286AF173CCB1700788D37 /* chaseit_btn-568h@2x.png in Resources */,
 				133286B0173CCB1700788D37 /* currentlocation_bttn-568h@2x.png in Resources */,
+				63B6BD461B417E5E00C271C2 /* icon57.png in Resources */,
 				633226221B3894580002D4F7 /* Target Field.gpx in Resources */,
 				133286B1173CCB1700788D37 /* dividingline-568h@2x.png in Resources */,
 				133286B2173CCB1700788D37 /* favorited_icn-568h@2x.png in Resources */,
 				133286B3173CCB1700788D37 /* fb_icn-568h@2x.png in Resources */,
 				133286B4173CCB1700788D37 /* fb_icn_active-568h@2x.png in Resources */,
+				63B6BD431B417E5E00C271C2 /* Default-568h@2x.png in Resources */,
 				133286B5173CCB1700788D37 /* fblogin_btn-568h@2x.png in Resources */,
 				133286B6173CCB1700788D37 /* key-568h@2x.png in Resources */,
 				133286B7173CCB1700788D37 /* lightningbolt-568h@2x.png in Resources */,
 				133286B8173CCB1700788D37 /* login_btn-568h@2x.png in Resources */,
+				63B6BD441B417E5E00C271C2 /* Default.png in Resources */,
 				133286B9173CCB1700788D37 /* login_table-568h@2x.png in Resources */,
 				133286BA173CCB1700788D37 /* logo-568h@2x.png in Resources */,
+				63B6BD301B417E5E00C271C2 /* 36X36.png in Resources */,
 				1870B81619DA7926003B40D2 /* filter.png in Resources */,
 				133286BB173CCB1700788D37 /* navbar-568h@2x.png in Resources */,
 				133286BC173CCB1700788D37 /* profile_active-568h@2x.png in Resources */,
@@ -1406,8 +1500,11 @@
 				133286C5173CCB1700788D37 /* storm_icn-568h@2x.png in Resources */,
 				133286C6173CCB1700788D37 /* strike_btn_pressed-568h@2x.png in Resources */,
 				133286C7173CCB1700788D37 /* strike_btn_release-568h@2x.png in Resources */,
+				63B6BD3F1B417E5E00C271C2 /* 180x180.png in Resources */,
 				133286C8173CCB1700788D37 /* strike_button-568h@2x.png in Resources */,
 				133286C9173CCB1700788D37 /* tabbar-568h@2x.png in Resources */,
+				63CBEF911B3CA8480058BAFD /* San Francisco Giants AT&T Park.gpx in Resources */,
+				63B6BD3A1B417E5E00C271C2 /* 100x100.png in Resources */,
 				133286CA173CCB1700788D37 /* twitter_icn-568h@2x.png in Resources */,
 				133286CB173CCB1700788D37 /* twitter_icn_active-568h@2x.png in Resources */,
 				133286CC173CCB1700788D37 /* twittterlogin_btn-568h@2x.png in Resources */,
@@ -1416,9 +1513,12 @@
 				13EF3A021740F57B00FB82BC /* SettingViewController.xib in Resources */,
 				13C34F81174A2FA700020E4D /* cancel_btn.png in Resources */,
 				13AB7146174B575300069786 /* HallOfFrameViewController.xib in Resources */,
+				632B45B11B3DF50600E1F572 /* Montcon Stadium.gpx in Resources */,
 				13AB7148174B5AFC00069786 /* HallOfFrameViewCell.xib in Resources */,
 				13E60AE9174C8FD4006342A6 /* edit_btn.png in Resources */,
+				63B6BD381B417E5E00C271C2 /* 80x80.png in Resources */,
 				13E60AEB174C8FE3006342A6 /* edit_btn@2x.png in Resources */,
+				63B6BD401B417E5E00C271C2 /* 198X198.png in Resources */,
 				130832DD1754AC7B00B6F5D5 /* EditProfileViewController.xib in Resources */,
 				130832EC1754B51C00B6F5D5 /* SearchViewController.xib in Resources */,
 				135B5A12175A3AEA009605B6 /* bgMap-568h@2x.png in Resources */,
@@ -1432,6 +1532,7 @@
 				13928C82175F5F0D00B70A8D /* table.9.png in Resources */,
 				13928C83175F5F0D00B70A8D /* top_strip.png in Resources */,
 				13928C84175F5F0D00B70A8D /* top_strip@2x.png in Resources */,
+				63B6BD391B417E5E00C271C2 /* 87x87.png in Resources */,
 				13928C86175F5F9C00B70A8D /* bottom_strip.png in Resources */,
 				13FA44EC1760B27A00122D97 /* doneSetting@2x.png in Resources */,
 				13FA44EE1760B29000122D97 /* doneSetting.png in Resources */,
@@ -1452,6 +1553,7 @@
 				138EF0091762126600F6E5EE /* arrow_grey.png in Resources */,
 				138EF00C176224B300F6E5EE /* tabbar_selection_blank.png in Resources */,
 				138EF00D176224B300F6E5EE /* tabbar_selection_blank@2x.png in Resources */,
+				63B6BD3E1B417E5E00C271C2 /* 152x152.png in Resources */,
 				137CBA0D1771E66200F197DC /* NearByLocationViewControlerViewController.xib in Resources */,
 				1395228A17742E1E009F9E01 /* ShareStrikeViewController.xib in Resources */,
 				A9889800177DB13D00109C76 /* FSWebLogin.xib in Resources */,
@@ -1465,10 +1567,13 @@
 				1388DEAA177DBE2E0073A0BF /* red_bubble@2x.png in Resources */,
 				1388DEAB177DBE2E0073A0BF /* yellow_bubble@2x.png in Resources */,
 				13844593177E0252007DFC67 /* ShareViewController.xib in Resources */,
+				63B6BD2F1B417E5E00C271C2 /* 29x29.png in Resources */,
 				139104EA1782CFFD0041CA4C /* SearchResultView.xib in Resources */,
 				139104EF1782F3E70041CA4C /* SearchDetailViewController.xib in Resources */,
+				63B6BD341B417E5E00C271C2 /* 58x58.png in Resources */,
 				13EBA86E17A24BA9001AE869 /* storm_large.png in Resources */,
 				13EBA86F17A24BA9001AE869 /* storm_large@2x.png in Resources */,
+				63B6BD321B417E5E00C271C2 /* 50x50.png in Resources */,
 				13EBA87017A24BA9001AE869 /* storm_largeest.png in Resources */,
 				13EBA87117A24BA9001AE869 /* storm_largeest@2X.png in Resources */,
 				13EBA87217A24BA9001AE869 /* storm_mediun.png in Resources */,
@@ -1483,9 +1588,11 @@
 				130CEF9417E1E2D600A35FA6 /* radar_btn@2x.png in Resources */,
 				926FEB4A1812AF8B0057E64A /* Iphone4.mp4 in Resources */,
 				926FEB4B1812AF8B0057E64A /* Iphone5FLAT.mp4 in Resources */,
+				63B6BD421B417E5E00C271C2 /* 1024x1024.png in Resources */,
 				18288EFD187EC8FA009F2195 /* Icon.png in Resources */,
 				18288EFF187EC90D009F2195 /* Icon-72.png in Resources */,
 				13DD01CE193C5A2F0064F0CB /* AboutViewController.xib in Resources */,
+				63B6BD371B417E5E00C271C2 /* 76x76.png in Resources */,
 				633226261B3894840002D4F7 /* Billy G's.gpx in Resources */,
 				13DD01F0193C8A0D0064F0CB /* SocialStorm.html in Resources */,
 				13513C99193DFA6900A4267F /* no_image_location.png in Resources */,
@@ -1503,6 +1610,7 @@
 				1330B14A19673A75008E7044 /* SearchDetailViewController-5.xib in Resources */,
 				1330B14B19673A75008E7044 /* SearchViewController-5.xib in Resources */,
 				1330B14C19673A75008E7044 /* SettingViewController-5.xib in Resources */,
+				63B6BD351B417E5E00C271C2 /* 60x60.png in Resources */,
 				1330B14D19673A75008E7044 /* ShareStrikeViewController-5.xib in Resources */,
 				1330B14E19673A75008E7044 /* ShareViewController-5.xib in Resources */,
 				1330B14F19673A75008E7044 /* ViewController-5.xib in Resources */,
