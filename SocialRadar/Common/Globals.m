@@ -17,27 +17,21 @@
 
 @implementation SSGlobals
 
-@synthesize SSGVenueSearch = _venuesearch;
-@synthesize NearByLatitude = _global2;
-@synthesize SSGlobal3 = _global3;
+@synthesize SSGVenueSearchRadius = _venuesearch;
+@synthesize NearByLocationRadius = _nearbylocationradius;
+@synthesize SearchViewRadius = _searchviewradius;
 
 -(id) init
 {
     if(self = [super init])
     {
-        self.SSGVenueSearch = [NSNumber numberWithFloat:19312.123];  // HomeViewControler GetUpdateResponse
-        self.NearByLatitude = [NSNumber numberWithFloat:19312.123];  // HomeViewControler 
-        self.SSGlobal3 = [NSNumber numberWithFloat:19312.123];
+        self.SSGVenueSearchRadius = [NSNumber numberWithFloat:19312.128];  // HomeViewControler GetUpdateResponse
+        self.NearByLocationRadius = [NSNumber numberWithFloat:19312.128];  // NearByLoactonViewControler
+        self.SearchViewRadius = [NSNumber numberWithFloat:19312.128];
     }
-    return nil;
+    return self;
 };
    
-    
-
-
-
-
-
 @end
 
 

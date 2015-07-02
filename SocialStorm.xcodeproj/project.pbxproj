@@ -286,6 +286,7 @@
 		633226281B399E040002D4F7 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 633226271B399E040002D4F7 /* FacebookSDK.framework */; };
 		636A35281B3B55F200464E15 /* New York Yankee Stadium.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 636A35261B3B55F200464E15 /* New York Yankee Stadium.gpx */; };
 		636A35291B3B55F200464E15 /* Cleveland Indians Progressive Field.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 636A35271B3B55F200464E15 /* Cleveland Indians Progressive Field.gpx */; };
+		637666621B42F30100600DE0 /* Olympic Stadium in Montreal.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 637666611B42F30100600DE0 /* Olympic Stadium in Montreal.gpx */; };
 		63927D4A1B2C9EF8005FCD57 /* Globals.m in Sources */ = {isa = PBXBuildFile; fileRef = 63927D491B2C9EF8005FCD57 /* Globals.m */; };
 		63B6BD2F1B417E5E00C271C2 /* 29x29.png in Resources */ = {isa = PBXBuildFile; fileRef = 63B6BD151B417E5D00C271C2 /* 29x29.png */; };
 		63B6BD301B417E5E00C271C2 /* 36X36.png in Resources */ = {isa = PBXBuildFile; fileRef = 63B6BD161B417E5D00C271C2 /* 36X36.png */; };
@@ -683,6 +684,7 @@
 		63355E011B21046A00601E4C /* Globals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Globals.h; path = ../Common/Globals.h; sourceTree = "<group>"; };
 		636A35261B3B55F200464E15 /* New York Yankee Stadium.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "New York Yankee Stadium.gpx"; path = "../New York Yankee Stadium.gpx"; sourceTree = "<group>"; };
 		636A35271B3B55F200464E15 /* Cleveland Indians Progressive Field.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Cleveland Indians Progressive Field.gpx"; path = "../Cleveland Indians Progressive Field.gpx"; sourceTree = "<group>"; };
+		637666611B42F30100600DE0 /* Olympic Stadium in Montreal.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Olympic Stadium in Montreal.gpx"; sourceTree = "<group>"; };
 		63927D491B2C9EF8005FCD57 /* Globals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Globals.m; path = SocialRadar/Common/Globals.m; sourceTree = SOURCE_ROOT; };
 		63B6BD151B417E5D00C271C2 /* 29x29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 29x29.png; sourceTree = "<group>"; };
 		63B6BD161B417E5D00C271C2 /* 36X36.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 36X36.png; sourceTree = "<group>"; };
@@ -1119,6 +1121,7 @@
 			isa = PBXGroup;
 			children = (
 				632B45B01B3DF50500E1F572 /* Montcon Stadium.gpx */,
+				637666611B42F30100600DE0 /* Olympic Stadium in Montreal.gpx */,
 				63CBEF901B3CA8480058BAFD /* San Francisco Giants AT&T Park.gpx */,
 				63CBEF8E1B3B729F0058BAFD /* Marlins Park.gpx */,
 				633226251B3894840002D4F7 /* Billy G's.gpx */,
@@ -1246,7 +1249,6 @@
 				13EF78C01738DCEE00373232 /* ViewController.m */,
 				13EF7956173929F400373232 /* LoginViewController.h */,
 				13EF7957173929F400373232 /* LoginViewController.m */,
-				130F4AA1173A732B007550EB /* RegisterViewController.h */,
 				130F4AA2173A732B007550EB /* RegisterViewController.m */,
 				130F4AA8173A8BA2007550EB /* RegisterViewCell.h */,
 				130F4AA9173A8BA2007550EB /* RegisterViewCell.m */,
@@ -1255,6 +1257,7 @@
 				13EF39F81740F37C00FB82BC /* TabViewClass */,
 				13AB7142174B572F00069786 /* HallOfFrameViewController.h */,
 				13AB7143174B572F00069786 /* HallOfFrameViewController.m */,
+				130F4AA1173A732B007550EB /* RegisterViewController.h */,
 				13AB7149174B6AEF00069786 /* HallOfFrameViewCell.h */,
 				13AB714A174B6AF000069786 /* HallOfFrameViewCell.m */,
 				130832D91754AC5700B6F5D5 /* EditProfileViewController.h */,
@@ -1456,6 +1459,7 @@
 				133286A0173CCB1700788D37 /* settings_icn@2x.png in Resources */,
 				133286A1173CCB1700788D37 /* socialradar_navicon@2x.png in Resources */,
 				133286A2173CCB1700788D37 /* splash@2x.png in Resources */,
+				637666621B42F30100600DE0 /* Olympic Stadium in Montreal.gpx in Resources */,
 				133286A3173CCB1700788D37 /* storm_icn@2x.png in Resources */,
 				133286A4173CCB1700788D37 /* strike_btn_pressed@2x.png in Resources */,
 				186E65021A35CAC600C47089 /* Images.xcassets in Resources */,
@@ -1776,6 +1780,7 @@
 		13EF78B81738D19200373232 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1786,8 +1791,6 @@
 					"$(SRCROOT)",
 					"\"$(SRCROOT)/SocialRadar\"",
 					"\"$(SRCROOT)/SocialRadar/FacebookSDK\"",
-					"\"$(SRCROOT)/../../../../../FacebookSDK_3.20\"",
-					"\"$(SRCROOT)/../../../../../FacebookSDK_3.21\"",
 					"$(PROJECT_DIR)/SocialRadar/FacebookSDK",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1814,6 +1817,7 @@
 		13EF78B91738D19200373232 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1823,8 +1827,6 @@
 					"$(SRCROOT)",
 					"\"$(SRCROOT)/SocialRadar\"",
 					"\"$(SRCROOT)/SocialRadar/FacebookSDK\"",
-					"\"$(SRCROOT)/../../../../../FacebookSDK_3.20\"",
-					"\"$(SRCROOT)/../../../../../FacebookSDK_3.21\"",
 					"$(PROJECT_DIR)/SocialRadar/FacebookSDK",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

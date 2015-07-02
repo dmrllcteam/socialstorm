@@ -9,12 +9,12 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SocialRadar/CustomClass/LocationDetailViewController.m"
-            timestampString = "456706991.638795"
+            filePath = "SocialRadar/CustomClass/HomeViewController.m"
+            timestampString = "457303607.479354"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "362"
-            endingLineNumber = "362"
+            startingLineNumber = "392"
+            endingLineNumber = "392"
             landmarkName = "-getupdateResponse:"
             landmarkType = "5">
          </BreakpointContent>
@@ -25,93 +25,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SocialRadar/CustomClass/HomeViewController.m"
-            timestampString = "457200382.482122"
+            filePath = "SocialRadar/CustomClass/SearchViewController.m"
+            timestampString = "457307342.590922"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "400"
-            endingLineNumber = "400"
-            landmarkName = "-getupdateResponse:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SocialRadar/CustomClass/HomeViewController.m"
-            timestampString = "457275204.524854"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "485"
-            endingLineNumber = "485"
-            landmarkName = "-getupdateResponse:"
-            landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[HomeViewController getupdateResponse:]"
-                  moduleName = "SocialRadar"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/davejarvis/Public/Drop%20Box/SocialRadar_New/SocialRadar/CustomClass/HomeViewController.m"
-                  timestampString = "457201623.022751"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "484"
-                  endingLineNumber = "484"
-                  offsetFromSymbolStart = "1584">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__40-[HomeViewController getupdateResponse:]_block_invoke281"
-                  moduleName = "SocialRadar"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/davejarvis/Public/Drop%20Box/SocialRadar_New/SocialRadar/CustomClass/HomeViewController.m"
-                  timestampString = "457201623.023086"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "488"
-                  endingLineNumber = "488"
-                  offsetFromSymbolStart = "62">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SocialRadar/Common/Globals.m"
-            timestampString = "457200508.550381"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "-init"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SocialRadar/CustomClass/HomeViewController.m"
-            timestampString = "457275204.524854"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "482"
-            endingLineNumber = "482"
-            landmarkName = "-getupdateResponse:"
+            startingLineNumber = "224"
+            endingLineNumber = "224"
+            landmarkName = "-callFourSquareLocations:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

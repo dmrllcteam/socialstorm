@@ -13,6 +13,7 @@
 #import "SearchResultView.h"
 #import "Common_IPhone.h"
 #import "Foursquare2.h"
+#import "Globals.h"
 
 @interface SearchViewController ()
 
@@ -162,7 +163,8 @@
     
     NSString *lat=[NSString stringWithFormat:@"%f",appDelegate.currentlocation.coordinate.latitude];
     NSString *longt=[NSString stringWithFormat:@"%f",appDelegate.currentlocation.coordinate.longitude];
-    
+    SSGlobals *globalSS = [[[SSGlobals alloc] init] autorelease];
+   
     /*//Showing location list using Foursquare API
     [Foursquare2 searchVenuesNearByLatitude:[NSNumber numberWithFloat:[lat floatValue]] longitude:[NSNumber numberWithFloat:[longt floatValue]]
                                  accuracyLL:nil
@@ -219,7 +221,7 @@
     //end of showling location list using Foursquare API*/
     
     //New Foursquare Trending API
-   [Foursquare2 venueSearchNearByLatitude:[NSNumber numberWithFloat:[lat floatValue]] longitude:[NSNumber numberWithFloat:[longt floatValue]] query:searchText limit:[NSNumber numberWithInteger:50] intent:intentBrowse radius:@(19312.08) categoryId:nil callback:^(BOOL success, id result)
+   [Foursquare2 venueSearchNearByLatitude:[NSNumber numberWithFloat:[lat floatValue]] longitude:[NSNumber numberWithFloat:[longt floatValue]] query:searchText limit:[NSNumber numberWithInteger:50] intent:intentBrowse radius:globalSS.SearchViewRadius categoryId:nil callback:^(BOOL success, id result)
     {
         if (success)
         {
@@ -327,7 +329,7 @@
     
     
     
-    [self performSelector:@selector(stopAnimatingIndicatorView) withObject:nil afterDelay:4];
+   [self performSelector:@selector(stopAnimatingIndicatorView) withObject:nil afterDelay:4];
 }
 -(void)stopAnimatingIndicatorView
 {

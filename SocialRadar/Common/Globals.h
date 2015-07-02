@@ -16,16 +16,16 @@
 
 @interface SSGlobals : NSObject 
 {
-    NSNumber* _venuesearch;
-    NSNumber* _global2;
-    NSNumber* _global3;
+    NSNumber* _venuesearchradius;
+    NSNumber* _nearbylocationradius;
+    NSNumber* _searchviewradius;
     
     
 }
 
-@property (retain, nonatomic) NSNumber* SSGVenueSearch;
-@property (retain, nonatomic) NSNumber* NearByLatitude;
-@property (retain, nonatomic) NSNumber* SSGlobal3;
+@property (retain, nonatomic) NSNumber* SSGVenueSearchRadius;
+@property (retain, nonatomic) NSNumber* NearByLocationRadius;
+@property (retain, nonatomic) NSNumber* SearchViewRadius;
 
     
 @end

@@ -23,6 +23,7 @@
 #import "Common_IPhone.h"
 #include <stdlib.h>
 #import "CLXURLConnection.h"
+#import "Globals.h"
 
 @interface NearByLocationViewControlerViewController ()
 
@@ -179,7 +180,8 @@
     [self loadURL:stringGoogleApiNearBy];*/
 
 }
--(void)Averagelocations:(NSTimer *)Timer{
+-(void)Averagelocations:(NSTimer *)Timer
+{
     
     //Author :Sanjay Done for CR 1,6 
    /* while (counter) {
@@ -220,9 +222,10 @@
    //Venue/Search
     CLLocation *myLocation = appDelegate.currentlocation;
     CLLocationCoordinate2D locationCoordinate = CLLocationCoordinate2DMake(myLocation.coordinate.latitude, myLocation.coordinate.longitude);
-    
-          [Foursquare2 venueSearchNearByLatitude:[NSNumber numberWithFloat:locationCoordinate.latitude]  longitude:[NSNumber numberWithFloat:locationCoordinate.longitude                                                    ] query:@"" limit:[NSNumber numberWithInt:50] intent:intentBrowse radius:@(19312.08) categoryId:nil callback:^(BOOL success, id result)
-           {
+    SSGlobals *globalSS = [[[SSGlobals alloc] init] autorelease];
+
+          [Foursquare2 venueSearchNearByLatitude:[NSNumber numberWithFloat:locationCoordinate.latitude]  longitude:[NSNumber numberWithFloat:locationCoordinate.longitude                                                    ] query:@"" limit:[NSNumber numberWithInt:50] intent:intentBrowse radius:globalSS.NearByLocationRadius categoryId:nil callback:^(BOOL success, id result)
+         {
                 if (success)
                 {
                    // @try {

@@ -389,7 +389,7 @@
     
     //Remove the existing anootation
     // DAJ 20150623 Add globals class
-//    SSGlobals *globalSS = [[SSGlobals alloc] init];
+    SSGlobals *globalSS = [[[SSGlobals alloc] init] autorelease];
 
     if ([[response objectForKey:kStatus] isKindOfClass:[NSNull class]])
     {
@@ -397,7 +397,7 @@
         CLLocationCoordinate2D locationCoordinate = CLLocationCoordinate2DMake(myLocation.coordinate.latitude, myLocation.coordinate.longitude);
        
         //comment todo This is Venues/Search
-        [Foursquare2 venueSearchNearByLatitude:[NSNumber numberWithFloat:locationCoordinate.latitude] longitude:[NSNumber numberWithFloat:locationCoordinate.longitude] query:nil limit:[NSNumber numberWithInt:50] intent:intentBrowse radius:@(19312.123) categoryId:nil callback:^(BOOL success, id result)
+        [Foursquare2 venueSearchNearByLatitude:[NSNumber numberWithFloat:locationCoordinate.latitude] longitude:[NSNumber numberWithFloat:locationCoordinate.longitude] query:nil limit:[NSNumber numberWithInt:50] intent:intentBrowse radius:globalSS.SSGVenueSearchRadius categoryId:nil callback:^(BOOL success, id result)
       
         {
             if (success)
@@ -482,7 +482,7 @@
     CLLocationCoordinate2D locationCoordinate = CLLocationCoordinate2DMake(myLocation.coordinate.latitude, myLocation.coordinate.longitude);
     //comment todo
     
-    [Foursquare2 venueSearchNearByLatitude:[NSNumber numberWithFloat:locationCoordinate.latitude] longitude:[NSNumber numberWithFloat:locationCoordinate.longitude] query:nil limit:[NSNumber numberWithInt:50] intent:intentBrowse radius:@(19312.123) categoryId:nil callback:^(BOOL success, id result)
+    [Foursquare2 venueSearchNearByLatitude:[NSNumber numberWithFloat:locationCoordinate.latitude] longitude:[NSNumber numberWithFloat:locationCoordinate.longitude] query:nil limit:[NSNumber numberWithInt:50] intent:intentBrowse radius:globalSS.SSGVenueSearchRadius categoryId:nil callback:^(BOOL success, id result)
     {
 //        [Foursquare2 venueSearchNearByLatitude:[NSNumber numberWithFloat:locationCoordinate.latitude] longitude:[NSNumber ////numberWithFloat:locationCoordinate.longitude] query:nil limit:[NSNumber numberWithInt:50] intent:intentBrowse radius:@(19312.08) categoryId:nil callback:^(BOOL success, id result) {
 
@@ -1089,43 +1089,49 @@
 {
     NSMutableString *strgStrikeSymbol = [[[NSMutableString alloc] init] autorelease];
     
-    if (intStrike < 20) {
-        
+    if (intStrike < 20)
+    {
         [strgStrikeSymbol setString:@""];
-    }else if (intStrike <= 85)
+    }
+    else if (intStrike <= 85)
     {
         [strgStrikeSymbol setString:@"EF0"];
         
-    }else if (intStrike <= 110)
+    }
+    else if (intStrike <= 110)
     {
         [strgStrikeSymbol setString:@"EF1"];
         
-    }else if (intStrike <= 135)
+    }
+    else if (intStrike <= 135)
     {
         [strgStrikeSymbol setString:@"EF2"];
         
-    }else if (intStrike <= 165)
+    }
+    else if (intStrike <= 165)
     {
         [strgStrikeSymbol setString:@"EF3"];
         
-    }else if (intStrike <= 200)
+    }
+    else if (intStrike <= 200)
     {
         [strgStrikeSymbol setString:@"EF4"];
         
-    }else if (intStrike <= 299)
+    }
+    else if (intStrike <= 299)
     {
         [strgStrikeSymbol setString:@"EF5"];
         
-    }else if (intStrike > 300)
+    }
+    else if (intStrike > 300)
     {
         [strgStrikeSymbol setString:@"EF6"];
         
     }
-
-    
-  
     return strgStrikeSymbol;
 }
+
+
 -(NSString *)converToBase64:(NSString*)str
 {
    // NSLog(@"before base 64=%@", str);
