@@ -396,8 +396,8 @@
         CLLocationCoordinate2D locationCoordinate = CLLocationCoordinate2DMake(myLocation.coordinate.latitude, myLocation.coordinate.longitude);
        
         //comment todo This is Venues/Search
- //       [Foursquare2 venueSearchNearByLatitude:[NSNumber numberWithFloat:locationCoordinate.latitude] longitude:[NSNumber numberWithFloat:locationCoordinate.longitude] query:@("") limit:[NSNumber numberWithInt:50] intent:intentCheckin radius:globalSS.SSGVenueSearchRadius categoryId:nil callback:^(BOOL success, id result)
-        [Foursquare2 venueSuggestCompletionByLatitude:[NSNumber numberWithFloat:locationCoordinate.latitude] longitude:[NSNumber numberWithFloat:locationCoordinate.longitude] near:@("") accuracyLL:@(1609.443) altitude:nil accuracyAlt:nil query:@("") limit:@(100) radius:@(1609.443) s:@(804.672) w:@(804.672) n:@(804.672) e:@(804.672) callback:^(BOOL success, id result)
+        [Foursquare2 venueSearchNearByLatitude:[NSNumber numberWithFloat:locationCoordinate.latitude] longitude:[NSNumber numberWithFloat:locationCoordinate.longitude] query:@("") limit:[NSNumber numberWithInt:50] intent:intentBrowse radius:globalSS.SSGVenueSearchRadius categoryId:nil callback:^(BOOL success, id result)
+ //       [Foursquare2 venueSuggestCompletionByLatitude:[NSNumber numberWithFloat:locationCoordinate.latitude] longitude:[NSNumber numberWithFloat:locationCoordinate.longitude] near:@("") accuracyLL:@(1609.443) altitude:nil accuracyAlt:nil query:@("") limit:@(100) radius:@(1609.443) s:@(804.672) w:@(804.672) n:@(804.672) e:@(804.672) callback:^(BOOL success, id result)
       
         {
             if (success)
@@ -967,8 +967,8 @@
     else if ([annotation isKindOfClass:[CalloutMapAnnotation class]])
     {
         CalloutMapAnnotationView *calloutuserAnnotationView = (CalloutMapAnnotationView *)[mapViewHome dequeueReusableAnnotationViewWithIdentifier:@"CalloutMapAnnotation"];
-        if (!calloutuserAnnotationView) // DAJ 20150523 uncomment
-       {
+//        if (!calloutuserAnnotationView) // DAJ 20150523 uncomment
+//       {
             CalloutMapAnnotation* callOutAnn = (CalloutMapAnnotation*)annotation;
             calloutuserAnnotationView = [[[CalloutMapAnnotationView alloc] initWithAnnotation:annotation
                                                                                reuseIdentifier:@"CalloutMapAnnotation"] autorelease];
@@ -993,7 +993,7 @@
             [calloutuserAnnotationView addGestureRecognizer:gestureRecognizer];   // DAJ uncomment out 20150523
             [calloutuserAnnotationView.contentView addSubview:callOutButton];     // DAJ uncomment same date
             
-      }
+ //     }
 
 
 
