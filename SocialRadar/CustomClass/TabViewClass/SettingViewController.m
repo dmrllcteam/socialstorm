@@ -207,14 +207,8 @@
     if(datePicker_View)
      [datePicker_View removeFromSuperview];
     
-    if (IS_IPHONE_5)
-    {
-        datasPicker.frame = CGRectMake(0, 301, 320, 267);
-    }else{
-        
-        datasPicker.frame = CGRectMake(0, 260, SCREEN_WIDTH, 600); // RAR changes second picker for auto strike alarm
-    }
-    NSDateFormatter* dateFormater = [[NSDateFormatter alloc] init];
+     datasPicker.frame = CGRectMake(0, 260, SCREEN_WIDTH, 600); // RAR changes second picker for auto strike alarm
+     NSDateFormatter* dateFormater = [[NSDateFormatter alloc] init];
      NSDateFormatter* dateFormater1 = [[NSDateFormatter alloc] init];
     
     //Used for webservice
@@ -251,13 +245,13 @@
         [appDelegate hidetabView];
         // Open the date picker
        // datePicker_View.hidden = NO;
-        if (IS_IPHONE_5)
-        {
+//        if (IS_IPHONE_5)
+//        {
         datePicker_View.frame = CGRectMake(0, 260, SCREEN_WIDTH, 620);
-        }else
-        {
+//        }else
+//        {
             datePicker_View.frame = CGRectMake(0, 260, SCREEN_WIDTH, 620); // RAR changes first picker for auto strike alarm
-        }
+//        }
         
         datePicker_Outlet.date = [NSDate date];
         datePicker_Outlet.minimumDate = [NSDate date];
@@ -488,7 +482,7 @@
 #pragma mark About
 - (IBAction)about:(id)sender
 {
-    AboutViewController *viewContorller= [[AboutViewController alloc] initWithNibName:kAboutViewController bundle:nil];
+    AboutViewController *viewContorller= [[AboutViewController alloc] initWithNibName:@"AboutViewController" bundle:nil];
     [self.navigationController pushViewController:viewContorller animated:YES];
     [viewContorller release];
 }

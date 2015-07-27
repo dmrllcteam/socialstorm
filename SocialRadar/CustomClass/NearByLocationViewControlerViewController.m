@@ -222,7 +222,7 @@
     CLLocationCoordinate2D locationCoordinate = CLLocationCoordinate2DMake(myLocation.coordinate.latitude, myLocation.coordinate.longitude);
     
           [Foursquare2 venueSearchNearByLatitude:[NSNumber numberWithFloat:locationCoordinate.latitude                                               ]  longitude:[NSNumber numberWithFloat:locationCoordinate.longitude
-                                                                ]                                                                                                         query:@"" limit:[NSNumber numberWithInt:50] intent:intentBrowse radius:@(19312.08) categoryId:nil callback:^(BOOL success, id result) { //RAR changes strike location distance ******
+                                                                ]                                                                                                         query:@"" limit:[NSNumber numberWithInt:50] intent:intentBrowse radius:@(NearByLatitude) categoryId:nil callback:^(BOOL success, id result) { //RAR changes strike location distance ******
                 if (success) {
                    // @try {
                         [appDelegate stopAnimatingIndicatorView];
@@ -585,7 +585,7 @@
         [appDelegate setbuttonImage:true];
         Location *location = [[Location alloc] initWithNode:[[response valueForKey:@"LocationDetails"] mutableCopy]];
         
-        ShareStrikeViewController *shareStrike = [[ShareStrikeViewController alloc] initWithNibName:kShareStrikeViewController bundle:nil];
+        ShareStrikeViewController *shareStrike = [[ShareStrikeViewController alloc] initWithNibName:@"ShareStrikeViewController" bundle:nil];
         shareStrike.location = [location retain];
        [self.navigationController pushViewController:shareStrike animated:YES];
         [shareStrike release];

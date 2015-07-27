@@ -231,26 +231,7 @@
 
     edit_TableViews.backgroundColor = [UIColor clearColor];
     edit_TableViews.opaque = YES;
-    
-    if (IS_IPHONE_5) {
-        edit_TableViews.frame = CGRectMake(edit_TableViews.frame.origin.x, 0, edit_TableViews.frame.size.width, edit_TableViews.frame.size.height);
-    }
-    
-    if (IS_IPHONE_5) {
-        registerScroll_View.contentSize = CGSizeMake(320, edit_TableViews.frame.size.height+180);
-        
-        //
-    }else
-    {
-        registerScroll_View.contentSize = CGSizeMake(320, edit_TableViews.frame.size.height+320);
-    }
-    
-   /* [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(keyboardPresent) name:UIKeyboardDidShowNotification object:nil];
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(keyboardDissmiss) name:UIKeyboardDidHideNotification object:nil];*/
-    
+    registerScroll_View.contentSize = CGSizeMake(320, edit_TableViews.frame.size.height+320);
     //Adding toolbar to phone textfield
     UIBarButtonItem *donebutton=[[UIBarButtonItem alloc]initWithTitle:@"Done" style:UIBarButtonItemStyleDone target:self action:@selector(doneWithNumberPad:)];
     [donebutton setTintColor:[UIColor blackColor]];
@@ -755,13 +736,13 @@
 {
     [commonTextField resignFirstResponder];
     
-    if (IS_IPHONE_5) {
-        pickerViewScreen.frame = CGRectMake(0, 100,pickerViewScreen.frame.size.width , pickerViewScreen.frame.size.height);
-    }else
-    {
+//    if (IS_IPHONE_5) {
+//        pickerViewScreen.frame = CGRectMake(0, 100,pickerViewScreen.frame.size.width , pickerViewScreen.frame.size.height);
+//    }else
+//    {
         pickerViewScreen.frame = CGRectMake(0, 20,pickerViewScreen.frame.size.width , pickerViewScreen.frame.size.height);
         
-    }
+//    }
     
     
    

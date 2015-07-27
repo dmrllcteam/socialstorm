@@ -6,7 +6,6 @@
 //  Copyright (c) 2013 RRINNOVATION LLC. All rights reserved.
 //
 
-#import "Globals.h"
 #import "HomeViewController.h"
 #import "AddressAnnotation.h"
 #import "Common_IPhone.h"
@@ -392,8 +391,6 @@
     [appDelegate stopAnimatingIndicatorView];
     
     //Remove the existing anootation
-    // DAJ 20150623 Add globals class
-//    SSGlobals *globalSS = [[SSGlobals alloc] init];
     
     if ([[response objectForKey:kStatus] isKindOfClass:[NSNull class]])
     {
@@ -404,7 +401,7 @@
         CLLocationCoordinate2D locationCoordinate = CLLocationCoordinate2DMake(myLocation.coordinate.latitude, myLocation.coordinate.longitude);
        
         //comment todo This is Venues/Search
-        [Foursquare2 venueSearchNearByLatitude:[NSNumber numberWithFloat:locationCoordinate.latitude] longitude:[NSNumber numberWithFloat:locationCoordinate.longitude] query:nil limit:[NSNumber numberWithInt:50] intent:intentBrowse radius:@(19312.08) categoryId:nil callback:^(BOOL success, id result)
+        [Foursquare2 venueSearchNearByLatitude:[NSNumber numberWithFloat:locationCoordinate.latitude] longitude:[NSNumber numberWithFloat:locationCoordinate.longitude] query:nil limit:[NSNumber numberWithInt:50] intent:intentBrowse radius:@(SSGVenueSearch) categoryId:nil callback:^(BOOL success, id result)
         {
             if (success)
             {
@@ -488,14 +485,14 @@
     CLLocationCoordinate2D locationCoordinate = CLLocationCoordinate2DMake(myLocation.coordinate.latitude, myLocation.coordinate.longitude);
     //comment todo
     
-    [Foursquare2 venueSearchNearByLatitude:[NSNumber numberWithFloat:locationCoordinate.latitude] longitude:[NSNumber numberWithFloat:locationCoordinate.longitude] query:nil limit:[NSNumber numberWithInt:50] intent:intentBrowse radius:@(19312.08) categoryId:nil callback:^(BOOL success, id result) {
+    [Foursquare2 venueSearchNearByLatitude:[NSNumber numberWithFloat:locationCoordinate.latitude] longitude:[NSNumber numberWithFloat:locationCoordinate.longitude] query:nil limit:[NSNumber numberWithInt:50] intent:intentBrowse radius: @(SSGVenueSearch) categoryId:nil callback:^(BOOL success, id result) {
 //        [Foursquare2 venueSearchNearByLatitude:[NSNumber numberWithFloat:locationCoordinate.latitude] longitude:[NSNumber ////numberWithFloat:locationCoordinate.longitude] query:nil limit:[NSNumber numberWithInt:50] intent:intentBrowse radius:@(19312.08) categoryId:nil callback:^(BOOL success, id result) {
 
         
         if (success) {
            
 
-//            [self removeAllAnnotationExceptOfCurrentUser];
+           [self removeAllAnnotationExceptOfCurrentUser];
 
           //  NSLog(@"response fs=%@",result);
             if ([arrayOfLocationList count] > 0)

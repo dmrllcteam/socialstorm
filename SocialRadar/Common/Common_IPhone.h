@@ -3,7 +3,7 @@
 //  SocialRadar
 //
 //  Created by Mohit Singh on 07/05/13.
-//  Copyright (c) 2013 Mohit Singh. All rights reserved.
+//  Copyright (c) RRInovation LLC. All rights reserved.
 //
 
 //#ifndef SocialRadar_Common_IPhone_h
@@ -16,10 +16,8 @@
 #include "TargetConditionals.h"
 
 #define KIsFaceBookLogIn    @"IsFaceBookLogIn"
-#define HEIGHT_IPHONE_5 568
-#define IS_IPHONE_5 ([[UIScreen mainScreen] bounds ].size.height == HEIGHT_IPHONE_5 )
-#define kLoasderHeight (IS_IPHONE_5)? 568 : 480
-#define kLoasderWidth (IS_IPHONE_6)? 750 : 320
+#define kLoasderHeight 480
+#define kLoasderWidth 320
 
 #define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 #define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
@@ -30,29 +28,30 @@
 #define SCREEN_MAX_LENGTH (MAX(SCREEN_WIDTH, SCREEN_HEIGHT))
 #define SCREEN_MIN_LENGTH (MIN(SCREEN_WIDTH, SCREEN_HEIGHT))
 
-#define IS_IPHONE_6 (IS_IPHONE && SCREEN_MAX_LENGTH == 667.0)
-#define IS_IPHONE_6P (IS_IPHONE && SCREEN_MAX_LENGTH == 736.0)
+// Search Radius
+#define SSGVenueSearch 19312.123  // HomeViewControler GetUpdateResponse
+#define NearByLatitude 19312.123  // HomeViewControler
+#define SSGlobal3 = 19312.123
 
 
+#define kLaunchScreen @"LaunchScreen"
+#define kViewController @"ViewController"
+#define kLoginViewControler @"LoginViewController"
+#define kRegisterViewControler @"RegisterViewController"
 
-#define kLaunchScreen (IS_IPHONE_5)? @"LaunchScreen-5" : @"LaunchScreen"
-#define kViewController (IS_IPHONE_5)? @"ViewController-5" : @"ViewController"
-#define kLoginViewControler (IS_IPHONE_5)? @"LoginViewController-5" : @"LoginViewController"
-#define kRegisterViewControler (IS_IPHONE_5)? @"RegisterViewController-5" : @"RegisterViewController"
+#define kEditProfileViewController @"EditProfileViewController"
+#define kHallOfFrameViewController @"HallOfFrameViewController"
+#define kHomeViewController @"HomeViewController"
+#define kMyProfileViewController @"MyProfileViewController"
+#define kSettingViewController @"SettingViewController"
+#define kSearchViewController @"SearchViewController"
+#define KLocationDetailViewController @"LocationDetailViewController"
+#define KNearByLocationViewControlerViewController @"NearByLocationViewControlerViewController"
 
-#define kEditProfileViewController (IS_IPHONE_5)? @"EditProfileViewController-5" : @"EditProfileViewController"
-#define kHallOfFrameViewController (IS_IPHONE_5)? @"HallOfFrameViewController-5" : @"HallOfFrameViewController"
-#define kHomeViewController (IS_IPHONE_5)? @"HomeViewController-5" : @"HomeViewController"
-#define kMyProfileViewController (IS_IPHONE_5)? @"MyProfileViewController-5" : @"MyProfileViewController"
-#define kSettingViewController (IS_IPHONE_5)? @"SettingViewController-5" : @"SettingViewController"
-#define kSearchViewController (IS_IPHONE_5)? @"SearchViewController-5" : @"SearchViewController"
-#define KLocationDetailViewController (IS_IPHONE_5)? @"LocationDetailViewController-5" : @"LocationDetailViewController"
-#define KNearByLocationViewControlerViewController (IS_IPHONE_5)? @"NearByLocationViewControlerViewController-5" : @"NearByLocationViewControlerViewController"
-
-#define kShareStrikeViewController (IS_IPHONE_5)? @"ShareStrikeViewController-5" : @"ShareStrikeViewController"
-#define kShareViewController (IS_IPHONE_5)? @"ShareViewController-5" : @"ShareViewController"
-#define kSearchDetailViewController (IS_IPHONE_5)? @"SearchDetailViewController-5" : @"SearchDetailViewController"
-#define kAboutViewController (IS_IPHONE_5)? @"AboutViewController-5" : @"AboutViewController"
+#define kShareStrikeViewController @"ShareStrikeViewController"
+#define kShareViewController @"ShareViewController"
+#define kSearchDetailViewController @"SearchDetailViewController"
+#define kAboutViewController @"AboutViewController"
 #define kMessage @"Message"
 #define kStatus  @"Status"
 #define kLocationList @"LocationList"
@@ -60,7 +59,7 @@
 #define checkMapStyle @"Standard_Hybrid"
 
 
-#define _RELEASE(x)             if(x){[x release]; x = nil;}
+#define _RELEASE(x) if(x){[x release]; x = nil;}
 
 // DEFINE THE ARRAYs TO SHOW THE DATA
 

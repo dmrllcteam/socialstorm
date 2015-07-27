@@ -42,14 +42,7 @@
     [self.view addSubview:pickerViewScreen];
     pickerViewScreen.hidden = YES;
     
-    if (IS_IPHONE_5) {
-        registerScroll_View.contentSize = CGSizeMake(320, register_TableView.frame.size.height+180);
-        
-        //
-    }else
-    {
-        registerScroll_View.contentSize = CGSizeMake(320, register_TableView.frame.size.height+320);
-    }
+    registerScroll_View.contentSize = CGSizeMake(320, register_TableView.frame.size.height+320);
     
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
                                    initWithTarget:self
@@ -117,13 +110,13 @@
 {
     [commonTextField resignFirstResponder];
     
-    if (IS_IPHONE_5) {
-        pickerViewScreen.frame = CGRectMake(0, 108,pickerViewScreen.frame.size.width , pickerViewScreen.frame.size.height);
-    }else
-    {
+//    if (IS_IPHONE_5) {
+//        pickerViewScreen.frame = CGRectMake(0, 108,pickerViewScreen.frame.size.width , pickerViewScreen.frame.size.height);
+//    }else
+//    {
         pickerViewScreen.frame = CGRectMake(0, 24,pickerViewScreen.frame.size.width , pickerViewScreen.frame.size.height);
         
-    }
+//    }
 
     if (tag==6) {
 //        [self.view addSubview:pickerViewScreen];
@@ -208,14 +201,14 @@
 
 -(void) keyboardDissmiss
 {
-    if (IS_IPHONE_5) {
-        registerScroll_View.contentSize = CGSizeMake(320, register_TableView.frame.size.height+180);
+//    if (IS_IPHONE_5) {
+//        registerScroll_View.contentSize = CGSizeMake(320, register_TableView.frame.size.height+180);
         
         //
-    }else
-    {
+//    }else
+//    {
         registerScroll_View.contentSize = CGSizeMake(320, register_TableView.frame.size.height+320);
-    }
+//    }
 }
 
 
@@ -389,7 +382,7 @@
 
 -(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
-    imageCreate = [[self imageByScalingAndCroppingForSize:[info objectForKey:@"UIImagePickerControllerOriginalImage"] :CGSizeMake(260, 306)] retain];
+    imageCreate = [[self imageByScalingAndCroppingForSize:[info objectForKey:UIImagePickerControllerOriginalImage] :CGSizeMake(260, 306)] retain];
     //imageCreate = [[self imageByScalingAndCroppingForSize:[info objectForKey:@"UIImagePickerControllerOriginalImage"] :CGSizeMake(120, 60)] retain];
     
 //    [picker dismissModalViewControllerAnimated:YES]; // DAJ depricated

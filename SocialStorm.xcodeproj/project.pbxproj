@@ -20,21 +20,6 @@
 		130F4AA5173A7362007550EB /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 130F4AA4173A7362007550EB /* RegisterViewController.xib */; };
 		130F4AA7173A8AAE007550EB /* RegisterViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 130F4AA6173A8AAE007550EB /* RegisterViewCell.xib */; };
 		130F4AAA173A8BA2007550EB /* RegisterViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 130F4AA9173A8BA2007550EB /* RegisterViewCell.m */; };
-		1330B14119673A75008E7044 /* AboutViewController-5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1330B13219673A75008E7044 /* AboutViewController-5.xib */; };
-		1330B14219673A75008E7044 /* EditProfileViewController-5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1330B13319673A75008E7044 /* EditProfileViewController-5.xib */; };
-		1330B14319673A75008E7044 /* HallOfFrameViewController-5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1330B13419673A75008E7044 /* HallOfFrameViewController-5.xib */; };
-		1330B14519673A75008E7044 /* LocationDetailViewController-5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1330B13619673A75008E7044 /* LocationDetailViewController-5.xib */; };
-		1330B14619673A75008E7044 /* LoginViewController-5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1330B13719673A75008E7044 /* LoginViewController-5.xib */; };
-		1330B14719673A75008E7044 /* MyProfileViewController-5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1330B13819673A75008E7044 /* MyProfileViewController-5.xib */; };
-		1330B14819673A75008E7044 /* NearByLocationViewControlerViewController-5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1330B13919673A75008E7044 /* NearByLocationViewControlerViewController-5.xib */; };
-		1330B14919673A75008E7044 /* RegisterViewController-5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1330B13A19673A75008E7044 /* RegisterViewController-5.xib */; };
-		1330B14A19673A75008E7044 /* SearchDetailViewController-5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1330B13B19673A75008E7044 /* SearchDetailViewController-5.xib */; };
-		1330B14B19673A75008E7044 /* SearchViewController-5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1330B13C19673A75008E7044 /* SearchViewController-5.xib */; };
-		1330B14C19673A75008E7044 /* SettingViewController-5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1330B13D19673A75008E7044 /* SettingViewController-5.xib */; };
-		1330B14D19673A75008E7044 /* ShareStrikeViewController-5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1330B13E19673A75008E7044 /* ShareStrikeViewController-5.xib */; };
-		1330B14E19673A75008E7044 /* ShareViewController-5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1330B13F19673A75008E7044 /* ShareViewController-5.xib */; };
-		1330B14F19673A75008E7044 /* ViewController-5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1330B14019673A75008E7044 /* ViewController-5.xib */; };
-		1330B15119673A94008E7044 /* HomeViewController-5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1330B15019673A94008E7044 /* HomeViewController-5.xib */; };
 		1330B15319673FBC008E7044 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1330B15219673FBC008E7044 /* HomeViewController.xib */; };
 		13328668173CCB1700788D37 /* back_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 13328601173CCB1700788D37 /* back_btn.png */; };
 		13328669173CCB1700788D37 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 13328602173CCB1700788D37 /* bg.png */; };
@@ -351,40 +336,7 @@
 		4B34DBF61B55EE0F0043A0EA /* radar_btn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B34DBF51B55EE0F0043A0EA /* radar_btn@3x.png */; };
 		4B34DC021B55FEF00043A0EA /* blog@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B34DC011B55FEF00043A0EA /* blog@3x.png */; };
 		4B7E282C1B4F7070004F1FAE /* blueGradient.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B7E282B1B4F7070004F1FAE /* blueGradient.png */; };
-		4BA2649A1B41D371000647AD /* AboutViewController-5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BA2648A1B41D371000647AD /* AboutViewController-5.xib */; };
-		4BA2649B1B41D371000647AD /* EditProfileViewController-5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BA2648B1B41D371000647AD /* EditProfileViewController-5.xib */; };
-		4BA2649C1B41D371000647AD /* HallOfFrameViewController-5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BA2648C1B41D371000647AD /* HallOfFrameViewController-5.xib */; };
-		4BA2649D1B41D371000647AD /* HomeViewController-5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BA2648D1B41D371000647AD /* HomeViewController-5.xib */; };
-		4BA2649E1B41D371000647AD /* LaunchScreen-5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BA2648E1B41D371000647AD /* LaunchScreen-5.xib */; };
-		4BA2649F1B41D371000647AD /* LocationDetailViewController-5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BA2648F1B41D371000647AD /* LocationDetailViewController-5.xib */; };
-		4BA264A01B41D371000647AD /* LoginViewController-6.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BA264901B41D371000647AD /* LoginViewController-6.xib */; };
-		4BA264A11B41D371000647AD /* MyProfileViewController-5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BA264911B41D371000647AD /* MyProfileViewController-5.xib */; };
-		4BA264A21B41D371000647AD /* NearByLocationViewControlerViewController-5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BA264921B41D371000647AD /* NearByLocationViewControlerViewController-5.xib */; };
-		4BA264A31B41D371000647AD /* RegisterViewController-5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BA264931B41D371000647AD /* RegisterViewController-5.xib */; };
-		4BA264A41B41D371000647AD /* SearchDetailViewController-5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BA264941B41D371000647AD /* SearchDetailViewController-5.xib */; };
-		4BA264A51B41D371000647AD /* SearchViewController-5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BA264951B41D371000647AD /* SearchViewController-5.xib */; };
-		4BA264A61B41D371000647AD /* SettingViewController-5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BA264961B41D371000647AD /* SettingViewController-5.xib */; };
-		4BA264A71B41D371000647AD /* ShareStrikeViewController-5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BA264971B41D371000647AD /* ShareStrikeViewController-5.xib */; };
-		4BA264A81B41D371000647AD /* ShareViewController-5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BA264981B41D371000647AD /* ShareViewController-5.xib */; };
-		4BA264A91B41D371000647AD /* ViewController-5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BA264991B41D371000647AD /* ViewController-5.xib */; };
-		4BA264BB1B41D3A2000647AD /* AboutViewController-5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BA264AB1B41D3A2000647AD /* AboutViewController-5.xib */; };
-		4BA264BC1B41D3A2000647AD /* EditProfileViewController-5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BA264AC1B41D3A2000647AD /* EditProfileViewController-5.xib */; };
-		4BA264BD1B41D3A2000647AD /* HallOfFrameViewController-5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BA264AD1B41D3A2000647AD /* HallOfFrameViewController-5.xib */; };
-		4BA264BE1B41D3A2000647AD /* HomeViewController-5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BA264AE1B41D3A2000647AD /* HomeViewController-5.xib */; };
-		4BA264BF1B41D3A2000647AD /* LaunchScreen-5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BA264AF1B41D3A2000647AD /* LaunchScreen-5.xib */; };
-		4BA264C01B41D3A2000647AD /* LocationDetailViewController-5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BA264B01B41D3A2000647AD /* LocationDetailViewController-5.xib */; };
-		4BA264C11B41D3A2000647AD /* LoginViewController-5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BA264B11B41D3A2000647AD /* LoginViewController-5.xib */; };
-		4BA264C21B41D3A2000647AD /* MyProfileViewController-5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BA264B21B41D3A2000647AD /* MyProfileViewController-5.xib */; };
-		4BA264C31B41D3A2000647AD /* NearByLocationViewControlerViewController-5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BA264B31B41D3A2000647AD /* NearByLocationViewControlerViewController-5.xib */; };
-		4BA264C41B41D3A2000647AD /* RegisterViewController-5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BA264B41B41D3A2000647AD /* RegisterViewController-5.xib */; };
-		4BA264C51B41D3A2000647AD /* SearchDetailViewController-5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BA264B51B41D3A2000647AD /* SearchDetailViewController-5.xib */; };
-		4BA264C61B41D3A2000647AD /* SearchViewController-5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BA264B61B41D3A2000647AD /* SearchViewController-5.xib */; };
-		4BA264C71B41D3A2000647AD /* SettingViewController-5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BA264B71B41D3A2000647AD /* SettingViewController-5.xib */; };
-		4BA264C81B41D3A2000647AD /* ShareStrikeViewController-5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BA264B81B41D3A2000647AD /* ShareStrikeViewController-5.xib */; };
-		4BA264C91B41D3A2000647AD /* ShareViewController-5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BA264B91B41D3A2000647AD /* ShareViewController-5.xib */; };
-		4BA264CA1B41D3A2000647AD /* ViewController-5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BA264BA1B41D3A2000647AD /* ViewController-5.xib */; };
 		633226281B399E040002D4F7 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 633226271B399E040002D4F7 /* FacebookSDK.framework */; };
-		63927D4A1B2C9EF8005FCD57 /* Globals.m in Sources */ = {isa = PBXBuildFile; fileRef = 63927D491B2C9EF8005FCD57 /* Globals.m */; };
 		63B0FB871B65692600079F9B /* Home.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 63B0FB861B65692600079F9B /* Home.gpx */; };
 		923F9F6917E191A800F7AF36 /* bgMap.png in Resources */ = {isa = PBXBuildFile; fileRef = 923F9F6717E191A800F7AF36 /* bgMap.png */; };
 		923F9F6A17E191A800F7AF36 /* bgMap@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 923F9F6817E191A800F7AF36 /* bgMap@2x.png */; };
@@ -422,21 +374,6 @@
 		130F4AA6173A8AAE007550EB /* RegisterViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewCell.xib; sourceTree = "<group>"; };
 		130F4AA8173A8BA2007550EB /* RegisterViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewCell.h; sourceTree = "<group>"; };
 		130F4AA9173A8BA2007550EB /* RegisterViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewCell.m; sourceTree = "<group>"; };
-		1330B13219673A75008E7044 /* AboutViewController-5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "AboutViewController-5.xib"; sourceTree = "<group>"; };
-		1330B13319673A75008E7044 /* EditProfileViewController-5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "EditProfileViewController-5.xib"; sourceTree = "<group>"; };
-		1330B13419673A75008E7044 /* HallOfFrameViewController-5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "HallOfFrameViewController-5.xib"; sourceTree = "<group>"; };
-		1330B13619673A75008E7044 /* LocationDetailViewController-5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "LocationDetailViewController-5.xib"; sourceTree = "<group>"; };
-		1330B13719673A75008E7044 /* LoginViewController-5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "LoginViewController-5.xib"; sourceTree = "<group>"; };
-		1330B13819673A75008E7044 /* MyProfileViewController-5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "MyProfileViewController-5.xib"; sourceTree = "<group>"; };
-		1330B13919673A75008E7044 /* NearByLocationViewControlerViewController-5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "NearByLocationViewControlerViewController-5.xib"; sourceTree = "<group>"; };
-		1330B13A19673A75008E7044 /* RegisterViewController-5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "RegisterViewController-5.xib"; sourceTree = "<group>"; };
-		1330B13B19673A75008E7044 /* SearchDetailViewController-5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "SearchDetailViewController-5.xib"; sourceTree = "<group>"; };
-		1330B13C19673A75008E7044 /* SearchViewController-5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "SearchViewController-5.xib"; sourceTree = "<group>"; };
-		1330B13D19673A75008E7044 /* SettingViewController-5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "SettingViewController-5.xib"; sourceTree = "<group>"; };
-		1330B13E19673A75008E7044 /* ShareStrikeViewController-5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "ShareStrikeViewController-5.xib"; sourceTree = "<group>"; };
-		1330B13F19673A75008E7044 /* ShareViewController-5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "ShareViewController-5.xib"; sourceTree = "<group>"; };
-		1330B14019673A75008E7044 /* ViewController-5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "ViewController-5.xib"; sourceTree = "<group>"; };
-		1330B15019673A94008E7044 /* HomeViewController-5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "HomeViewController-5.xib"; sourceTree = "<group>"; };
 		1330B15219673FBC008E7044 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		13328601173CCB1700788D37 /* back_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_btn.png; sourceTree = "<group>"; };
 		13328602173CCB1700788D37 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
@@ -816,41 +753,7 @@
 		4B34DBF51B55EE0F0043A0EA /* radar_btn@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radar_btn@3x.png"; sourceTree = "<group>"; };
 		4B34DC011B55FEF00043A0EA /* blog@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blog@3x.png"; sourceTree = "<group>"; };
 		4B7E282B1B4F7070004F1FAE /* blueGradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueGradient.png; sourceTree = "<group>"; };
-		4BA2648A1B41D371000647AD /* AboutViewController-5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "AboutViewController-5.xib"; sourceTree = "<group>"; };
-		4BA2648B1B41D371000647AD /* EditProfileViewController-5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "EditProfileViewController-5.xib"; sourceTree = "<group>"; };
-		4BA2648C1B41D371000647AD /* HallOfFrameViewController-5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "HallOfFrameViewController-5.xib"; sourceTree = "<group>"; };
-		4BA2648D1B41D371000647AD /* HomeViewController-5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "HomeViewController-5.xib"; sourceTree = "<group>"; };
-		4BA2648E1B41D371000647AD /* LaunchScreen-5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "LaunchScreen-5.xib"; sourceTree = "<group>"; };
-		4BA2648F1B41D371000647AD /* LocationDetailViewController-5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "LocationDetailViewController-5.xib"; sourceTree = "<group>"; };
-		4BA264901B41D371000647AD /* LoginViewController-6.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "LoginViewController-6.xib"; sourceTree = "<group>"; };
-		4BA264911B41D371000647AD /* MyProfileViewController-5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "MyProfileViewController-5.xib"; sourceTree = "<group>"; };
-		4BA264921B41D371000647AD /* NearByLocationViewControlerViewController-5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "NearByLocationViewControlerViewController-5.xib"; sourceTree = "<group>"; };
-		4BA264931B41D371000647AD /* RegisterViewController-5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "RegisterViewController-5.xib"; sourceTree = "<group>"; };
-		4BA264941B41D371000647AD /* SearchDetailViewController-5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "SearchDetailViewController-5.xib"; sourceTree = "<group>"; };
-		4BA264951B41D371000647AD /* SearchViewController-5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "SearchViewController-5.xib"; sourceTree = "<group>"; };
-		4BA264961B41D371000647AD /* SettingViewController-5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "SettingViewController-5.xib"; sourceTree = "<group>"; };
-		4BA264971B41D371000647AD /* ShareStrikeViewController-5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "ShareStrikeViewController-5.xib"; sourceTree = "<group>"; };
-		4BA264981B41D371000647AD /* ShareViewController-5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "ShareViewController-5.xib"; sourceTree = "<group>"; };
-		4BA264991B41D371000647AD /* ViewController-5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "ViewController-5.xib"; sourceTree = "<group>"; };
-		4BA264AB1B41D3A2000647AD /* AboutViewController-5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "AboutViewController-5.xib"; sourceTree = "<group>"; };
-		4BA264AC1B41D3A2000647AD /* EditProfileViewController-5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "EditProfileViewController-5.xib"; sourceTree = "<group>"; };
-		4BA264AD1B41D3A2000647AD /* HallOfFrameViewController-5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "HallOfFrameViewController-5.xib"; sourceTree = "<group>"; };
-		4BA264AE1B41D3A2000647AD /* HomeViewController-5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "HomeViewController-5.xib"; sourceTree = "<group>"; };
-		4BA264AF1B41D3A2000647AD /* LaunchScreen-5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "LaunchScreen-5.xib"; sourceTree = "<group>"; };
-		4BA264B01B41D3A2000647AD /* LocationDetailViewController-5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "LocationDetailViewController-5.xib"; sourceTree = "<group>"; };
-		4BA264B11B41D3A2000647AD /* LoginViewController-5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "LoginViewController-5.xib"; sourceTree = "<group>"; };
-		4BA264B21B41D3A2000647AD /* MyProfileViewController-5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "MyProfileViewController-5.xib"; sourceTree = "<group>"; };
-		4BA264B31B41D3A2000647AD /* NearByLocationViewControlerViewController-5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "NearByLocationViewControlerViewController-5.xib"; sourceTree = "<group>"; };
-		4BA264B41B41D3A2000647AD /* RegisterViewController-5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "RegisterViewController-5.xib"; sourceTree = "<group>"; };
-		4BA264B51B41D3A2000647AD /* SearchDetailViewController-5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "SearchDetailViewController-5.xib"; sourceTree = "<group>"; };
-		4BA264B61B41D3A2000647AD /* SearchViewController-5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "SearchViewController-5.xib"; sourceTree = "<group>"; };
-		4BA264B71B41D3A2000647AD /* SettingViewController-5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "SettingViewController-5.xib"; sourceTree = "<group>"; };
-		4BA264B81B41D3A2000647AD /* ShareStrikeViewController-5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "ShareStrikeViewController-5.xib"; sourceTree = "<group>"; };
-		4BA264B91B41D3A2000647AD /* ShareViewController-5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "ShareViewController-5.xib"; sourceTree = "<group>"; };
-		4BA264BA1B41D3A2000647AD /* ViewController-5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "ViewController-5.xib"; sourceTree = "<group>"; };
 		633226271B399E040002D4F7 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = SocialRadar/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
-		63355E011B21046A00601E4C /* Globals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Globals.h; path = ../Common/Globals.h; sourceTree = "<group>"; };
-		63927D491B2C9EF8005FCD57 /* Globals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Globals.m; path = SocialRadar/Common/Globals.m; sourceTree = SOURCE_ROOT; };
 		63B0FB861B65692600079F9B /* Home.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Home.gpx; sourceTree = "<group>"; };
 		923F9F6717E191A800F7AF36 /* bgMap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgMap.png; sourceTree = "<group>"; };
 		923F9F6817E191A800F7AF36 /* bgMap@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bgMap@2x.png"; sourceTree = "<group>"; };
@@ -909,28 +812,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1330B13119673A75008E7044 /* NibFile-5 */ = {
-			isa = PBXGroup;
-			children = (
-				1330B15019673A94008E7044 /* HomeViewController-5.xib */,
-				1330B13219673A75008E7044 /* AboutViewController-5.xib */,
-				1330B13319673A75008E7044 /* EditProfileViewController-5.xib */,
-				1330B13419673A75008E7044 /* HallOfFrameViewController-5.xib */,
-				1330B13619673A75008E7044 /* LocationDetailViewController-5.xib */,
-				1330B13719673A75008E7044 /* LoginViewController-5.xib */,
-				1330B13819673A75008E7044 /* MyProfileViewController-5.xib */,
-				1330B13919673A75008E7044 /* NearByLocationViewControlerViewController-5.xib */,
-				1330B13A19673A75008E7044 /* RegisterViewController-5.xib */,
-				1330B13B19673A75008E7044 /* SearchDetailViewController-5.xib */,
-				1330B13C19673A75008E7044 /* SearchViewController-5.xib */,
-				1330B13D19673A75008E7044 /* SettingViewController-5.xib */,
-				1330B13E19673A75008E7044 /* ShareStrikeViewController-5.xib */,
-				1330B13F19673A75008E7044 /* ShareViewController-5.xib */,
-				1330B14019673A75008E7044 /* ViewController-5.xib */,
-			);
-			path = "NibFile-5";
-			sourceTree = "<group>";
-		};
 		133285FF173CCB1700788D37 /* Images */ = {
 			isa = PBXGroup;
 			children = (
@@ -1383,9 +1264,6 @@
 				1366A1CC1784729B002148BB /* SDWebImage */,
 				1388DE87177DA7990073A0BF /* FourSquare */,
 				139AFBE51770684000BB1DDC /* ModelClass */,
-				4BA264AA1B41D3A2000647AD /* NibFile-6Plus */,
-				4BA264891B41D371000647AD /* NibFile-6 */,
-				1330B13119673A75008E7044 /* NibFile-5 */,
 				13EF78BB1738D40F00373232 /* NibFile */,
 				133285FF173CCB1700788D37 /* Images */,
 				13EF78BE1738D4BC00373232 /* Common */,
@@ -1412,8 +1290,6 @@
 		13EF78BA1738D3CF00373232 /* CustomClass */ = {
 			isa = PBXGroup;
 			children = (
-				63355E011B21046A00601E4C /* Globals.h */,
-				63927D491B2C9EF8005FCD57 /* Globals.m */,
 				13DD01CA193C5A2F0064F0CB /* AboutViewController.h */,
 				13DD01CB193C5A2F0064F0CB /* AboutViewController.m */,
 				13DD01CC193C5A2F0064F0CB /* AboutViewController.xib */,
@@ -1502,52 +1378,6 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
-		4BA264891B41D371000647AD /* NibFile-6 */ = {
-			isa = PBXGroup;
-			children = (
-				4BA2648A1B41D371000647AD /* AboutViewController-5.xib */,
-				4BA2648B1B41D371000647AD /* EditProfileViewController-5.xib */,
-				4BA2648C1B41D371000647AD /* HallOfFrameViewController-5.xib */,
-				4BA2648D1B41D371000647AD /* HomeViewController-5.xib */,
-				4BA2648E1B41D371000647AD /* LaunchScreen-5.xib */,
-				4BA2648F1B41D371000647AD /* LocationDetailViewController-5.xib */,
-				4BA264901B41D371000647AD /* LoginViewController-6.xib */,
-				4BA264911B41D371000647AD /* MyProfileViewController-5.xib */,
-				4BA264921B41D371000647AD /* NearByLocationViewControlerViewController-5.xib */,
-				4BA264931B41D371000647AD /* RegisterViewController-5.xib */,
-				4BA264941B41D371000647AD /* SearchDetailViewController-5.xib */,
-				4BA264951B41D371000647AD /* SearchViewController-5.xib */,
-				4BA264961B41D371000647AD /* SettingViewController-5.xib */,
-				4BA264971B41D371000647AD /* ShareStrikeViewController-5.xib */,
-				4BA264981B41D371000647AD /* ShareViewController-5.xib */,
-				4BA264991B41D371000647AD /* ViewController-5.xib */,
-			);
-			path = "NibFile-6";
-			sourceTree = "<group>";
-		};
-		4BA264AA1B41D3A2000647AD /* NibFile-6Plus */ = {
-			isa = PBXGroup;
-			children = (
-				4BA264AB1B41D3A2000647AD /* AboutViewController-5.xib */,
-				4BA264AC1B41D3A2000647AD /* EditProfileViewController-5.xib */,
-				4BA264AD1B41D3A2000647AD /* HallOfFrameViewController-5.xib */,
-				4BA264AE1B41D3A2000647AD /* HomeViewController-5.xib */,
-				4BA264AF1B41D3A2000647AD /* LaunchScreen-5.xib */,
-				4BA264B01B41D3A2000647AD /* LocationDetailViewController-5.xib */,
-				4BA264B11B41D3A2000647AD /* LoginViewController-5.xib */,
-				4BA264B21B41D3A2000647AD /* MyProfileViewController-5.xib */,
-				4BA264B31B41D3A2000647AD /* NearByLocationViewControlerViewController-5.xib */,
-				4BA264B41B41D3A2000647AD /* RegisterViewController-5.xib */,
-				4BA264B51B41D3A2000647AD /* SearchDetailViewController-5.xib */,
-				4BA264B61B41D3A2000647AD /* SearchViewController-5.xib */,
-				4BA264B71B41D3A2000647AD /* SettingViewController-5.xib */,
-				4BA264B81B41D3A2000647AD /* ShareStrikeViewController-5.xib */,
-				4BA264B91B41D3A2000647AD /* ShareViewController-5.xib */,
-				4BA264BA1B41D3A2000647AD /* ViewController-5.xib */,
-			);
-			path = "NibFile-6Plus";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1608,12 +1438,10 @@
 				4B116D591B5C5B6F006A7166 /* nav_logo@2x.png in Resources */,
 				4B116D551B5C5B6F006A7166 /* login_btn@2x.png in Resources */,
 				13EF78C31738DD1100373232 /* ViewController.xib in Resources */,
-				4BA264C61B41D3A2000647AD /* SearchViewController-5.xib in Resources */,
 				4B116C321B5C5889006A7166 /* 120x120.png in Resources */,
 				4B116C2B1B5C5889006A7166 /* 58x58.png in Resources */,
 				13EF795A17392A0E00373232 /* LoginViewController.xib in Resources */,
 				130F4AA5173A7362007550EB /* RegisterViewController.xib in Resources */,
-				4BA264C81B41D3A2000647AD /* ShareStrikeViewController-5.xib in Resources */,
 				130F4AA7173A8AAE007550EB /* RegisterViewCell.xib in Resources */,
 				4B116C391B5C5889006A7166 /* Default@2x.png in Resources */,
 				13328668173CCB1700788D37 /* back_btn.png in Resources */,
@@ -1621,7 +1449,6 @@
 				13328669173CCB1700788D37 /* bg.png in Resources */,
 				1332866A173CCB1700788D37 /* blue_overlay.png in Resources */,
 				1332866B173CCB1700788D37 /* bolt_icn.png in Resources */,
-				4BA264A71B41D371000647AD /* ShareStrikeViewController-5.xib in Resources */,
 				4B116D601B5C5B6F006A7166 /* profile_icn@3x.png in Resources */,
 				1332866D173CCB1700788D37 /* currentlocation_bttn.png in Resources */,
 				1332866E173CCB1700788D37 /* dividingline.png in Resources */,
@@ -1640,7 +1467,6 @@
 				13328675173CCB1700788D37 /* lightningbolt.png in Resources */,
 				13328676173CCB1700788D37 /* login_btn.png in Resources */,
 				13328677173CCB1700788D37 /* login_table.png in Resources */,
-				4BA264BD1B41D3A2000647AD /* HallOfFrameViewController-5.xib in Resources */,
 				13328678173CCB1700788D37 /* logo.png in Resources */,
 				13328679173CCB1700788D37 /* navbar.png in Resources */,
 				1332867A173CCB1700788D37 /* profile_active.png in Resources */,
@@ -1665,31 +1491,22 @@
 				4B34DBF61B55EE0F0043A0EA /* radar_btn@3x.png in Resources */,
 				13328688173CCB1700788D37 /* twittterlogin_btn.png in Resources */,
 				4B116D571B5C5B6F006A7166 /* login_table@2x.png in Resources */,
-				4BA2649B1B41D371000647AD /* EditProfileViewController-5.xib in Resources */,
-				4BA264C71B41D3A2000647AD /* SettingViewController-5.xib in Resources */,
-				4BA264A51B41D371000647AD /* SearchViewController-5.xib in Resources */,
-				4BA2649F1B41D371000647AD /* LocationDetailViewController-5.xib in Resources */,
 				4B116D781B5C5B6F006A7166 /* tabbar@2x.png in Resources */,
 				4B116D441B5C5B6F006A7166 /* edit_btn@2x.png in Resources */,
 				4B116D4C1B5C5B6F006A7166 /* fb_icn@3x.png in Resources */,
-				4BA2649E1B41D371000647AD /* LaunchScreen-5.xib in Resources */,
 				4B116C3C1B5C5889006A7166 /* icon114.png in Resources */,
-				4BA264BF1B41D3A2000647AD /* LaunchScreen-5.xib in Resources */,
 				4B116D7C1B5C5B6F006A7166 /* twitter_icn@3x.png in Resources */,
 				4B116D6F1B5C5B6F006A7166 /* storm_icn2@2x.png in Resources */,
 				4B116D5E1B5C5B6F006A7166 /* profile_active@3x.png in Resources */,
-				4BA264C51B41D3A2000647AD /* SearchDetailViewController-5.xib in Resources */,
 				4B116C311B5C5889006A7166 /* 114x114.png in Resources */,
 				4B116D361B5C5B6F006A7166 /* back_btn@3x.png in Resources */,
 				186E65021A35CAC600C47089 /* Images.xcassets in Resources */,
-				4BA264C31B41D3A2000647AD /* NearByLocationViewControlerViewController-5.xib in Resources */,
 				133286AB173CCB1700788D37 /* back_btn-568h@2x.png in Resources */,
 				4B116C371B5C5889006A7166 /* Default-568h@2x.png in Resources */,
 				133286AC173CCB1700788D37 /* bg-568h@2x.png in Resources */,
 				4B116D531B5C5B6F006A7166 /* key@3x.png in Resources */,
 				133286AD173CCB1700788D37 /* blue_overlay-568h@2x.png in Resources */,
 				133286AE173CCB1700788D37 /* bolt_icn-568h@2x.png in Resources */,
-				4BA264A91B41D371000647AD /* ViewController-5.xib in Resources */,
 				4B116D621B5C5B6F006A7166 /* records_icn@3x.png in Resources */,
 				133286AF173CCB1700788D37 /* chaseit_btn-568h@2x.png in Resources */,
 				4B116D401B5C5B6F006A7166 /* currentlocation_bttn@3x.png in Resources */,
@@ -1719,9 +1536,7 @@
 				133286BD173CCB1700788D37 /* profile_icn-568h@2x.png in Resources */,
 				133286BE173CCB1700788D37 /* records_icn-568h@2x.png in Resources */,
 				133286BF173CCB1700788D37 /* search_icn-568h@2x.png in Resources */,
-				4BA264C21B41D3A2000647AD /* MyProfileViewController-5.xib in Resources */,
 				4B116C2C1B5C5889006A7166 /* 60x60.png in Resources */,
-				4BA264A41B41D371000647AD /* SearchDetailViewController-5.xib in Resources */,
 				133286C0173CCB1700788D37 /* settings_active-568h@2x.png in Resources */,
 				133286C1173CCB1700788D37 /* settings_icn-568h@2x.png in Resources */,
 				133286C3173CCB1700788D37 /* splash-568h@2x.png in Resources */,
@@ -1730,10 +1545,8 @@
 				4B7E282C1B4F7070004F1FAE /* blueGradient.png in Resources */,
 				4B116D7A1B5C5B6F006A7166 /* twitter_icn_active@2x.png in Resources */,
 				133286C6173CCB1700788D37 /* strike_btn_pressed-568h@2x.png in Resources */,
-				4BA264A31B41D371000647AD /* RegisterViewController-5.xib in Resources */,
 				133286C7173CCB1700788D37 /* strike_btn_release-568h@2x.png in Resources */,
 				133286C8173CCB1700788D37 /* strike_button-568h@2x.png in Resources */,
-				4BA264C01B41D3A2000647AD /* LocationDetailViewController-5.xib in Resources */,
 				133286C9173CCB1700788D37 /* tabbar-568h@2x.png in Resources */,
 				133286CA173CCB1700788D37 /* twitter_icn-568h@2x.png in Resources */,
 				133286CB173CCB1700788D37 /* twitter_icn_active-568h@2x.png in Resources */,
@@ -1745,7 +1558,6 @@
 				4B116D6E1B5C5B6F006A7166 /* storm_icn@2x.png in Resources */,
 				4B116D561B5C5B6F006A7166 /* login_btn@3x.png in Resources */,
 				4B34DBDA1B5573A60043A0EA /* yellow_bubble@3x.png in Resources */,
-				4BA264BB1B41D3A2000647AD /* AboutViewController-5.xib in Resources */,
 				13C34F81174A2FA700020E4D /* cancel_btn.png in Resources */,
 				4B116C3A1B5C5889006A7166 /* icon57.png in Resources */,
 				4B116D7E1B5C5B6F006A7166 /* twittterlogin_btn@3x.png in Resources */,
@@ -1756,13 +1568,11 @@
 				4B34DBE61B55D56B0043A0EA /* storm_small@3x.png in Resources */,
 				4B116D771B5C5B6F006A7166 /* strike_button@3x.png in Resources */,
 				13E60AE9174C8FD4006342A6 /* edit_btn.png in Resources */,
-				4BA264C11B41D3A2000647AD /* LoginViewController-5.xib in Resources */,
 				4B116D641B5C5B6F006A7166 /* register@3x.png in Resources */,
 				130832DD1754AC7B00B6F5D5 /* EditProfileViewController.xib in Resources */,
 				130832EC1754B51C00B6F5D5 /* SearchViewController.xib in Resources */,
 				4B116D5D1B5C5B6F006A7166 /* profile_active@2x.png in Resources */,
 				4B116D421B5C5B6F006A7166 /* dividingline@2x.png in Resources */,
-				4BA264A81B41D371000647AD /* ShareViewController-5.xib in Resources */,
 				135B5A12175A3AEA009605B6 /* bgMap-568h@2x.png in Resources */,
 				1395B8EC175A7DC600FB8352 /* arrow.png in Resources */,
 				13878A54175B2D9C008037B3 /* LocationDetailViewController.xib in Resources */,
@@ -1779,16 +1589,13 @@
 				13928C81175F5F0D00B70A8D /* bottom_strip@2x.png in Resources */,
 				4B116D681B5C5B6F006A7166 /* settings_active@3x.png in Resources */,
 				13928C82175F5F0D00B70A8D /* table.9.png in Resources */,
-				4BA264CA1B41D3A2000647AD /* ViewController-5.xib in Resources */,
 				13928C83175F5F0D00B70A8D /* top_strip.png in Resources */,
-				4BA264A11B41D371000647AD /* MyProfileViewController-5.xib in Resources */,
 				13928C84175F5F0D00B70A8D /* top_strip@2x.png in Resources */,
 				13928C86175F5F9C00B70A8D /* bottom_strip.png in Resources */,
 				4B116D461B5C5B6F006A7166 /* favorite_icn@2x.png in Resources */,
 				13FA44EC1760B27A00122D97 /* doneSetting@2x.png in Resources */,
 				4B116D631B5C5B6F006A7166 /* register@2x.png in Resources */,
 				13FA44EE1760B29000122D97 /* doneSetting.png in Resources */,
-				4BA264A21B41D371000647AD /* NearByLocationViewControlerViewController-5.xib in Resources */,
 				13FA44F01760B5D800122D97 /* saveSetting@2x.png in Resources */,
 				13FA44F21760B5DE00122D97 /* saveSetting.png in Resources */,
 				138F9FDB1761074100C899B0 /* default_women_ldpi.png in Resources */,
@@ -1809,10 +1616,8 @@
 				138EF0071762028B00F6E5EE /* blog.png in Resources */,
 				138EF0091762126600F6E5EE /* arrow_grey.png in Resources */,
 				4B116D731B5C5B6F006A7166 /* strike_btn_pressed@3x.png in Resources */,
-				4BA264A61B41D371000647AD /* SettingViewController-5.xib in Resources */,
 				138EF00C176224B300F6E5EE /* tabbar_selection_blank.png in Resources */,
 				138EF00D176224B300F6E5EE /* tabbar_selection_blank@2x.png in Resources */,
-				4BA264C91B41D3A2000647AD /* ShareViewController-5.xib in Resources */,
 				137CBA0D1771E66200F197DC /* NearByLocationViewControlerViewController.xib in Resources */,
 				1395228A17742E1E009F9E01 /* ShareStrikeViewController.xib in Resources */,
 				A9889800177DB13D00109C76 /* FSWebLogin.xib in Resources */,
@@ -1826,14 +1631,11 @@
 				1388DEA3177DBD450073A0BF /* yellow_bubble.png in Resources */,
 				1388DEA8177DBE2E0073A0BF /* green_bubble@2x.png in Resources */,
 				4B116D371B5C5B6F006A7166 /* bg@2x.png in Resources */,
-				4BA2649D1B41D371000647AD /* HomeViewController-5.xib in Resources */,
 				4B116D411B5C5B6F006A7166 /* DarkOverlay@2x.png in Resources */,
 				1388DEA9177DBE2E0073A0BF /* no_image@2x.png in Resources */,
-				4BA264A01B41D371000647AD /* LoginViewController-6.xib in Resources */,
 				4B116D431B5C5B6F006A7166 /* dont_share@2x.png in Resources */,
 				4B34DBF31B55ED0D0043A0EA /* doneEdit@3x.png in Resources */,
 				1388DEAA177DBE2E0073A0BF /* red_bubble@2x.png in Resources */,
-				4BA2649C1B41D371000647AD /* HallOfFrameViewController-5.xib in Resources */,
 				4B116D5F1B5C5B6F006A7166 /* profile_icn@2x.png in Resources */,
 				1388DEAB177DBE2E0073A0BF /* yellow_bubble@2x.png in Resources */,
 				13844593177E0252007DFC67 /* ShareViewController.xib in Resources */,
@@ -1850,7 +1652,6 @@
 				4B116C381B5C5889006A7166 /* Default.png in Resources */,
 				13EBA87317A24BA9001AE869 /* storm_mediun@2x.png in Resources */,
 				4B116D6B1B5C5B6F006A7166 /* skylinebackground@2x.png in Resources */,
-				4BA264BC1B41D3A2000647AD /* EditProfileViewController-5.xib in Resources */,
 				13EBA87417A24BA9001AE869 /* storm_small.png in Resources */,
 				4B116D491B5C5B6F006A7166 /* favorited_icn@3x.png in Resources */,
 				13EBA87517A24BA9001AE869 /* storm_small@2x.png in Resources */,
@@ -1859,7 +1660,6 @@
 				4B116D4E1B5C5B6F006A7166 /* fblogin_btn@3x.png in Resources */,
 				4B34DBF41B55ED0D0043A0EA /* doneSetting@3x.png in Resources */,
 				4B116D4A1B5C5B6F006A7166 /* fb_icn_active@2x.png in Resources */,
-				4BA264BE1B41D3A2000647AD /* HomeViewController-5.xib in Resources */,
 				130CEF9317E1E2D600A35FA6 /* radar_btn.png in Resources */,
 				130CEF9417E1E2D600A35FA6 /* radar_btn@2x.png in Resources */,
 				926FEB4A1812AF8B0057E64A /* Iphone4.mp4 in Resources */,
@@ -1872,7 +1672,6 @@
 				4B116C3E1B5C5A3E006A7166 /* check@3x.png in Resources */,
 				13DD01F0193C8A0D0064F0CB /* SocialStorm.html in Resources */,
 				4B116C291B5C5889006A7166 /* 40x40.png in Resources */,
-				4BA2649A1B41D371000647AD /* AboutViewController-5.xib in Resources */,
 				13513C99193DFA6900A4267F /* no_image_location.png in Resources */,
 				63B0FB871B65692600079F9B /* Home.gpx in Resources */,
 				4B116D6C1B5C5B6F006A7166 /* socialradar_navicon@2x.png in Resources */,
@@ -1883,31 +1682,15 @@
 				13CCC05B1965546300F88FF0 /* socialradar_navicon-568h@2x .png in Resources */,
 				4B116C341B5C5889006A7166 /* 180x180.png in Resources */,
 				4B116D581B5C5B6F006A7166 /* logo@2x.png in Resources */,
-				4BA264C41B41D3A2000647AD /* RegisterViewController-5.xib in Resources */,
-				1330B14119673A75008E7044 /* AboutViewController-5.xib in Resources */,
 				4B116D3B1B5C5B6F006A7166 /* cancel_btn@2x.png in Resources */,
 				4B116C3B1B5C5889006A7166 /* icon57@2x.png in Resources */,
-				1330B14219673A75008E7044 /* EditProfileViewController-5.xib in Resources */,
-				1330B14319673A75008E7044 /* HallOfFrameViewController-5.xib in Resources */,
 				4B116C351B5C5889006A7166 /* 198X198.png in Resources */,
-				1330B14519673A75008E7044 /* LocationDetailViewController-5.xib in Resources */,
-				1330B14619673A75008E7044 /* LoginViewController-5.xib in Resources */,
-				1330B14719673A75008E7044 /* MyProfileViewController-5.xib in Resources */,
-				1330B14819673A75008E7044 /* NearByLocationViewControlerViewController-5.xib in Resources */,
 				4B116D3A1B5C5B6F006A7166 /* bolt_icn@3x.png in Resources */,
-				1330B14919673A75008E7044 /* RegisterViewController-5.xib in Resources */,
-				1330B14A19673A75008E7044 /* SearchDetailViewController-5.xib in Resources */,
 				4B116C281B5C5889006A7166 /* 36X36.png in Resources */,
-				1330B14B19673A75008E7044 /* SearchViewController-5.xib in Resources */,
 				4B116D5C1B5C5B6F006A7166 /* navbar@3x.png in Resources */,
 				4B116C2D1B5C5889006A7166 /* 72x72.png in Resources */,
-				1330B14C19673A75008E7044 /* SettingViewController-5.xib in Resources */,
 				4B34DBDE1B5573DC0043A0EA /* green_bubble@3x.png in Resources */,
-				1330B14D19673A75008E7044 /* ShareStrikeViewController-5.xib in Resources */,
-				1330B14E19673A75008E7044 /* ShareViewController-5.xib in Resources */,
-				1330B14F19673A75008E7044 /* ViewController-5.xib in Resources */,
 				4B116D351B5C5B6F006A7166 /* back_btn@2x.png in Resources */,
-				1330B15119673A94008E7044 /* HomeViewController-5.xib in Resources */,
 				1330B15319673FBC008E7044 /* HomeViewController.xib in Resources */,
 				A9515A7419E3F45100ED7832 /* FBUserSettingsViewResources.bundle in Resources */,
 			);
@@ -1976,7 +1759,6 @@
 				139104ED1782F3770041CA4C /* SearchDetailViewController.m in Sources */,
 				1366A1E11784729B002148BB /* MKAnnotationView+WebCache.m in Sources */,
 				1366A1E21784729B002148BB /* SDImageCache.m in Sources */,
-				63927D4A1B2C9EF8005FCD57 /* Globals.m in Sources */,
 				1366A1E31784729B002148BB /* SDWebImageDecoder.m in Sources */,
 				1366A1E41784729B002148BB /* SDWebImageDownloader.m in Sources */,
 				1366A1E51784729B002148BB /* SDWebImageManager.m in Sources */,
@@ -2078,8 +1860,13 @@
 					"$(SRCROOT)",
 					"\"$(SRCROOT)/SocialRadar\"",
 					"\"$(SRCROOT)/SocialRadar/FacebookSDK\"",
-					"\"$(SRCROOT)/../../../../../FacebookSDK_3.20\"",
-					"\"$(SRCROOT)/../../../../../FacebookSDK_3.21\"",
+					"$(PROJECT_DIR)/SocialRadar/FacebookSDK",
+				);
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = (
+					"$(inherited)",
+					"$(SRCROOT)",
+					"\"$(SRCROOT)/SocialRadar\"",
+					"\"$(SRCROOT)/SocialRadar/FacebookSDK\"",
 					"$(PROJECT_DIR)/SocialRadar/FacebookSDK",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -2115,8 +1902,6 @@
 					"$(SRCROOT)",
 					"\"$(SRCROOT)/SocialRadar\"",
 					"\"$(SRCROOT)/SocialRadar/FacebookSDK\"",
-					"\"$(SRCROOT)/../../../../../FacebookSDK_3.20\"",
-					"\"$(SRCROOT)/../../../../../FacebookSDK_3.21\"",
 					"$(PROJECT_DIR)/SocialRadar/FacebookSDK",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

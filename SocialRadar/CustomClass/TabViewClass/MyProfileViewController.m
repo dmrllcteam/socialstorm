@@ -63,12 +63,7 @@
     self.navigationItem.rightBarButtonItem=back_btn;
     [back_btn release];
     
-    if (IS_IPHONE_5) {
-        myProfile_ScrollView.contentSize =  CGSizeMake(320, 600);
-    }else
-    {
-        myProfile_ScrollView.contentSize =  CGSizeMake(320, 680);
-    }
+    myProfile_ScrollView.contentSize =  CGSizeMake(320, 680);
     
     
     favorites_tableView.frame = CGRectMake(favorites_tableView.frame.origin.x, favorites_tableView.frame.origin.y, favorites_tableView.frame.size.width, SCREEN_WIDTH);
@@ -130,7 +125,7 @@
 -(void)editTarget:(id)sender
 {
     
-    EditProfileViewController *edit = [[EditProfileViewController alloc] initWithNibName:kEditProfileViewController bundle:nil] ;
+    EditProfileViewController *edit = [[EditProfileViewController alloc] initWithNibName:@"EditProfileViewController" bundle:nil] ;
     edit.userData = appDelegate.appdelegateUser;
     [self.navigationController pushViewController:edit animated:YES];
     [edit release];
@@ -248,7 +243,7 @@
     
     NSLog(@" location --- %@",location);
     
-    LocationDetailViewController *locationDeatails = [[LocationDetailViewController alloc] initWithNibName:KLocationDetailViewController bundle:nil];
+    LocationDetailViewController *locationDeatails = [[LocationDetailViewController alloc] initWithNibName:@"LocationDetailViewController" bundle:nil];
     locationDeatails.isFromHallOfFrame = NO;
     locationDeatails.locationObj = location ;
     [self.navigationController pushViewController:locationDeatails animated:YES];

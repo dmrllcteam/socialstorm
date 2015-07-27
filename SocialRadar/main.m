@@ -3,7 +3,7 @@
 //  SocialRadar
 //
 //  Created by Mohit Singh on 07/05/13.
-//  Copyright (c) 2013 Mohit Singh. All rights reserved.
+//  Copyright (c) 2013 RRInnovaton LLC. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -16,8 +16,4 @@ int main(int argc, char *argv[])
     {
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
-    
-    
-    
-    
 }

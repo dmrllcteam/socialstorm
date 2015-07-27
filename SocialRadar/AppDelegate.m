@@ -87,16 +87,7 @@ AppDelegate* appDelegate = nil;
     self.window.rootViewController=navigation;
     
     [self showLoaderView];
-    // Override point for customization after application launch.
-  
-//    UIViewController *viewController1 = [[[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil] autorelease];
-//    UIViewController *viewController2 = [[[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil] autorelease];
-//    self.tabBarController = [[[UITabBarController alloc] init] autorelease];
-//    self.tabBarController.viewControllers = @[viewController1, viewController2];
-//    self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
-    
-    
     return YES;
 }
 
@@ -192,7 +183,7 @@ AppDelegate* appDelegate = nil;
     [[UITabBar appearance] setShadowImage:[[UIImage alloc] init]];
 //  End of added code
     
-    MyProfileViewController* myprofile = [[MyProfileViewController alloc] initWithNibName:kMyProfileViewController bundle:nil];
+    MyProfileViewController* myprofile = [[MyProfileViewController alloc] initWithNibName:@"MyProfileViewController" bundle:nil];
     UINavigationController* myprofileNavCtrller = [[UINavigationController alloc] initWithRootViewController:myprofile] ;
 //    myprofileNavCtrller.tabBarItem.title = @"My Profile";
     [myprofileNavCtrller.navigationBar setBackgroundImage:navigationImg forBarMetrics:UIBarMetricsDefault];
@@ -209,7 +200,7 @@ AppDelegate* appDelegate = nil;
     [myprofile release];
     
     
-    HomeViewController* home = [[HomeViewController alloc] initWithNibName:kHomeViewController bundle:nil];
+    HomeViewController* home = [[HomeViewController alloc] initWithNibName:@"HomeViewController" bundle:nil];
     home.view.backgroundColor=[UIColor blackColor];
     UINavigationController* homeNavCtrller = [[UINavigationController alloc] initWithRootViewController:home] ;
     [homeNavCtrller.navigationBar setBackgroundImage:homeTittle_IMG forBarMetrics:UIBarMetricsDefault];
@@ -217,7 +208,7 @@ AppDelegate* appDelegate = nil;
     [home release];
     
     
-    SettingViewController* setting = [[SettingViewController alloc] initWithNibName:kSettingViewController bundle:nil];
+    SettingViewController* setting = [[SettingViewController alloc] initWithNibName:@"SettingViewController" bundle:nil];
      UINavigationController* settingNavCtrller = [[UINavigationController alloc] initWithRootViewController:setting] ;
       [settingNavCtrller.navigationBar setBackgroundImage:navigationImg forBarMetrics:UIBarMetricsDefault];
 //        UIImage* searchSelImage = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"settings_icn" ofType:@"png"]];
