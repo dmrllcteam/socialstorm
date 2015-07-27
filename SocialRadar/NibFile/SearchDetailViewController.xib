@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <archive type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="8.00">
 	<data>
-		<int key="IBDocument.SystemTarget">1552</int>
-		<string key="IBDocument.SystemVersion">12E55</string>
-		<string key="IBDocument.InterfaceBuilderVersion">3084</string>
-		<string key="IBDocument.AppKitVersion">1187.39</string>
-		<string key="IBDocument.HIToolboxVersion">626.00</string>
+		<int key="IBDocument.SystemTarget">1808</int>
+		<string key="IBDocument.SystemVersion">14D136</string>
+		<string key="IBDocument.InterfaceBuilderVersion">7706</string>
+		<string key="IBDocument.AppKitVersion">1347.57</string>
+		<string key="IBDocument.HIToolboxVersion">758.70</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-			<string key="NS.object.0">2083</string>
+			<string key="NS.object.0">7703</string>
 		</object>
 		<array key="IBDocument.IntegratedClassDependencies">
 			<string>IBProxyObject</string>
@@ -35,7 +35,7 @@
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 			</object>
 			<object class="IBUIView" id="75650406">
-				<reference key="NSNextResponder"/>
+				<nil key="NSNextResponder"/>
 				<int key="NSvFlags">1298</int>
 				<array class="NSMutableArray" key="NSSubviews">
 					<object class="IBUIImageView" id="938791324">
@@ -44,7 +44,6 @@
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
 						<string key="NSFrameSize">{320, 480}</string>
 						<reference key="NSSuperview" ref="75650406"/>
-						<reference key="NSWindow"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<int key="IBUIContentMode">4</int>
@@ -69,7 +68,6 @@
 										<object class="NSPSMatrix" key="NSFrameMatrix"/>
 										<string key="NSFrameSize">{320, 176}</string>
 										<reference key="NSSuperview" ref="920934023"/>
-										<reference key="NSWindow"/>
 										<float key="IBUIAlpha">0.10000000149011612</float>
 										<bool key="IBUIUserInteractionEnabled">NO</bool>
 										<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -84,7 +82,6 @@
 										<object class="NSPSMatrix" key="NSFrameMatrix"/>
 										<string key="NSFrame">{{167, 12}, {149, 20}}</string>
 										<reference key="NSSuperview" ref="920934023"/>
-										<reference key="NSWindow"/>
 										<bool key="IBUIOpaque">NO</bool>
 										<bool key="IBUIClipsSubviews">YES</bool>
 										<int key="IBUIContentMode">7</int>
@@ -109,6 +106,7 @@
 											<int key="NSfFlags">16</int>
 										</object>
 										<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
+										<bool key="useAutomaticPreferredMaxLayoutWidth">YES</bool>
 									</object>
 									<object class="IBUILabel" id="272791508">
 										<reference key="NSNextResponder" ref="920934023"/>
@@ -116,7 +114,6 @@
 										<object class="NSPSMatrix" key="NSFrameMatrix"/>
 										<string key="NSFrame">{{167, 32}, {38, 16}}</string>
 										<reference key="NSSuperview" ref="920934023"/>
-										<reference key="NSWindow"/>
 										<bool key="IBUIOpaque">NO</bool>
 										<bool key="IBUIClipsSubviews">YES</bool>
 										<int key="IBUIContentMode">7</int>
@@ -138,6 +135,7 @@
 											<int key="NSfFlags">16</int>
 										</object>
 										<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
+										<bool key="useAutomaticPreferredMaxLayoutWidth">YES</bool>
 									</object>
 									<object class="IBUILabel" id="841081600">
 										<reference key="NSNextResponder" ref="920934023"/>
@@ -145,7 +143,6 @@
 										<object class="NSPSMatrix" key="NSFrameMatrix"/>
 										<string key="NSFrame">{{165, 50}, {79, 16}}</string>
 										<reference key="NSSuperview" ref="920934023"/>
-										<reference key="NSWindow"/>
 										<bool key="IBUIOpaque">NO</bool>
 										<bool key="IBUIClipsSubviews">YES</bool>
 										<int key="IBUIContentMode">7</int>
@@ -158,6 +155,7 @@
 										<reference key="IBUIFontDescription" ref="413602266"/>
 										<reference key="IBUIFont" ref="802485645"/>
 										<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
+										<bool key="useAutomaticPreferredMaxLayoutWidth">YES</bool>
 									</object>
 									<object class="IBUILabel" id="32204698">
 										<reference key="NSNextResponder" ref="920934023"/>
@@ -165,7 +163,6 @@
 										<object class="NSPSMatrix" key="NSFrameMatrix"/>
 										<string key="NSFrame">{{165, 67}, {81, 16}}</string>
 										<reference key="NSSuperview" ref="920934023"/>
-										<reference key="NSWindow"/>
 										<bool key="IBUIOpaque">NO</bool>
 										<bool key="IBUIClipsSubviews">YES</bool>
 										<int key="IBUIContentMode">7</int>
@@ -178,6 +175,7 @@
 										<reference key="IBUIFontDescription" ref="413602266"/>
 										<reference key="IBUIFont" ref="802485645"/>
 										<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
+										<bool key="useAutomaticPreferredMaxLayoutWidth">YES</bool>
 									</object>
 									<object class="IBUILabel" id="48533551">
 										<reference key="NSNextResponder" ref="920934023"/>
@@ -185,7 +183,6 @@
 										<object class="NSPSMatrix" key="NSFrameMatrix"/>
 										<string key="NSFrame">{{248, 67}, {70, 16}}</string>
 										<reference key="NSSuperview" ref="920934023"/>
-										<reference key="NSWindow"/>
 										<bool key="IBUIOpaque">NO</bool>
 										<bool key="IBUIClipsSubviews">YES</bool>
 										<int key="IBUIContentMode">7</int>
@@ -201,6 +198,7 @@
 										<reference key="IBUIFontDescription" ref="864980154"/>
 										<reference key="IBUIFont" ref="524231520"/>
 										<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
+										<bool key="useAutomaticPreferredMaxLayoutWidth">YES</bool>
 									</object>
 									<object class="IBUILabel" id="804800286">
 										<reference key="NSNextResponder" ref="920934023"/>
@@ -208,7 +206,6 @@
 										<object class="NSPSMatrix" key="NSFrameMatrix"/>
 										<string key="NSFrame">{{165, 83}, {89, 16}}</string>
 										<reference key="NSSuperview" ref="920934023"/>
-										<reference key="NSWindow"/>
 										<bool key="IBUIOpaque">NO</bool>
 										<bool key="IBUIClipsSubviews">YES</bool>
 										<int key="IBUIContentMode">7</int>
@@ -221,6 +218,7 @@
 										<reference key="IBUIFontDescription" ref="413602266"/>
 										<reference key="IBUIFont" ref="802485645"/>
 										<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
+										<bool key="useAutomaticPreferredMaxLayoutWidth">YES</bool>
 									</object>
 									<object class="IBUILabel" id="532153661">
 										<reference key="NSNextResponder" ref="920934023"/>
@@ -228,7 +226,6 @@
 										<object class="NSPSMatrix" key="NSFrameMatrix"/>
 										<string key="NSFrame">{{165, 132}, {19, 16}}</string>
 										<reference key="NSSuperview" ref="920934023"/>
-										<reference key="NSWindow"/>
 										<bool key="IBUIOpaque">NO</bool>
 										<bool key="IBUIClipsSubviews">YES</bool>
 										<int key="IBUIContentMode">7</int>
@@ -241,6 +238,7 @@
 										<reference key="IBUIFontDescription" ref="413602266"/>
 										<reference key="IBUIFont" ref="802485645"/>
 										<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
+										<bool key="useAutomaticPreferredMaxLayoutWidth">YES</bool>
 									</object>
 									<object class="IBUILabel" id="696609225">
 										<reference key="NSNextResponder" ref="920934023"/>
@@ -248,7 +246,6 @@
 										<object class="NSPSMatrix" key="NSFrameMatrix"/>
 										<string key="NSFrame">{{242, 132}, {17, 16}}</string>
 										<reference key="NSSuperview" ref="920934023"/>
-										<reference key="NSWindow"/>
 										<bool key="IBUIOpaque">NO</bool>
 										<bool key="IBUIClipsSubviews">YES</bool>
 										<int key="IBUIContentMode">7</int>
@@ -261,6 +258,7 @@
 										<reference key="IBUIFontDescription" ref="413602266"/>
 										<reference key="IBUIFont" ref="802485645"/>
 										<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
+										<bool key="useAutomaticPreferredMaxLayoutWidth">YES</bool>
 									</object>
 									<object class="IBUILabel" id="556224126">
 										<reference key="NSNextResponder" ref="920934023"/>
@@ -268,7 +266,6 @@
 										<object class="NSPSMatrix" key="NSFrameMatrix"/>
 										<string key="NSFrame">{{236, 132}, {9, 16}}</string>
 										<reference key="NSSuperview" ref="920934023"/>
-										<reference key="NSWindow"/>
 										<bool key="IBUIOpaque">NO</bool>
 										<bool key="IBUIClipsSubviews">YES</bool>
 										<int key="IBUIContentMode">7</int>
@@ -281,6 +278,7 @@
 										<reference key="IBUIFontDescription" ref="413602266"/>
 										<reference key="IBUIFont" ref="802485645"/>
 										<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
+										<bool key="useAutomaticPreferredMaxLayoutWidth">YES</bool>
 									</object>
 									<object class="IBUILabel" id="429466615">
 										<reference key="NSNextResponder" ref="920934023"/>
@@ -288,7 +286,6 @@
 										<object class="NSPSMatrix" key="NSFrameMatrix"/>
 										<string key="NSFrame">{{184, 132}, {48, 16}}</string>
 										<reference key="NSSuperview" ref="920934023"/>
-										<reference key="NSWindow"/>
 										<bool key="IBUIOpaque">NO</bool>
 										<bool key="IBUIClipsSubviews">YES</bool>
 										<int key="IBUIContentMode">7</int>
@@ -304,6 +301,7 @@
 										<reference key="IBUIFontDescription" ref="864980154"/>
 										<reference key="IBUIFont" ref="524231520"/>
 										<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
+										<bool key="useAutomaticPreferredMaxLayoutWidth">YES</bool>
 									</object>
 									<object class="IBUILabel" id="204149046">
 										<reference key="NSNextResponder" ref="920934023"/>
@@ -311,7 +309,6 @@
 										<object class="NSPSMatrix" key="NSFrameMatrix"/>
 										<string key="NSFrame">{{259, 132}, {50, 16}}</string>
 										<reference key="NSSuperview" ref="920934023"/>
-										<reference key="NSWindow"/>
 										<bool key="IBUIOpaque">NO</bool>
 										<bool key="IBUIClipsSubviews">YES</bool>
 										<int key="IBUIContentMode">7</int>
@@ -327,6 +324,7 @@
 										<reference key="IBUIFontDescription" ref="864980154"/>
 										<reference key="IBUIFont" ref="524231520"/>
 										<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
+										<bool key="useAutomaticPreferredMaxLayoutWidth">YES</bool>
 									</object>
 									<object class="IBUILabel" id="424447462">
 										<reference key="NSNextResponder" ref="920934023"/>
@@ -334,7 +332,6 @@
 										<object class="NSPSMatrix" key="NSFrameMatrix"/>
 										<string key="NSFrame">{{227, 149}, {63, 16}}</string>
 										<reference key="NSSuperview" ref="920934023"/>
-										<reference key="NSWindow"/>
 										<bool key="IBUIOpaque">NO</bool>
 										<bool key="IBUIClipsSubviews">YES</bool>
 										<int key="IBUIContentMode">7</int>
@@ -350,6 +347,7 @@
 										<reference key="IBUIFontDescription" ref="864980154"/>
 										<reference key="IBUIFont" ref="524231520"/>
 										<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
+										<bool key="useAutomaticPreferredMaxLayoutWidth">YES</bool>
 									</object>
 									<object class="IBUILabel" id="502806686">
 										<reference key="NSNextResponder" ref="920934023"/>
@@ -357,7 +355,6 @@
 										<object class="NSPSMatrix" key="NSFrameMatrix"/>
 										<string key="NSFrame">{{165, 149}, {60, 16}}</string>
 										<reference key="NSSuperview" ref="920934023"/>
-										<reference key="NSWindow"/>
 										<bool key="IBUIOpaque">NO</bool>
 										<bool key="IBUIClipsSubviews">YES</bool>
 										<int key="IBUIContentMode">7</int>
@@ -370,6 +367,7 @@
 										<reference key="IBUIFontDescription" ref="413602266"/>
 										<reference key="IBUIFont" ref="802485645"/>
 										<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
+										<bool key="useAutomaticPreferredMaxLayoutWidth">YES</bool>
 									</object>
 									<object class="IBUILabel" id="588250709">
 										<reference key="NSNextResponder" ref="920934023"/>
@@ -377,7 +375,6 @@
 										<object class="NSPSMatrix" key="NSFrameMatrix"/>
 										<string key="NSFrame">{{165, 115}, {90, 16}}</string>
 										<reference key="NSSuperview" ref="920934023"/>
-										<reference key="NSWindow"/>
 										<bool key="IBUIOpaque">NO</bool>
 										<bool key="IBUIClipsSubviews">YES</bool>
 										<int key="IBUIContentMode">7</int>
@@ -399,6 +396,7 @@
 											<int key="NSfFlags">16</int>
 										</object>
 										<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
+										<bool key="useAutomaticPreferredMaxLayoutWidth">YES</bool>
 									</object>
 									<object class="IBUILabel" id="769656285">
 										<reference key="NSNextResponder" ref="920934023"/>
@@ -406,7 +404,6 @@
 										<object class="NSPSMatrix" key="NSFrameMatrix"/>
 										<string key="NSFrame">{{165, 98}, {150, 16}}</string>
 										<reference key="NSSuperview" ref="920934023"/>
-										<reference key="NSWindow"/>
 										<bool key="IBUIOpaque">NO</bool>
 										<bool key="IBUIClipsSubviews">YES</bool>
 										<int key="IBUIContentMode">7</int>
@@ -429,6 +426,7 @@
 											<int key="NSfFlags">16</int>
 										</object>
 										<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
+										<bool key="useAutomaticPreferredMaxLayoutWidth">YES</bool>
 									</object>
 									<object class="IBUILabel" id="1057472735">
 										<reference key="NSNextResponder" ref="920934023"/>
@@ -436,7 +434,6 @@
 										<object class="NSPSMatrix" key="NSFrameMatrix"/>
 										<string key="NSFrame">{{256, 83}, {59, 16}}</string>
 										<reference key="NSSuperview" ref="920934023"/>
-										<reference key="NSWindow"/>
 										<bool key="IBUIOpaque">NO</bool>
 										<bool key="IBUIClipsSubviews">YES</bool>
 										<int key="IBUIContentMode">7</int>
@@ -452,6 +449,7 @@
 										<reference key="IBUIFontDescription" ref="864980154"/>
 										<reference key="IBUIFont" ref="524231520"/>
 										<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
+										<bool key="useAutomaticPreferredMaxLayoutWidth">YES</bool>
 									</object>
 									<object class="IBUILabel" id="131120908">
 										<reference key="NSNextResponder" ref="920934023"/>
@@ -459,7 +457,6 @@
 										<object class="NSPSMatrix" key="NSFrameMatrix"/>
 										<string key="NSFrame">{{248, 50}, {68, 16}}</string>
 										<reference key="NSSuperview" ref="920934023"/>
-										<reference key="NSWindow"/>
 										<bool key="IBUIOpaque">NO</bool>
 										<bool key="IBUIClipsSubviews">YES</bool>
 										<int key="IBUIContentMode">7</int>
@@ -475,6 +472,7 @@
 										<reference key="IBUIFontDescription" ref="864980154"/>
 										<reference key="IBUIFont" ref="524231520"/>
 										<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
+										<bool key="useAutomaticPreferredMaxLayoutWidth">YES</bool>
 									</object>
 									<object class="IBUILabel" id="996457099">
 										<reference key="NSNextResponder" ref="920934023"/>
@@ -482,7 +480,6 @@
 										<object class="NSPSMatrix" key="NSFrameMatrix"/>
 										<string key="NSFrame">{{207, 32}, {109, 16}}</string>
 										<reference key="NSSuperview" ref="920934023"/>
-										<reference key="NSWindow"/>
 										<bool key="IBUIOpaque">NO</bool>
 										<bool key="IBUIClipsSubviews">YES</bool>
 										<int key="IBUIContentMode">7</int>
@@ -498,12 +495,12 @@
 										<reference key="IBUIFontDescription" ref="864980154"/>
 										<reference key="IBUIFont" ref="524231520"/>
 										<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
+										<bool key="useAutomaticPreferredMaxLayoutWidth">YES</bool>
 									</object>
 								</array>
 								<object class="NSPSMatrix" key="NSFrameMatrix"/>
 								<string key="NSFrameSize">{320, 176}</string>
 								<reference key="NSSuperview" ref="682694823"/>
-								<reference key="NSWindow"/>
 								<object class="NSColor" key="IBUIBackgroundColor" id="764813886">
 									<int key="NSColorSpace">3</int>
 									<bytes key="NSWhite">MCAwAA</bytes>
@@ -518,9 +515,8 @@
 										<reference key="NSNextResponder" ref="532009778"/>
 										<int key="NSvFlags">1316</int>
 										<object class="NSPSMatrix" key="NSFrameMatrix"/>
-										<string key="NSFrame">{{12, 3}, {181, 21}}</string>
+										<string key="NSFrame">{{12, 7}, {181, 21}}</string>
 										<reference key="NSSuperview" ref="532009778"/>
-										<reference key="NSWindow"/>
 										<bool key="IBUIOpaque">NO</bool>
 										<bool key="IBUIClipsSubviews">YES</bool>
 										<int key="IBUIContentMode">7</int>
@@ -542,14 +538,14 @@
 											<int key="NSfFlags">16</int>
 										</object>
 										<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
+										<bool key="useAutomaticPreferredMaxLayoutWidth">YES</bool>
 									</object>
 									<object class="IBUILabel" id="706954732">
 										<reference key="NSNextResponder" ref="532009778"/>
 										<int key="NSvFlags">1316</int>
 										<object class="NSPSMatrix" key="NSFrameMatrix"/>
-										<string key="NSFrame">{{12, 29}, {101, 16}}</string>
+										<string key="NSFrame">{{12, 33}, {101, 16}}</string>
 										<reference key="NSSuperview" ref="532009778"/>
-										<reference key="NSWindow"/>
 										<bool key="IBUIOpaque">NO</bool>
 										<bool key="IBUIClipsSubviews">YES</bool>
 										<int key="IBUIContentMode">7</int>
@@ -562,14 +558,14 @@
 										<reference key="IBUIFontDescription" ref="413602266"/>
 										<reference key="IBUIFont" ref="802485645"/>
 										<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
+										<bool key="useAutomaticPreferredMaxLayoutWidth">YES</bool>
 									</object>
 									<object class="IBUILabel" id="1017716324">
 										<reference key="NSNextResponder" ref="532009778"/>
 										<int key="NSvFlags">1316</int>
 										<object class="NSPSMatrix" key="NSFrameMatrix"/>
-										<string key="NSFrame">{{12, 53}, {94, 16}}</string>
+										<string key="NSFrame">{{12, 57}, {94, 16}}</string>
 										<reference key="NSSuperview" ref="532009778"/>
-										<reference key="NSWindow"/>
 										<bool key="IBUIOpaque">NO</bool>
 										<bool key="IBUIClipsSubviews">YES</bool>
 										<int key="IBUIContentMode">7</int>
@@ -582,14 +578,14 @@
 										<reference key="IBUIFontDescription" ref="413602266"/>
 										<reference key="IBUIFont" ref="802485645"/>
 										<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
+										<bool key="useAutomaticPreferredMaxLayoutWidth">YES</bool>
 									</object>
 									<object class="IBUILabel" id="129238874">
 										<reference key="NSNextResponder" ref="532009778"/>
 										<int key="NSvFlags">1316</int>
 										<object class="NSPSMatrix" key="NSFrameMatrix"/>
-										<string key="NSFrame">{{110, 53}, {197, 16}}</string>
+										<string key="NSFrame">{{110, 57}, {197, 16}}</string>
 										<reference key="NSSuperview" ref="532009778"/>
-										<reference key="NSWindow"/>
 										<bool key="IBUIOpaque">NO</bool>
 										<bool key="IBUIClipsSubviews">YES</bool>
 										<int key="IBUIContentMode">7</int>
@@ -605,14 +601,14 @@
 										<reference key="IBUIFontDescription" ref="864980154"/>
 										<reference key="IBUIFont" ref="524231520"/>
 										<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
+										<bool key="useAutomaticPreferredMaxLayoutWidth">YES</bool>
 									</object>
 									<object class="IBUILabel" id="86349850">
 										<reference key="NSNextResponder" ref="532009778"/>
 										<int key="NSvFlags">1316</int>
 										<object class="NSPSMatrix" key="NSFrameMatrix"/>
-										<string key="NSFrame">{{110, 29}, {197, 16}}</string>
+										<string key="NSFrame">{{110, 33}, {197, 16}}</string>
 										<reference key="NSSuperview" ref="532009778"/>
-										<reference key="NSWindow"/>
 										<bool key="IBUIOpaque">NO</bool>
 										<bool key="IBUIClipsSubviews">YES</bool>
 										<int key="IBUIContentMode">7</int>
@@ -628,33 +624,34 @@
 										<reference key="IBUIFontDescription" ref="864980154"/>
 										<reference key="IBUIFont" ref="524231520"/>
 										<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
+										<bool key="useAutomaticPreferredMaxLayoutWidth">YES</bool>
 									</object>
 									<object class="IBUIButton" id="863141917">
 										<reference key="NSNextResponder" ref="532009778"/>
 										<int key="NSvFlags">1316</int>
 										<object class="NSPSMatrix" key="NSFrameMatrix"/>
-										<string key="NSFrame">{{110, 29}, {197, 16}}</string>
+										<string key="NSFrame">{{110, 33}, {197, 16}}</string>
 										<reference key="NSSuperview" ref="532009778"/>
-										<reference key="NSWindow"/>
 										<bool key="IBUIOpaque">NO</bool>
 										<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 										<int key="IBUIContentHorizontalAlignment">0</int>
 										<int key="IBUIContentVerticalAlignment">0</int>
-										<reference key="IBUIHighlightedTitleColor" ref="111054945"/>
 										<object class="NSColor" key="IBUINormalTitleColor">
 											<int key="NSColorSpace">1</int>
 											<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
 										</object>
+										<reference key="IBUIHighlightedTitleColor" ref="111054945"/>
 										<object class="NSColor" key="IBUINormalTitleShadowColor" id="825167663">
 											<int key="NSColorSpace">3</int>
 											<bytes key="NSWhite">MC41AA</bytes>
 										</object>
 										<object class="IBUIFontDescription" key="IBUIFontDescription" id="1044396848">
 											<int key="type">2</int>
+											<int key="weightCategory">30</int>
 											<double key="pointSize">15</double>
 										</object>
-										<object class="NSFont" key="IBUIFont" id="241642573">
-											<string key="NSName">Helvetica-Bold</string>
+										<object class="NSFont" key="IBUIFont" id="846589253">
+											<string key="NSName">HelveticaNeue</string>
 											<double key="NSSize">15</double>
 											<int key="NSfFlags">16</int>
 										</object>
@@ -663,12 +660,10 @@
 								<object class="NSPSMatrix" key="NSFrameMatrix"/>
 								<string key="NSFrame">{{0, 176}, {320, 84}}</string>
 								<reference key="NSSuperview" ref="682694823"/>
-								<reference key="NSWindow"/>
 								<object class="NSColor" key="IBUIBackgroundColor">
 									<int key="NSColorSpace">2</int>
-									<bytes key="NSRGB">MC40MTE3NjQ3NDA5IDAuNDgyMzUyOTcyIDAuNjI3NDUxMDAyNgA</bytes>
+									<bytes key="NSRGB">MCAwLjQwMDAwMDAzNTggMC44MDAwMDAwNzE1IDAuNwA</bytes>
 								</object>
-								<float key="IBUIAlpha">0.80000001192092896</float>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 							</object>
 							<object class="IBUIImageView" id="547065128">
@@ -677,7 +672,6 @@
 								<object class="NSPSMatrix" key="NSFrameMatrix"/>
 								<string key="NSFrame">{{7, 15}, {150, 150}}</string>
 								<reference key="NSSuperview" ref="682694823"/>
-								<reference key="NSWindow"/>
 								<reference key="IBUIBackgroundColor" ref="764813886"/>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -688,7 +682,6 @@
 								<object class="NSPSMatrix" key="NSFrameMatrix"/>
 								<string key="NSFrame">{{0, 259}, {320, 130}}</string>
 								<reference key="NSSuperview" ref="682694823"/>
-								<reference key="NSWindow"/>
 								<float key="IBUIAlpha">0.10000000149011612</float>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -700,7 +693,6 @@
 								<object class="NSPSMatrix" key="NSFrameMatrix"/>
 								<string key="NSFrame">{{25, 273}, {270, 40}}</string>
 								<reference key="NSSuperview" ref="682694823"/>
-								<reference key="NSWindow"/>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
 								<int key="IBUIContentMode">4</int>
@@ -717,7 +709,6 @@
 								<object class="NSPSMatrix" key="NSFrameMatrix"/>
 								<string key="NSFrame">{{125, 313}, {70, 21}}</string>
 								<reference key="NSSuperview" ref="682694823"/>
-								<reference key="NSWindow"/>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
 								<int key="IBUIContentMode">7</int>
@@ -745,6 +736,7 @@
 									<int key="NSfFlags">16</int>
 								</object>
 								<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
+								<bool key="useAutomaticPreferredMaxLayoutWidth">YES</bool>
 							</object>
 							<object class="IBUIButton" id="739191528">
 								<reference key="NSNextResponder" ref="682694823"/>
@@ -752,39 +744,31 @@
 								<object class="NSPSMatrix" key="NSFrameMatrix"/>
 								<string key="NSFrame">{{25, 269}, {275, 44}}</string>
 								<reference key="NSSuperview" ref="682694823"/>
-								<reference key="NSWindow"/>
 								<bool key="IBUIOpaque">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								<int key="IBUIContentHorizontalAlignment">0</int>
 								<int key="IBUIContentVerticalAlignment">0</int>
-								<reference key="IBUIHighlightedTitleColor" ref="111054945"/>
 								<object class="NSColor" key="IBUINormalTitleColor">
 									<int key="NSColorSpace">1</int>
 									<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
 								</object>
+								<reference key="IBUIHighlightedTitleColor" ref="111054945"/>
 								<reference key="IBUINormalTitleShadowColor" ref="825167663"/>
 								<reference key="IBUIFontDescription" ref="1044396848"/>
-								<reference key="IBUIFont" ref="241642573"/>
+								<reference key="IBUIFont" ref="846589253"/>
 							</object>
 						</array>
 						<object class="NSPSMatrix" key="NSFrameMatrix"/>
 						<string key="NSFrame">{{0, -7}, {320, 381}}</string>
 						<reference key="NSSuperview" ref="75650406"/>
-						<reference key="NSWindow"/>
 						<reference key="IBUIBackgroundColor" ref="764813886"/>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<bool key="IBUIMultipleTouchEnabled">YES</bool>
-						<object class="IBUISimulatedSizeMetrics" key="IBUISimulatedDestinationMetrics">
-							<string key="IBUISimulatedSizeMetricsClass">IBUISimulatedFreeformSizeMetricsSentinel</string>
-							<string key="IBUIDisplayName">Freeform</string>
-						</object>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					</object>
 				</array>
 				<object class="NSPSMatrix" key="NSFrameMatrix"/>
 				<string key="NSFrame">{{0, 64}, {320, 367}}</string>
-				<reference key="NSSuperview"/>
-				<reference key="NSWindow"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">3</int>
 					<bytes key="NSWhite">MQA</bytes>
@@ -799,6 +783,8 @@
 				<object class="IBUISimulatedTabBarMetrics" key="IBUISimulatedBottomBarMetrics"/>
 				<object class="IBUIScreenMetrics" key="IBUISimulatedDestinationMetrics">
 					<string key="IBUISimulatedSizeMetricsClass">IBUIScreenMetrics</string>
+					<string key="IBUITargetRuntime">IBCocoaTouchFramework</string>
+					<string key="IBUIDisplayName">iPhone 3.5-inch</string>
 					<object class="NSMutableDictionary" key="IBUINormalizedOrientationToSizeMap">
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<array key="dict.sortedKeys">
@@ -810,8 +796,6 @@
 							<string>{480, 320}</string>
 						</array>
 					</object>
-					<string key="IBUITargetRuntime">IBCocoaTouchFramework</string>
-					<string key="IBUIDisplayName">Retina 3.5 Full Screen</string>
 					<int key="IBUIType">0</int>
 				</object>
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -819,7 +803,7 @@
 		</array>
 		<object class="IBObjectContainer" key="IBDocument.Objects">
 			<bool key="usesAutoincrementingIDs">NO</bool>
-			<array class="NSMutableArray" key="connectionRecords">
+			<array key="connectionRecords">
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">liveFeeds_Female_lbl</string>
@@ -1299,103 +1283,10 @@
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
 		</object>
-		<object class="IBClassDescriber" key="IBDocument.Classes">
-			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
-				<object class="IBPartialClassDescription">
-					<string key="className">SearchDetailViewController</string>
-					<string key="superclassName">UIViewController</string>
-					<dictionary class="NSMutableDictionary" key="actions">
-						<string key="makeCall:">id</string>
-						<string key="searchChaseitAction:">id</string>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="actionInfosByName">
-						<object class="IBActionInfo" key="makeCall:">
-							<string key="name">makeCall:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="searchChaseitAction:">
-							<string key="name">searchChaseitAction:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="outlets">
-						<string key="liveFeeds_Female_lbl">UILabel</string>
-						<string key="liveFeeds_Male_lbl">UILabel</string>
-						<string key="phone_outlet">UIButton</string>
-						<string key="searchAvgAge_lbl">UILabel</string>
-						<string key="searchDateAndTimeLargestStorm_lbl">UILabel</string>
-						<string key="searchEmailAddress_lbl">UILabel</string>
-						<string key="searchLargestStorm_lbl">UILabel</string>
-						<string key="searchLocationImageView">UIImageView</string>
-						<string key="searchLocationName_lbl">UILabel</string>
-						<string key="searchLocationPhone_lbl">UILabel</string>
-						<string key="searchTotalStorm_lbl">UILabel</string>
-						<string key="searchTotalStrike_lbl">UILabel</string>
-						<string key="search_lbl">UILabel</string>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
-						<object class="IBToOneOutletInfo" key="liveFeeds_Female_lbl">
-							<string key="name">liveFeeds_Female_lbl</string>
-							<string key="candidateClassName">UILabel</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="liveFeeds_Male_lbl">
-							<string key="name">liveFeeds_Male_lbl</string>
-							<string key="candidateClassName">UILabel</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="phone_outlet">
-							<string key="name">phone_outlet</string>
-							<string key="candidateClassName">UIButton</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="searchAvgAge_lbl">
-							<string key="name">searchAvgAge_lbl</string>
-							<string key="candidateClassName">UILabel</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="searchDateAndTimeLargestStorm_lbl">
-							<string key="name">searchDateAndTimeLargestStorm_lbl</string>
-							<string key="candidateClassName">UILabel</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="searchEmailAddress_lbl">
-							<string key="name">searchEmailAddress_lbl</string>
-							<string key="candidateClassName">UILabel</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="searchLargestStorm_lbl">
-							<string key="name">searchLargestStorm_lbl</string>
-							<string key="candidateClassName">UILabel</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="searchLocationImageView">
-							<string key="name">searchLocationImageView</string>
-							<string key="candidateClassName">UIImageView</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="searchLocationName_lbl">
-							<string key="name">searchLocationName_lbl</string>
-							<string key="candidateClassName">UILabel</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="searchLocationPhone_lbl">
-							<string key="name">searchLocationPhone_lbl</string>
-							<string key="candidateClassName">UILabel</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="searchTotalStorm_lbl">
-							<string key="name">searchTotalStorm_lbl</string>
-							<string key="candidateClassName">UILabel</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="searchTotalStrike_lbl">
-							<string key="name">searchTotalStrike_lbl</string>
-							<string key="candidateClassName">UILabel</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="search_lbl">
-							<string key="name">search_lbl</string>
-							<string key="candidateClassName">UILabel</string>
-						</object>
-					</dictionary>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/SearchDetailViewController.h</string>
-					</object>
-				</object>
-			</array>
-		</object>
+		<object class="IBClassDescriber" key="IBDocument.Classes"/>
 		<int key="IBDocument.localizationMode">0</int>
 		<string key="IBDocument.TargetRuntimeIdentifier">IBCocoaTouchFramework</string>
+		<bool key="IBDocument.previouslyAttemptedUpgradeToXcode5">NO</bool>
 		<object class="NSMutableDictionary" key="IBDocument.PluginDeclaredDevelopmentDependencies">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaTouchPlugin.InterfaceBuilder3</string>
 			<integer value="4600" key="NS.object.0"/>
@@ -1407,6 +1298,5 @@
 			<string key="blue_overlay.png">{320, 480}</string>
 			<string key="chaseit_btn.png">{270, 40}</string>
 		</dictionary>
-		<string key="IBCocoaTouchPluginVersion">2083</string>
 	</data>
 </archive>

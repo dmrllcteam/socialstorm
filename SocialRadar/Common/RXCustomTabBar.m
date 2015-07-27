@@ -12,6 +12,7 @@
 #define TABBAR_IMAGE_Y 431
 #define TABBAR_IMAGE_WIDTH 61
 
+
 @implementation RXCustomTabBar
 
 @synthesize btn1, btn2, btn3;
@@ -74,11 +75,12 @@
         UIImageView *imageView=[[UIImageView alloc] initWithFrame:CGRectMake(0, 402, tabCustom_Img.size.width, tabCustom_Img.size.height)];
         imageView.backgroundColor=[UIColor clearColor];
         imageView.image = tabCustom_Img;
+        imageView.contentMode = UIViewContentModeCenter; //RAR possible fix to make TabBar centered on 6, 6+
         [self.view addSubview:imageView];
         [imageView release];
         
         self.btn1 = [UIButton buttonWithType:UIButtonTypeCustom]; //Setup the button
-        btn1.frame = CGRectMake(0, TABBAR_IMAGE_Y, TABBAR_IMAGE_WIDTH, 49); // Set the frame (size and position) of the button)
+        btn1.frame = CGRectMake(50, TABBAR_IMAGE_Y, TABBAR_IMAGE_WIDTH, 49); // Set the frame (size and position) of the button)
         [btn1 setBackgroundImage:btnImage forState:UIControlStateNormal]; // Set the image for the normal state of the button
         [btn1 setBackgroundImage:btnImageSelected forState:UIControlStateSelected]; // Set the image for the selected state of the button
         [btn1 setTag:0]; // Assign the button a "tag" so when our "click" event is called we know which button was pressed.

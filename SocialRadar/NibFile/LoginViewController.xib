@@ -1,823 +1,488 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<archive type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="8.00">
-	<data>
-		<int key="IBDocument.SystemTarget">1280</int>
-		<string key="IBDocument.SystemVersion">14C1510</string>
-		<string key="IBDocument.InterfaceBuilderVersion">6751</string>
-		<string key="IBDocument.AppKitVersion">1344.72</string>
-		<string key="IBDocument.HIToolboxVersion">757.30</string>
-		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
-			<string key="NS.key.0">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-			<string key="NS.object.0">6736</string>
-		</object>
-		<array key="IBDocument.IntegratedClassDependencies">
-			<string>IBProxyObject</string>
-			<string>IBUIButton</string>
-			<string>IBUIImageView</string>
-			<string>IBUILabel</string>
-			<string>IBUITextField</string>
-			<string>IBUIView</string>
-		</array>
-		<array key="IBDocument.PluginDependencies">
-			<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-		</array>
-		<object class="NSMutableDictionary" key="IBDocument.Metadata">
-			<string key="NS.key.0">PluginDependencyRecalculationVersion</string>
-			<integer value="1" key="NS.object.0"/>
-		</object>
-		<array class="NSMutableArray" key="IBDocument.RootObjects" id="1000">
-			<object class="IBProxyObject" id="372490531">
-				<string key="IBProxiedObjectIdentifier">IBFilesOwner</string>
-				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-			</object>
-			<object class="IBProxyObject" id="975951072">
-				<string key="IBProxiedObjectIdentifier">IBFirstResponder</string>
-				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-			</object>
-			<object class="IBUIView" id="191373211">
-				<reference key="NSNextResponder"/>
-				<int key="NSvFlags">274</int>
-				<array class="NSMutableArray" key="NSSubviews">
-					<object class="IBUIImageView" id="169776043">
-						<reference key="NSNextResponder" ref="191373211"/>
-						<int key="NSvFlags">256</int>
-						<string key="NSFrameSize">{320, 480}</string>
-						<reference key="NSSuperview" ref="191373211"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="112715332"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<bool key="IBUIClipsSubviews">YES</bool>
-						<int key="IBUIContentMode">4</int>
-						<bool key="IBUIMultipleTouchEnabled">YES</bool>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<object class="NSCustomResource" key="IBUIImage">
-							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">bg.png</string>
-						</object>
-					</object>
-					<object class="IBUIImageView" id="112715332">
-						<reference key="NSNextResponder" ref="191373211"/>
-						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{0, 40}, {320, 75}}</string>
-						<reference key="NSSuperview" ref="191373211"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="447246735"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<bool key="IBUIClipsSubviews">YES</bool>
-						<int key="IBUIContentMode">4</int>
-						<bool key="IBUIMultipleTouchEnabled">YES</bool>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<object class="NSCustomResource" key="IBUIImage">
-							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">logo.png</string>
-						</object>
-					</object>
-					<object class="IBUIImageView" id="447246735">
-						<reference key="NSNextResponder" ref="191373211"/>
-						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{25, 154}, {270, 110}}</string>
-						<reference key="NSSuperview" ref="191373211"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="288199065"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<bool key="IBUIClipsSubviews">YES</bool>
-						<int key="IBUIContentMode">4</int>
-						<bool key="IBUIMultipleTouchEnabled">YES</bool>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<object class="NSCustomResource" key="IBUIImage">
-							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">login_table.png</string>
-						</object>
-					</object>
-					<object class="IBUIImageView" id="210028355">
-						<reference key="NSNextResponder" ref="191373211"/>
-						<int key="NSvFlags">256</int>
-						<string key="NSFrame">{{25, 207}, {270, 1}}</string>
-						<reference key="NSSuperview" ref="191373211"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="393631605"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<bool key="IBUIClipsSubviews">YES</bool>
-						<int key="IBUIContentMode">4</int>
-						<bool key="IBUIMultipleTouchEnabled">YES</bool>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<object class="NSCustomResource" key="IBUIImage">
-							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">dividingline.png</string>
-						</object>
-					</object>
-					<object class="IBUIImageView" id="401491497">
-						<reference key="NSNextResponder" ref="191373211"/>
-						<int key="NSvFlags">256</int>
-						<string key="NSFrame">{{25, 276}, {270, 40}}</string>
-						<reference key="NSSuperview" ref="191373211"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="210935522"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<bool key="IBUIClipsSubviews">YES</bool>
-						<int key="IBUIContentMode">4</int>
-						<bool key="IBUIMultipleTouchEnabled">YES</bool>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<object class="NSCustomResource" key="IBUIImage">
-							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">login_btn.png</string>
-						</object>
-					</object>
-					<object class="IBUILabel" id="956549706">
-						<reference key="NSNextResponder" ref="191373211"/>
-						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{85, 393}, {151, 21}}</string>
-						<reference key="NSSuperview" ref="191373211"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="874884102"/>
-						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<bool key="IBUIOpaque">NO</bool>
-						<bool key="IBUIClipsSubviews">YES</bool>
-						<int key="IBUIContentMode">7</int>
-						<bool key="IBUIUserInteractionEnabled">NO</bool>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<string key="IBUIText">Don't have an account?</string>
-						<object class="NSColor" key="IBUITextColor" id="70746134">
-							<int key="NSColorSpace">3</int>
-							<bytes key="NSWhite">MQA</bytes>
-						</object>
-						<nil key="IBUIHighlightedColor"/>
-						<int key="IBUIBaselineAdjustment">0</int>
-						<object class="IBUIFontDescription" key="IBUIFontDescription">
-							<int key="type">2</int>
-							<int key="weightCategory">30</int>
-							<double key="pointSize">13</double>
-						</object>
-						<object class="NSFont" key="IBUIFont">
-							<string key="NSName">HelveticaNeue</string>
-							<double key="NSSize">13</double>
-							<int key="NSfFlags">16</int>
-						</object>
-						<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
-						<bool key="useAutomaticPreferredMaxLayoutWidth">YES</bool>
-					</object>
-					<object class="IBUILabel" id="488854619">
-						<reference key="NSNextResponder" ref="191373211"/>
-						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{112, 415}, {96, 20}}</string>
-						<reference key="NSSuperview" ref="191373211"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="491894285"/>
-						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<bool key="IBUIOpaque">NO</bool>
-						<bool key="IBUIClipsSubviews">YES</bool>
-						<int key="IBUIContentMode">7</int>
-						<bool key="IBUIUserInteractionEnabled">NO</bool>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<string key="IBUIText">Register here</string>
-						<reference key="IBUITextColor" ref="70746134"/>
-						<nil key="IBUIHighlightedColor"/>
-						<int key="IBUIBaselineAdjustment">0</int>
-						<object class="IBUIFontDescription" key="IBUIFontDescription">
-							<string key="name">HelveticaNeue</string>
-							<string key="family">Helvetica Neue</string>
-							<int key="traits">0</int>
-							<double key="pointSize">16</double>
-						</object>
-						<object class="NSFont" key="IBUIFont">
-							<string key="NSName">HelveticaNeue</string>
-							<double key="NSSize">16</double>
-							<int key="NSfFlags">16</int>
-						</object>
-						<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
-						<bool key="useAutomaticPreferredMaxLayoutWidth">YES</bool>
-					</object>
-					<object class="IBUIButton" id="874884102">
-						<reference key="NSNextResponder" ref="191373211"/>
-						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{101, 415}, {101, 28}}</string>
-						<reference key="NSSuperview" ref="191373211"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="488854619"/>
-						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<bool key="IBUIOpaque">NO</bool>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<reference key="IBUIHighlightedTitleColor" ref="70746134"/>
-						<object class="NSColor" key="IBUINormalTitleShadowColor" id="249593804">
-							<int key="NSColorSpace">3</int>
-							<bytes key="NSWhite">MC41AA</bytes>
-						</object>
-						<object class="IBUIFontDescription" key="IBUIFontDescription" id="58775652">
-							<int key="type">2</int>
-							<int key="weightCategory">30</int>
-							<int key="size">2</int>
-						</object>
-						<object class="NSFont" key="IBUIFont" id="510989233">
-							<string key="NSName">HelveticaNeue</string>
-							<double key="NSSize">18</double>
-							<int key="NSfFlags">16</int>
-						</object>
-					</object>
-					<object class="IBUIButton" id="328670072">
-						<reference key="NSNextResponder" ref="191373211"/>
-						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{164, 332}, {131, 36}}</string>
-						<reference key="NSSuperview" ref="191373211"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="956549706"/>
-						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<bool key="IBUIOpaque">NO</bool>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<object class="NSColor" key="IBUINormalTitleColor">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
-						</object>
-						<reference key="IBUIHighlightedTitleColor" ref="70746134"/>
-						<reference key="IBUINormalTitleShadowColor" ref="249593804"/>
-						<object class="NSCustomResource" key="IBUINormalBackgroundImage">
-							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">twittterlogin_btn.png</string>
-						</object>
-						<object class="IBUIFontDescription" key="IBUIFontDescription" id="818284630">
-							<int key="type">2</int>
-							<int key="weightCategory">30</int>
-							<double key="pointSize">15</double>
-						</object>
-						<object class="NSFont" key="IBUIFont" id="105960146">
-							<string key="NSName">HelveticaNeue</string>
-							<double key="NSSize">15</double>
-							<int key="NSfFlags">16</int>
-						</object>
-					</object>
-					<object class="IBUIButton" id="748840160">
-						<reference key="NSNextResponder" ref="191373211"/>
-						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{25, 332}, {131, 36}}</string>
-						<reference key="NSSuperview" ref="191373211"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="328670072"/>
-						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<bool key="IBUIOpaque">NO</bool>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<object class="NSColor" key="IBUINormalTitleColor">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
-						</object>
-						<reference key="IBUIHighlightedTitleColor" ref="70746134"/>
-						<reference key="IBUINormalTitleShadowColor" ref="249593804"/>
-						<object class="NSCustomResource" key="IBUINormalBackgroundImage">
-							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">fblogin_btn.png</string>
-						</object>
-						<reference key="IBUIFontDescription" ref="818284630"/>
-						<reference key="IBUIFont" ref="105960146"/>
-					</object>
-					<object class="IBUIButton" id="210935522">
-						<reference key="NSNextResponder" ref="191373211"/>
-						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{25, 277}, {270, 40}}</string>
-						<reference key="NSSuperview" ref="191373211"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="748840160"/>
-						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<bool key="IBUIOpaque">NO</bool>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<int key="IBUIContentHorizontalAlignment">0</int>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<object class="NSColor" key="IBUINormalTitleColor">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MC4xOTYwNzg0MzE0IDAuMzA5ODAzOTIxNiAwLjUyMTU2ODYyNzUAA</bytes>
-						</object>
-						<reference key="IBUIHighlightedTitleColor" ref="70746134"/>
-						<reference key="IBUINormalTitleShadowColor" ref="249593804"/>
-						<reference key="IBUIFontDescription" ref="58775652"/>
-						<reference key="IBUIFont" ref="510989233"/>
-					</object>
-					<object class="IBUITextField" id="288199065">
-						<reference key="NSNextResponder" ref="191373211"/>
-						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{36, 166}, {257, 33}}</string>
-						<reference key="NSSuperview" ref="191373211"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="210028355"/>
-						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<bool key="IBUIOpaque">NO</bool>
-						<bool key="IBUIClipsSubviews">YES</bool>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<string key="IBUIText"/>
-						<string key="IBUIPlaceholder">Username</string>
-						<object class="NSColor" key="IBUITextColor">
-							<int key="NSColorSpace">3</int>
-							<bytes key="NSWhite">MAA</bytes>
-							<object class="NSColorSpace" key="NSCustomColorSpace" id="124557760">
-								<int key="NSID">2</int>
-							</object>
-						</object>
-						<bool key="IBUIAdjustsFontSizeToFit">YES</bool>
-						<float key="IBUIMinimumFontSize">17</float>
-						<object class="IBUITextInputTraits" key="IBUITextInputTraits">
-							<int key="IBUIKeyboardType">7</int>
-							<int key="IBUIReturnKeyType">4</int>
-							<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						</object>
-						<object class="IBUIFontDescription" key="IBUIFontDescription" id="605801579">
-							<int key="type">1</int>
-							<int key="weightCategory">0</int>
-							<double key="pointSize">14</double>
-						</object>
-						<object class="NSFont" key="IBUIFont" id="914441207">
-							<string key="NSName">HelveticaNeue</string>
-							<double key="NSSize">14</double>
-							<int key="NSfFlags">16</int>
-						</object>
-					</object>
-					<object class="IBUITextField" id="393631605">
-						<reference key="NSNextResponder" ref="191373211"/>
-						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{36, 215}, {257, 33}}</string>
-						<reference key="NSSuperview" ref="191373211"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="401491497"/>
-						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<bool key="IBUIOpaque">NO</bool>
-						<bool key="IBUIClipsSubviews">YES</bool>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<int key="IBUIContentVerticalAlignment">0</int>
-						<string key="IBUIText"/>
-						<string key="IBUIPlaceholder">Password</string>
-						<object class="NSColor" key="IBUITextColor">
-							<int key="NSColorSpace">3</int>
-							<bytes key="NSWhite">MAA</bytes>
-							<reference key="NSCustomColorSpace" ref="124557760"/>
-						</object>
-						<bool key="IBUIAdjustsFontSizeToFit">YES</bool>
-						<float key="IBUIMinimumFontSize">17</float>
-						<object class="IBUITextInputTraits" key="IBUITextInputTraits">
-							<int key="IBUIReturnKeyType">9</int>
-							<bool key="IBUISecureTextEntry">YES</bool>
-							<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						</object>
-						<reference key="IBUIFontDescription" ref="605801579"/>
-						<reference key="IBUIFont" ref="914441207"/>
-					</object>
-					<object class="IBUIView" id="491894285">
-						<reference key="NSNextResponder" ref="191373211"/>
-						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{117, 423}, {79, 1}}</string>
-						<reference key="NSSuperview" ref="191373211"/>
-						<reference key="NSWindow"/>
-						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<object class="NSColor" key="IBUIBackgroundColor">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MC4wNjczNjE2NTczNiAwLjE0MzYyODA1NDYgMC41NjI3MzkxNTgyAA</bytes>
-						</object>
-						<float key="IBUIAlpha">0.5</float>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-					</object>
-				</array>
-				<string key="NSFrameSize">{320, 480}</string>
-				<reference key="NSSuperview"/>
-				<reference key="NSWindow"/>
-				<reference key="NSNextKeyView" ref="169776043"/>
-				<object class="NSColor" key="IBUIBackgroundColor">
-					<int key="NSColorSpace">3</int>
-					<bytes key="NSWhite">MQA</bytes>
-					<reference key="NSCustomColorSpace" ref="124557760"/>
-				</object>
-				<object class="IBUIScreenMetrics" key="IBUISimulatedDestinationMetrics">
-					<string key="IBUISimulatedSizeMetricsClass">IBUIScreenMetrics</string>
-					<string key="IBUITargetRuntime">IBCocoaTouchFramework</string>
-					<string key="IBUIDisplayName">iPhone 3.5-inch</string>
-					<object class="NSMutableDictionary" key="IBUINormalizedOrientationToSizeMap">
-						<bool key="EncodedWithXMLCoder">YES</bool>
-						<array key="dict.sortedKeys">
-							<integer value="1"/>
-							<integer value="3"/>
-						</array>
-						<array key="dict.values">
-							<string>{320, 480}</string>
-							<string>{480, 320}</string>
-						</array>
-					</object>
-					<int key="IBUIType">0</int>
-				</object>
-				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-			</object>
-		</array>
-		<object class="IBObjectContainer" key="IBDocument.Objects">
-			<array key="connectionRecords">
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">userName_text</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="288199065"/>
-					</object>
-					<int key="connectionID">15</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">password_text</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="393631605"/>
-					</object>
-					<int key="connectionID">16</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">view</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="191373211"/>
-					</object>
-					<int key="connectionID">24</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchEventConnection" key="connection">
-						<string key="label">registerButtonAction:</string>
-						<reference key="source" ref="874884102"/>
-						<reference key="destination" ref="372490531"/>
-						<int key="IBEventType">7</int>
-					</object>
-					<int key="connectionID">23</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">delegate</string>
-						<reference key="source" ref="288199065"/>
-						<reference key="destination" ref="372490531"/>
-					</object>
-					<int key="connectionID">25</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">delegate</string>
-						<reference key="source" ref="393631605"/>
-						<reference key="destination" ref="372490531"/>
-					</object>
-					<int key="connectionID">26</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchEventConnection" key="connection">
-						<string key="label">loginButtonAction:</string>
-						<reference key="source" ref="210935522"/>
-						<reference key="destination" ref="372490531"/>
-						<int key="IBEventType">7</int>
-					</object>
-					<int key="connectionID">20</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchEventConnection" key="connection">
-						<string key="label">twitterButtonAction:</string>
-						<reference key="source" ref="328670072"/>
-						<reference key="destination" ref="372490531"/>
-						<int key="IBEventType">7</int>
-					</object>
-					<int key="connectionID">22</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchEventConnection" key="connection">
-						<string key="label">faceBookButtonAction:</string>
-						<reference key="source" ref="748840160"/>
-						<reference key="destination" ref="372490531"/>
-						<int key="IBEventType">7</int>
-					</object>
-					<int key="connectionID">21</int>
-				</object>
-			</array>
-			<object class="IBMutableOrderedSet" key="objectRecords">
-				<array key="orderedObjects">
-					<object class="IBObjectRecord">
-						<int key="objectID">0</int>
-						<array key="object" id="0"/>
-						<reference key="children" ref="1000"/>
-						<nil key="parent"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">1</int>
-						<reference key="object" ref="191373211"/>
-						<array class="NSMutableArray" key="children">
-							<reference ref="169776043"/>
-							<reference ref="112715332"/>
-							<reference ref="447246735"/>
-							<reference ref="210028355"/>
-							<reference ref="401491497"/>
-							<reference ref="956549706"/>
-							<reference ref="488854619"/>
-							<reference ref="874884102"/>
-							<reference ref="328670072"/>
-							<reference ref="748840160"/>
-							<reference ref="210935522"/>
-							<reference ref="288199065"/>
-							<reference ref="393631605"/>
-							<reference ref="491894285"/>
-						</array>
-						<reference key="parent" ref="0"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">-1</int>
-						<reference key="object" ref="372490531"/>
-						<reference key="parent" ref="0"/>
-						<string key="objectName">File's Owner</string>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">-2</int>
-						<reference key="object" ref="975951072"/>
-						<reference key="parent" ref="0"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">3</int>
-						<reference key="object" ref="169776043"/>
-						<reference key="parent" ref="191373211"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">4</int>
-						<reference key="object" ref="112715332"/>
-						<reference key="parent" ref="191373211"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">5</int>
-						<reference key="object" ref="447246735"/>
-						<reference key="parent" ref="191373211"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">6</int>
-						<reference key="object" ref="210028355"/>
-						<reference key="parent" ref="191373211"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">7</int>
-						<reference key="object" ref="401491497"/>
-						<reference key="parent" ref="191373211"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">10</int>
-						<reference key="object" ref="956549706"/>
-						<reference key="parent" ref="191373211"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">11</int>
-						<reference key="object" ref="488854619"/>
-						<reference key="parent" ref="191373211"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">12</int>
-						<reference key="object" ref="874884102"/>
-						<reference key="parent" ref="191373211"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">13</int>
-						<reference key="object" ref="288199065"/>
-						<reference key="parent" ref="191373211"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">14</int>
-						<reference key="object" ref="393631605"/>
-						<reference key="parent" ref="191373211"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">17</int>
-						<reference key="object" ref="210935522"/>
-						<reference key="parent" ref="191373211"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">18</int>
-						<reference key="object" ref="328670072"/>
-						<reference key="parent" ref="191373211"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">19</int>
-						<reference key="object" ref="748840160"/>
-						<reference key="parent" ref="191373211"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">27</int>
-						<reference key="object" ref="491894285"/>
-						<reference key="parent" ref="191373211"/>
-					</object>
-				</array>
-			</object>
-			<dictionary class="NSMutableDictionary" key="flattenedProperties">
-				<string key="-1.CustomClassName">LoginViewController</string>
-				<string key="-1.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="-2.CustomClassName">UIResponder</string>
-				<string key="-2.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<reference key="1.IBNSViewMetadataGestureRecognizers" ref="0"/>
-				<string key="1.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="10.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="11.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="12.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="13.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="14.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="17.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="18.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="19.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="27.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="3.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="4.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="5.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="6.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="7.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-			</dictionary>
-			<dictionary class="NSMutableDictionary" key="unlocalizedProperties"/>
-			<nil key="activeLocalization"/>
-			<dictionary class="NSMutableDictionary" key="localizations"/>
-			<nil key="sourceID"/>
-			<int key="maxID">27</int>
-		</object>
-		<object class="IBClassDescriber" key="IBDocument.Classes">
-			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
-				<object class="IBPartialClassDescription">
-					<string key="className">LoginViewController</string>
-					<string key="superclassName">UIViewController</string>
-					<dictionary class="NSMutableDictionary" key="actions">
-						<string key="faceBookButtonAction:">id</string>
-						<string key="loginButtonAction:">id</string>
-						<string key="registerButtonAction:">id</string>
-						<string key="twitterButtonAction:">id</string>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="actionInfosByName">
-						<object class="IBActionInfo" key="faceBookButtonAction:">
-							<string key="name">faceBookButtonAction:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="loginButtonAction:">
-							<string key="name">loginButtonAction:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="registerButtonAction:">
-							<string key="name">registerButtonAction:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="twitterButtonAction:">
-							<string key="name">twitterButtonAction:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="outlets">
-						<string key="password_text">UITextField</string>
-						<string key="twImage">UIImageView</string>
-						<string key="userName_text">UITextField</string>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
-						<object class="IBToOneOutletInfo" key="password_text">
-							<string key="name">password_text</string>
-							<string key="candidateClassName">UITextField</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="twImage">
-							<string key="name">twImage</string>
-							<string key="candidateClassName">UIImageView</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="userName_text">
-							<string key="name">userName_text</string>
-							<string key="candidateClassName">UITextField</string>
-						</object>
-					</dictionary>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">../SocialRadar/CustomClass/LoginViewController.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">LoginViewController</string>
-					<dictionary class="NSMutableDictionary" key="actions">
-						<string key="faceBookButtonAction:">id</string>
-						<string key="loginButtonAction:">id</string>
-						<string key="registerButtonAction:">id</string>
-						<string key="twitterButtonAction:">id</string>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="actionInfosByName">
-						<object class="IBActionInfo" key="faceBookButtonAction:">
-							<string key="name">faceBookButtonAction:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="loginButtonAction:">
-							<string key="name">loginButtonAction:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="registerButtonAction:">
-							<string key="name">registerButtonAction:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="twitterButtonAction:">
-							<string key="name">twitterButtonAction:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-					</dictionary>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">../SocialRadar/CustomClass/LoginViewController.m</string>
-					</object>
-				</object>
-			</array>
-			<array class="NSMutableArray" key="referencedPartialClassDescriptionsV3.2+">
-				<object class="IBPartialClassDescription">
-					<string key="className">UIButton</string>
-					<string key="superclassName">UIControl</string>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBFrameworkSource</string>
-						<string key="minorKey">UIKit.framework/Headers/UIButton.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">UIControl</string>
-					<string key="superclassName">UIView</string>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBFrameworkSource</string>
-						<string key="minorKey">UIKit.framework/Headers/UIControl.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">UIGestureRecognizer</string>
-					<string key="superclassName">NSObject</string>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBFrameworkSource</string>
-						<string key="minorKey">UIKit.framework/Headers/UIGestureRecognizer.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">UIImageView</string>
-					<string key="superclassName">UIView</string>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBFrameworkSource</string>
-						<string key="minorKey">UIKit.framework/Headers/UIImageView.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">UILabel</string>
-					<string key="superclassName">UIView</string>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBFrameworkSource</string>
-						<string key="minorKey">UIKit.framework/Headers/UILabel.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">UIResponder</string>
-					<string key="superclassName">NSObject</string>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBFrameworkSource</string>
-						<string key="minorKey">UIKit.framework/Headers/UIResponder.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">UISearchBar</string>
-					<string key="superclassName">UIView</string>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBFrameworkSource</string>
-						<string key="minorKey">UIKit.framework/Headers/UISearchBar.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">UISearchDisplayController</string>
-					<string key="superclassName">NSObject</string>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBFrameworkSource</string>
-						<string key="minorKey">UIKit.framework/Headers/UISearchDisplayController.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">UITextField</string>
-					<string key="superclassName">UIControl</string>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBFrameworkSource</string>
-						<string key="minorKey">UIKit.framework/Headers/UITextField.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">UIView</string>
-					<string key="superclassName">UIResponder</string>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBFrameworkSource</string>
-						<string key="minorKey">UIKit.framework/Headers/UIView.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">UIViewController</string>
-					<string key="superclassName">UIResponder</string>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBFrameworkSource</string>
-						<string key="minorKey">UIKit.framework/Headers/UIViewController.h</string>
-					</object>
-				</object>
-			</array>
-		</object>
-		<int key="IBDocument.localizationMode">0</int>
-		<string key="IBDocument.TargetRuntimeIdentifier">IBCocoaTouchFramework</string>
-		<bool key="IBDocument.previouslyAttemptedUpgradeToXcode5">NO</bool>
-		<object class="NSMutableDictionary" key="IBDocument.PluginDeclaredDevelopmentDependencies">
-			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaTouchPlugin.InterfaceBuilder3</string>
-			<integer value="4600" key="NS.object.0"/>
-		</object>
-		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
-		<int key="IBDocument.defaultPropertyAccessControl">3</int>
-		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
-			<string key="bg.png">{320, 480}</string>
-			<string key="dividingline.png">{270, 1}</string>
-			<string key="fblogin_btn.png">{131, 36}</string>
-			<string key="login_btn.png">{270, 40}</string>
-			<string key="login_table.png">{270, 111}</string>
-			<string key="logo.png">{320, 75}</string>
-			<string key="twittterlogin_btn.png">{131, 36}</string>
-		</dictionary>
-	</data>
-</archive>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <development version="6000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController">
+            <connections>
+                <outlet property="password_text" destination="14" id="16"/>
+                <outlet property="userName_text" destination="13" id="15"/>
+                <outlet property="view" destination="1" id="24"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="Jl3-j2-mjo" userLabel="bg.png">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="login_btn.png" translatesAutoresizingMaskIntoConstraints="NO" id="7">
+                    <rect key="frame" x="185" y="396" width="270" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Ph8-bY-NUM"/>
+                        <constraint firstAttribute="width" constant="270" id="eUt-tk-ZCg"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Ph8-bY-NUM"/>
+                            <exclude reference="eUt-tk-ZCg"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="Ph8-bY-NUM"/>
+                            <include reference="eUt-tk-ZCg"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="login_table.png" translatesAutoresizingMaskIntoConstraints="NO" id="5">
+                    <rect key="frame" x="25" y="274" width="270" height="110"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="111" id="C6r-TU-wYf"/>
+                        <constraint firstAttribute="width" constant="270" id="iSq-7r-z4P"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="C6r-TU-wYf"/>
+                            <exclude reference="iSq-7r-z4P"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="C6r-TU-wYf"/>
+                            <include reference="iSq-7r-z4P"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Don't have an account?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="10">
+                    <rect key="frame" x="85" y="513" width="471" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Tb1-kc-AQl"/>
+                        <constraint firstAttribute="height" constant="16" id="dvH-du-PVU"/>
+                        <constraint firstAttribute="width" constant="146" id="lcq-4u-Xfe"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="dvH-du-PVU"/>
+                            <exclude reference="lcq-4u-Xfe"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <exclude reference="Tb1-kc-AQl"/>
+                            <include reference="dvH-du-PVU"/>
+                            <include reference="lcq-4u-Xfe"/>
+                        </mask>
+                    </variation>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Register here" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="11">
+                    <rect key="frame" x="272" y="535" width="96" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="96" id="1qv-zi-k9z"/>
+                        <constraint firstAttribute="height" constant="20" id="u8Y-uM-gpK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <exclude reference="1qv-zi-k9z"/>
+                            <exclude reference="u8Y-uM-gpK"/>
+                        </mask>
+                    </variation>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="18">
+                    <rect key="frame" x="324" y="452" width="131" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="131" id="eAI-JO-kav"/>
+                        <constraint firstAttribute="height" constant="36" id="kvr-kR-3gh"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" backgroundImage="twittterlogin_btn.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="eAI-JO-kav"/>
+                            <exclude reference="kvr-kR-3gh"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="eAI-JO-kav"/>
+                            <include reference="kvr-kR-3gh"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="twitterButtonAction:" destination="-1" eventType="touchUpInside" id="22"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="19">
+                    <rect key="frame" x="185" y="452" width="131" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="gI4-Ej-ov5"/>
+                        <constraint firstAttribute="width" constant="131" id="uxk-6v-n5p"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" backgroundImage="fblogin_btn.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="gI4-Ej-ov5"/>
+                            <exclude reference="uxk-6v-n5p"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="gI4-Ej-ov5"/>
+                            <include reference="uxk-6v-n5p"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="faceBookButtonAction:" destination="-1" eventType="touchUpInside" id="21"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="17">
+                    <rect key="frame" x="185" y="397" width="270" height="40"/>
+                    <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                    <state key="normal">
+                        <color key="titleColor" red="0.1960784314" green="0.30980392159999998" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="loginButtonAction:" destination="-1" eventType="touchUpInside" id="20"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="13">
+                    <rect key="frame" x="36" y="286" width="537" height="33"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="17" id="BSW-2X-Rqf"/>
+                        <constraint firstAttribute="width" constant="240" id="DTt-os-nHM"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="BSW-2X-Rqf"/>
+                            <exclude reference="DTt-os-nHM"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="BSW-2X-Rqf"/>
+                            <include reference="DTt-os-nHM"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="25"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="14">
+                    <rect key="frame" x="36" y="335" width="537" height="33"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="240" id="PS7-tf-LPV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="PS7-tf-LPV"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="PS7-tf-LPV"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="26"/>
+                    </connections>
+                </textField>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" misplaced="YES" image="dividingline.png" translatesAutoresizingMaskIntoConstraints="NO" id="6">
+                    <rect key="frame" x="25" y="327" width="270" height="1"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="4">
+                    <rect key="frame" x="0.0" y="160" width="320" height="75"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="320" id="8UZ-OR-BfW"/>
+                        <constraint firstAttribute="height" constant="75" id="cTq-xq-OYr"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="8UZ-OR-BfW"/>
+                            <exclude reference="cTq-xq-OYr"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="8UZ-OR-BfW"/>
+                            <include reference="cTq-xq-OYr"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="12">
+                    <rect key="frame" x="101" y="535" width="101" height="28"/>
+                    <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="registerButtonAction:" destination="-1" eventType="touchUpInside" id="23"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="7" firstAttribute="top" secondItem="5" secondAttribute="bottom" constant="12" id="0Gr-pN-5oV"/>
+                <constraint firstItem="13" firstAttribute="top" secondItem="4" secondAttribute="bottom" constant="51" id="1dt-6b-TNk"/>
+                <constraint firstAttribute="centerY" secondItem="6" secondAttribute="centerY" id="1k8-3g-w2c"/>
+                <constraint firstAttribute="centerX" secondItem="17" secondAttribute="centerX" id="2NA-QL-yeG">
+                    <variation key="heightClass=regular-widthClass=compact" constant="-1"/>
+                </constraint>
+                <constraint firstItem="11" firstAttribute="top" secondItem="10" secondAttribute="bottom" constant="13" id="3sN-ZI-KJf"/>
+                <constraint firstAttribute="centerX" secondItem="Jl3-j2-mjo" secondAttribute="centerX" constant="-2.5" id="4mG-5w-zDn">
+                    <variation key="heightClass=regular-widthClass=compact" constant="-3"/>
+                </constraint>
+                <constraint firstAttribute="centerY" secondItem="5" secondAttribute="centerY" id="6Kf-0a-FRL"/>
+                <constraint firstAttribute="centerX" secondItem="10" secondAttribute="centerX" id="7n6-rz-GWY"/>
+                <constraint firstItem="12" firstAttribute="centerX" secondItem="10" secondAttribute="centerX" constant="2" id="8Po-6g-PB2"/>
+                <constraint firstAttribute="centerY" secondItem="Jl3-j2-mjo" secondAttribute="centerY" constant="-1.5" id="97q-hP-OeE">
+                    <variation key="heightClass=regular-widthClass=compact" constant="-10"/>
+                </constraint>
+                <constraint firstItem="19" firstAttribute="leading" secondItem="17" secondAttribute="leading" id="9Md-9r-8CS"/>
+                <constraint firstItem="19" firstAttribute="leading" secondItem="7" secondAttribute="leading" constant="1" id="9Wb-Vd-kxe">
+                    <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                </constraint>
+                <constraint firstAttribute="trailing" secondItem="13" secondAttribute="trailing" constant="27" id="9qs-0d-d0w">
+                    <variation key="heightClass=regular-widthClass=compact" constant="44"/>
+                </constraint>
+                <constraint firstAttribute="centerY" secondItem="17" secondAttribute="centerY" id="D9t-CR-gJT">
+                    <variation key="heightClass=regular-widthClass=compact" constant="-93.5"/>
+                </constraint>
+                <constraint firstItem="14" firstAttribute="top" secondItem="6" secondAttribute="bottom" constant="7" id="Dig-aq-jcc"/>
+                <constraint firstItem="19" firstAttribute="top" secondItem="7" secondAttribute="bottom" constant="16" id="EAB-9y-qE4"/>
+                <constraint firstItem="11" firstAttribute="centerX" secondItem="10" secondAttribute="centerX" constant="2.5" id="EKR-EO-7Bq"/>
+                <constraint firstItem="14" firstAttribute="top" secondItem="6" secondAttribute="bottom" constant="17" id="Fra-PO-iMp"/>
+                <constraint firstItem="18" firstAttribute="leading" secondItem="19" secondAttribute="trailing" constant="8" symbolic="YES" id="G5L-JQ-DMr"/>
+                <constraint firstAttribute="centerX" secondItem="5" secondAttribute="centerX" id="G6u-xk-Vja"/>
+                <constraint firstItem="17" firstAttribute="width" secondItem="7" secondAttribute="width" id="Gbd-IA-uWQ">
+                    <variation key="heightClass=regular-widthClass=compact" constant="2"/>
+                </constraint>
+                <constraint firstItem="11" firstAttribute="top" secondItem="12" secondAttribute="top" id="HTM-WA-PCZ"/>
+                <constraint firstItem="14" firstAttribute="trailing" secondItem="13" secondAttribute="trailing" id="IP5-Sk-PVW"/>
+                <constraint firstAttribute="centerY" secondItem="5" secondAttribute="centerY" id="IRz-yW-eFg"/>
+                <constraint firstItem="12" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="101" id="IuT-bN-w9W"/>
+                <constraint firstItem="12" firstAttribute="width" secondItem="11" secondAttribute="width" id="MDm-EB-d9Q"/>
+                <constraint firstItem="5" firstAttribute="centerX" secondItem="7" secondAttribute="centerX" constant="1" id="P2H-0f-FcF">
+                    <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                </constraint>
+                <constraint firstItem="14" firstAttribute="leading" secondItem="13" secondAttribute="leading" constant="2" id="POv-TU-mqf"/>
+                <constraint firstItem="19" firstAttribute="top" secondItem="7" secondAttribute="bottom" constant="14" id="Pil-XS-dFY"/>
+                <constraint firstAttribute="bottom" secondItem="Jl3-j2-mjo" secondAttribute="bottom" constant="-4" id="Ptu-Gt-GRt">
+                    <variation key="heightClass=regular-widthClass=compact" constant="-20"/>
+                </constraint>
+                <constraint firstAttribute="centerX" secondItem="6" secondAttribute="centerX" id="QV0-wd-mc0"/>
+                <constraint firstItem="19" firstAttribute="top" secondItem="17" secondAttribute="bottom" constant="15" id="RnS-da-fDU"/>
+                <constraint firstItem="4" firstAttribute="centerX" secondItem="6" secondAttribute="centerX" id="S48-JD-fNa"/>
+                <constraint firstItem="10" firstAttribute="top" secondItem="19" secondAttribute="bottom" constant="25" id="Tms-rS-R9h"/>
+                <constraint firstItem="17" firstAttribute="centerY" secondItem="7" secondAttribute="centerY" constant="1" id="UA8-aG-BUW"/>
+                <constraint firstItem="14" firstAttribute="leading" secondItem="13" secondAttribute="leading" id="VMs-VJ-cpW"/>
+                <constraint firstAttribute="centerX" secondItem="5" secondAttribute="centerX" id="VTQ-46-qP0"/>
+                <constraint firstItem="19" firstAttribute="top" secondItem="18" secondAttribute="top" id="VsI-I8-4Xc"/>
+                <constraint firstItem="7" firstAttribute="top" secondItem="5" secondAttribute="bottom" constant="13" id="W7W-EM-MHo"/>
+                <constraint firstItem="10" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="85" id="WCR-Xe-GyL"/>
+                <constraint firstItem="7" firstAttribute="trailing" secondItem="6" secondAttribute="trailing" id="aDf-LT-jam"/>
+                <constraint firstAttribute="bottom" secondItem="11" secondAttribute="bottom" constant="45" id="aGX-Ly-bGA"/>
+                <constraint firstItem="7" firstAttribute="top" secondItem="14" secondAttribute="bottom" constant="28" id="aUL-Tb-Hbl"/>
+                <constraint firstAttribute="centerX" secondItem="Jl3-j2-mjo" secondAttribute="centerX" id="aWu-OA-ZTy">
+                    <variation key="heightClass=regular-widthClass=compact" constant="2"/>
+                </constraint>
+                <constraint firstItem="19" firstAttribute="centerY" secondItem="18" secondAttribute="centerY" id="adm-5z-nnK"/>
+                <constraint firstAttribute="bottom" secondItem="12" secondAttribute="bottom" constant="37" id="e8t-o6-xsz"/>
+                <constraint firstAttribute="centerX" secondItem="5" secondAttribute="centerX" id="fHt-qP-sU1"/>
+                <constraint firstItem="17" firstAttribute="leading" secondItem="7" secondAttribute="leading" id="gDg-Va-Nm0"/>
+                <constraint firstItem="5" firstAttribute="leading" secondItem="13" secondAttribute="trailing" constant="-86" id="gRD-Uf-cXs">
+                    <variation key="heightClass=regular-widthClass=compact" constant="-256"/>
+                </constraint>
+                <constraint firstItem="17" firstAttribute="top" secondItem="5" secondAttribute="bottom" constant="13" id="hsP-Pv-sb5"/>
+                <constraint firstItem="5" firstAttribute="top" secondItem="4" secondAttribute="bottom" constant="46" id="huX-Ec-3pn"/>
+                <constraint firstItem="6" firstAttribute="top" secondItem="13" secondAttribute="bottom" constant="16" id="iPI-Lj-l71"/>
+                <constraint firstItem="12" firstAttribute="top" secondItem="10" secondAttribute="bottom" constant="1" id="jCU-xg-btx"/>
+                <constraint firstItem="11" firstAttribute="centerX" secondItem="10" secondAttribute="centerX" id="jqq-aO-Q2k"/>
+                <constraint firstItem="17" firstAttribute="top" secondItem="7" secondAttribute="top" constant="4" id="kGd-Ii-bCB"/>
+                <constraint firstItem="6" firstAttribute="top" secondItem="13" secondAttribute="bottom" constant="8" symbolic="YES" id="lca-Ym-LtZ"/>
+                <constraint firstItem="5" firstAttribute="top" secondItem="4" secondAttribute="bottom" constant="39" id="nh3-S8-evv"/>
+                <constraint firstItem="7" firstAttribute="trailing" secondItem="18" secondAttribute="trailing" constant="1" id="o19-WI-kOs">
+                    <variation key="heightClass=regular-widthClass=compact" constant="1"/>
+                </constraint>
+                <constraint firstItem="13" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="36" id="obj-pu-3dl">
+                    <variation key="heightClass=regular-widthClass=compact" constant="19"/>
+                </constraint>
+                <constraint firstItem="17" firstAttribute="height" secondItem="7" secondAttribute="height" id="s7N-0z-nte"/>
+                <constraint firstItem="10" firstAttribute="top" secondItem="18" secondAttribute="bottom" constant="23" id="sxj-tr-xO3"/>
+                <constraint firstItem="4" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="tFd-f0-5vZ"/>
+                <constraint firstItem="Jl3-j2-mjo" firstAttribute="top" secondItem="1" secondAttribute="top" constant="-1" id="tWb-p8-4XD">
+                    <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                </constraint>
+                <constraint firstItem="10" firstAttribute="centerX" secondItem="17" secondAttribute="centerX" id="u3s-ia-y47"/>
+                <constraint firstItem="17" firstAttribute="trailing" secondItem="7" secondAttribute="trailing" id="vOR-7U-QJb"/>
+                <constraint firstAttribute="centerX" secondItem="4" secondAttribute="centerX" id="wHD-i6-EKJ"/>
+                <constraint firstItem="12" firstAttribute="top" secondItem="10" secondAttribute="bottom" constant="10" id="wL9-Nq-tVR"/>
+                <constraint firstItem="6" firstAttribute="leading" secondItem="5" secondAttribute="leading" id="yNV-Ow-dIK"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="Jl3-j2-mjo"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="4mG-5w-zDn"/>
+                    <exclude reference="97q-hP-OeE"/>
+                    <exclude reference="Ptu-Gt-GRt"/>
+                    <exclude reference="aWu-OA-ZTy"/>
+                    <exclude reference="tWb-p8-4XD"/>
+                    <exclude reference="wHD-i6-EKJ"/>
+                    <exclude reference="6Kf-0a-FRL"/>
+                    <exclude reference="G6u-xk-Vja"/>
+                    <exclude reference="IRz-yW-eFg"/>
+                    <exclude reference="P2H-0f-FcF"/>
+                    <exclude reference="VTQ-46-qP0"/>
+                    <exclude reference="fHt-qP-sU1"/>
+                    <exclude reference="gRD-Uf-cXs"/>
+                    <exclude reference="huX-Ec-3pn"/>
+                    <exclude reference="1k8-3g-w2c"/>
+                    <exclude reference="QV0-wd-mc0"/>
+                    <exclude reference="iPI-Lj-l71"/>
+                    <exclude reference="Fra-PO-iMp"/>
+                    <exclude reference="POv-TU-mqf"/>
+                    <exclude reference="W7W-EM-MHo"/>
+                    <exclude reference="o19-WI-kOs"/>
+                    <exclude reference="2NA-QL-yeG"/>
+                    <exclude reference="D9t-CR-gJT"/>
+                    <exclude reference="Gbd-IA-uWQ"/>
+                    <exclude reference="UA8-aG-BUW"/>
+                    <exclude reference="kGd-Ii-bCB"/>
+                    <exclude reference="s7N-0z-nte"/>
+                    <exclude reference="9Wb-Vd-kxe"/>
+                    <exclude reference="Pil-XS-dFY"/>
+                    <exclude reference="adm-5z-nnK"/>
+                    <exclude reference="7n6-rz-GWY"/>
+                    <exclude reference="sxj-tr-xO3"/>
+                    <exclude reference="8Po-6g-PB2"/>
+                    <exclude reference="MDm-EB-d9Q"/>
+                    <exclude reference="wL9-Nq-tVR"/>
+                    <exclude reference="3sN-ZI-KJf"/>
+                    <exclude reference="EKR-EO-7Bq"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="Jl3-j2-mjo"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="4mG-5w-zDn"/>
+                    <include reference="97q-hP-OeE"/>
+                    <include reference="Ptu-Gt-GRt"/>
+                    <exclude reference="aWu-OA-ZTy"/>
+                    <include reference="tWb-p8-4XD"/>
+                    <exclude reference="S48-JD-fNa"/>
+                    <exclude reference="tFd-f0-5vZ"/>
+                    <include reference="wHD-i6-EKJ"/>
+                    <include reference="6Kf-0a-FRL"/>
+                    <include reference="G6u-xk-Vja"/>
+                    <include reference="IRz-yW-eFg"/>
+                    <include reference="P2H-0f-FcF"/>
+                    <include reference="VTQ-46-qP0"/>
+                    <include reference="fHt-qP-sU1"/>
+                    <include reference="gRD-Uf-cXs"/>
+                    <include reference="huX-Ec-3pn"/>
+                    <exclude reference="nh3-S8-evv"/>
+                    <exclude reference="1dt-6b-TNk"/>
+                    <exclude reference="9qs-0d-d0w"/>
+                    <exclude reference="obj-pu-3dl"/>
+                    <include reference="1k8-3g-w2c"/>
+                    <include reference="QV0-wd-mc0"/>
+                    <include reference="iPI-Lj-l71"/>
+                    <exclude reference="lca-Ym-LtZ"/>
+                    <exclude reference="yNV-Ow-dIK"/>
+                    <exclude reference="Dig-aq-jcc"/>
+                    <include reference="Fra-PO-iMp"/>
+                    <exclude reference="IP5-Sk-PVW"/>
+                    <include reference="POv-TU-mqf"/>
+                    <exclude reference="VMs-VJ-cpW"/>
+                    <exclude reference="0Gr-pN-5oV"/>
+                    <include reference="W7W-EM-MHo"/>
+                    <exclude reference="aDf-LT-jam"/>
+                    <exclude reference="aUL-Tb-Hbl"/>
+                    <include reference="o19-WI-kOs"/>
+                    <include reference="2NA-QL-yeG"/>
+                    <include reference="D9t-CR-gJT"/>
+                    <include reference="Gbd-IA-uWQ"/>
+                    <exclude reference="UA8-aG-BUW"/>
+                    <exclude reference="gDg-Va-Nm0"/>
+                    <exclude reference="hsP-Pv-sb5"/>
+                    <exclude reference="kGd-Ii-bCB"/>
+                    <exclude reference="s7N-0z-nte"/>
+                    <exclude reference="vOR-7U-QJb"/>
+                    <exclude reference="9Md-9r-8CS"/>
+                    <include reference="9Wb-Vd-kxe"/>
+                    <exclude reference="EAB-9y-qE4"/>
+                    <include reference="Pil-XS-dFY"/>
+                    <exclude reference="RnS-da-fDU"/>
+                    <exclude reference="VsI-I8-4Xc"/>
+                    <include reference="adm-5z-nnK"/>
+                    <include reference="7n6-rz-GWY"/>
+                    <exclude reference="Tms-rS-R9h"/>
+                    <exclude reference="WCR-Xe-GyL"/>
+                    <include reference="sxj-tr-xO3"/>
+                    <exclude reference="u3s-ia-y47"/>
+                    <include reference="8Po-6g-PB2"/>
+                    <exclude reference="IuT-bN-w9W"/>
+                    <include reference="MDm-EB-d9Q"/>
+                    <exclude reference="e8t-o6-xsz"/>
+                    <exclude reference="jCU-xg-btx"/>
+                    <include reference="wL9-Nq-tVR"/>
+                    <exclude reference="G5L-JQ-DMr"/>
+                    <include reference="3sN-ZI-KJf"/>
+                    <include reference="EKR-EO-7Bq"/>
+                    <exclude reference="HTM-WA-PCZ"/>
+                    <exclude reference="aGX-Ly-bGA"/>
+                    <exclude reference="jqq-aO-Q2k"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="333" y="436"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg.png" width="320" height="480"/>
+        <image name="dividingline.png" width="270" height="1"/>
+        <image name="fblogin_btn.png" width="131" height="36"/>
+        <image name="login_btn.png" width="270" height="40"/>
+        <image name="login_table.png" width="270" height="111"/>
+        <image name="logo.png" width="640" height="138"/>
+        <image name="twittterlogin_btn.png" width="131" height="36"/>
+    </resources>
+</document>

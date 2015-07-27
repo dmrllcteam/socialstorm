@@ -2,25 +2,31 @@
 //  Globals.h
 //  SocialStorm
 //
-//  Created by Dave Jarvis on 6/4/15.
-//  Copyright (c) 2015 Mohit Singh. All rights reserved.
+//  Copyright (c) RRInnovation LLC. All rights reserved.
 //
+//
+//              History
+//  Created by Dave Jarvis on 6/4/15.
+//  DAJ add globals class 20150621
 
 #ifndef SocialStorm_Globals_h
-#import <UIKit/UIKit.h>
 #define SocialStorm_Globals_h
-//#define NSNumVenueSearch = [NSNumber numberWithFloat:19312.128];
-//@interface SSGlobals
 
-extern    NSNumber* NSNumVenueSearch;
+#import <Foundation/Foundation.h>
 
-//-(void) SSGlobalsInit;
-
-//@end SSGlobals
-
+@interface SSGlobals : NSObject 
+{
+    NSNumber* _venuesearch;
+    NSNumber* _global2;
+    NSNumber* _global3;
     
     
+}
+
+@property (assign) NSNumber* SSGVenueSearch;
+@property (assign) NSNumber* NearByLatitude;
+@property (assign) NSNumber* SSGlobal3;
+
     
-
-
+@end
 #endif

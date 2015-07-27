@@ -212,7 +212,7 @@
         datasPicker.frame = CGRectMake(0, 301, 320, 267);
     }else{
         
-        datasPicker.frame = CGRectMake(0, 212, 320, 267);
+        datasPicker.frame = CGRectMake(0, 260, SCREEN_WIDTH, 600); // RAR changes second picker for auto strike alarm
     }
     NSDateFormatter* dateFormater = [[NSDateFormatter alloc] init];
      NSDateFormatter* dateFormater1 = [[NSDateFormatter alloc] init];
@@ -253,10 +253,10 @@
        // datePicker_View.hidden = NO;
         if (IS_IPHONE_5)
         {
-        datePicker_View.frame = CGRectMake(0, 301, 320, 267);
+        datePicker_View.frame = CGRectMake(0, 260, SCREEN_WIDTH, 620);
         }else
         {
-            datePicker_View.frame = CGRectMake(0, 212, 320, 267);
+            datePicker_View.frame = CGRectMake(0, 260, SCREEN_WIDTH, 620); // RAR changes first picker for auto strike alarm
         }
         
         datePicker_Outlet.date = [NSDate date];

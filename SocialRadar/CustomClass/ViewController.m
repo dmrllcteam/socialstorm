@@ -35,7 +35,7 @@
     
     self.navigationController.navigationBarHidden = YES;
     
-    [self performSelector:@selector(callLogin) withObject:nil afterDelay:1.0];
+    [self performSelector:@selector(callLogin) withObject:nil afterDelay:2.0];
     
    
 

@@ -241,7 +241,7 @@ AppDelegate* appDelegate = nil;
     [self.window addSubview:self.tabBarController.view];
     //self.window.rootViewController=self.tabBarController;
     
-    tab_view=[[UIView  alloc] initWithFrame:CGRectMake(106.6, self.window.frame.size.height-60, 106.7, 74)];
+    tab_view=[[UIView  alloc] initWithFrame:CGRectMake((SCREEN_WIDTH/2)-52.5, self.window.frame.size.height-70, 105, 104)]; // RAR screen width/2 code - button size for positioning strike button in center withought covering other buttons
     [tab_view setBackgroundColor:[UIColor clearColor]];
     strike_button=[UIButton buttonWithType:UIButtonTypeCustom];
     
@@ -260,7 +260,7 @@ AppDelegate* appDelegate = nil;
     }
     
     
-    CGSize btn_size= CGSizeMake(58, 58);
+    CGSize btn_size= CGSizeMake(210, 69);
     [strike_button setFrame:CGRectMake((tab_view.frame.size.width-btn_size.width)/2, 2, btn_size.width, btn_size.height)];
     [strike_button addTarget:self action:@selector(LoadhomeView:) forControlEvents:UIControlEventTouchUpInside];
     [tab_view addSubview:strike_button];
@@ -290,7 +290,6 @@ AppDelegate* appDelegate = nil;
     [[UITabBar appearance] setBackgroundImage:tabCustom_Img];
     
     [[UITabBar appearance] setSelectionIndicatorImage:[UIImage imageNamed:@"tabbar_selection_blank.png"]];
-    
     
 }
 
@@ -412,7 +411,7 @@ AppDelegate* appDelegate = nil;
 - (void) showLoaderView
 {
     
-    loaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, kLoasderHeight)];
+    loaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 1000, 1000)]; // RAR changes size of black overlay for loading
     loaderView.backgroundColor = [UIColor blackColor];
     [loaderView setAlpha:0.7];
     

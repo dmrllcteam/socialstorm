@@ -48,6 +48,10 @@
 	<string></string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Needed to locate venues</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Needed to located venues</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
@@ -70,9 +74,5 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Needed to located venues</string>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>Needed to locate venues</string>
 </dict>
 </plist>

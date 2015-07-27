@@ -71,7 +71,7 @@
     }
     
     
-    favorites_tableView.frame = CGRectMake(favorites_tableView.frame.origin.x, favorites_tableView.frame.origin.y, favorites_tableView.frame.size.width, 280);
+    favorites_tableView.frame = CGRectMake(favorites_tableView.frame.origin.x, favorites_tableView.frame.origin.y, favorites_tableView.frame.size.width, SCREEN_WIDTH);
 
     
     UIButton *leftNavBarButton = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -263,9 +263,6 @@
 {
     return 44.0f;
 }
-
-
-
 
 
 -(void)getFavResponse:(NSDictionary*)response{
