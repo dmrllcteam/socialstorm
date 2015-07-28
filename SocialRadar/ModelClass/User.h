@@ -3,9 +3,7 @@
 //  SocialRadar
 //
 //  Created by Mohit Singh on 18/06/13.
-//  Copyright (c) 2013 Mohit Singh. All rights reserved.
-//
-
+//  Copyright (c) 2013 RRInnovation LLC
 #import <Foundation/Foundation.h>
 
 @interface User : NSObject

@@ -3,7 +3,7 @@
 //  NEWDUBAI
 //
 //  Created by prakash raj on 25/07/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//  Copyright 2011 RRInnovation LLC. All rights reserved.
 //
 
 #import "AddressAnnotation.h"

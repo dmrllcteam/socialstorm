@@ -338,6 +338,15 @@
 		4B7E282C1B4F7070004F1FAE /* blueGradient.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B7E282B1B4F7070004F1FAE /* blueGradient.png */; };
 		633226281B399E040002D4F7 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 633226271B399E040002D4F7 /* FacebookSDK.framework */; };
 		63B0FB871B65692600079F9B /* Home.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 63B0FB861B65692600079F9B /* Home.gpx */; };
+		63B4714B1B67006F0030529D /* Bush Stadium.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 63B4714A1B67006F0030529D /* Bush Stadium.gpx */; };
+		63B471541B67016B0030529D /* San Francisco Giants AT&T Park.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 63B4714C1B67016B0030529D /* San Francisco Giants AT&T Park.gpx */; };
+		63B471551B67016B0030529D /* Citizens Bank Park.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 63B4714D1B67016B0030529D /* Citizens Bank Park.gpx */; };
+		63B471561B67016B0030529D /* New York Yankee Stadium.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 63B4714E1B67016B0030529D /* New York Yankee Stadium.gpx */; };
+		63B471571B67016B0030529D /* Cleveland Indians Progressive Field.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 63B4714F1B67016B0030529D /* Cleveland Indians Progressive Field.gpx */; };
+		63B471581B67016B0030529D /* Progressive Field.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 63B471501B67016B0030529D /* Progressive Field.gpx */; };
+		63B471591B67016B0030529D /* Marlins Park.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 63B471511B67016B0030529D /* Marlins Park.gpx */; };
+		63B4715A1B67016B0030529D /* Miller Park.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 63B471521B67016B0030529D /* Miller Park.gpx */; };
+		63B4715B1B67016B0030529D /* Target Field.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 63B471531B67016B0030529D /* Target Field.gpx */; };
 		923F9F6917E191A800F7AF36 /* bgMap.png in Resources */ = {isa = PBXBuildFile; fileRef = 923F9F6717E191A800F7AF36 /* bgMap.png */; };
 		923F9F6A17E191A800F7AF36 /* bgMap@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 923F9F6817E191A800F7AF36 /* bgMap@2x.png */; };
 		926FEB4A1812AF8B0057E64A /* Iphone4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 926FEB481812AF8B0057E64A /* Iphone4.mp4 */; };
@@ -755,6 +764,15 @@
 		4B7E282B1B4F7070004F1FAE /* blueGradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueGradient.png; sourceTree = "<group>"; };
 		633226271B399E040002D4F7 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = SocialRadar/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		63B0FB861B65692600079F9B /* Home.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Home.gpx; sourceTree = "<group>"; };
+		63B4714A1B67006F0030529D /* Bush Stadium.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Bush Stadium.gpx"; sourceTree = "<group>"; };
+		63B4714C1B67016B0030529D /* San Francisco Giants AT&T Park.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "San Francisco Giants AT&T Park.gpx"; sourceTree = "<group>"; };
+		63B4714D1B67016B0030529D /* Citizens Bank Park.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Citizens Bank Park.gpx"; sourceTree = "<group>"; };
+		63B4714E1B67016B0030529D /* New York Yankee Stadium.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "New York Yankee Stadium.gpx"; sourceTree = "<group>"; };
+		63B4714F1B67016B0030529D /* Cleveland Indians Progressive Field.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Cleveland Indians Progressive Field.gpx"; sourceTree = "<group>"; };
+		63B471501B67016B0030529D /* Progressive Field.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Progressive Field.gpx"; sourceTree = "<group>"; };
+		63B471511B67016B0030529D /* Marlins Park.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Marlins Park.gpx"; sourceTree = "<group>"; };
+		63B471521B67016B0030529D /* Miller Park.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Miller Park.gpx"; sourceTree = "<group>"; };
+		63B471531B67016B0030529D /* Target Field.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Target Field.gpx"; sourceTree = "<group>"; };
 		923F9F6717E191A800F7AF36 /* bgMap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgMap.png; sourceTree = "<group>"; };
 		923F9F6817E191A800F7AF36 /* bgMap@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bgMap@2x.png"; sourceTree = "<group>"; };
 		926FEB481812AF8B0057E64A /* Iphone4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Iphone4.mp4; sourceTree = "<group>"; };
@@ -1189,6 +1207,15 @@
 		13EF787D1738D19200373232 = {
 			isa = PBXGroup;
 			children = (
+				63B4714C1B67016B0030529D /* San Francisco Giants AT&T Park.gpx */,
+				63B4714D1B67016B0030529D /* Citizens Bank Park.gpx */,
+				63B4714E1B67016B0030529D /* New York Yankee Stadium.gpx */,
+				63B4714F1B67016B0030529D /* Cleveland Indians Progressive Field.gpx */,
+				63B471501B67016B0030529D /* Progressive Field.gpx */,
+				63B471511B67016B0030529D /* Marlins Park.gpx */,
+				63B471521B67016B0030529D /* Miller Park.gpx */,
+				63B471531B67016B0030529D /* Target Field.gpx */,
+				63B4714A1B67006F0030529D /* Bush Stadium.gpx */,
 				63B0FB861B65692600079F9B /* Home.gpx */,
 				4B116C131B5C5889006A7166 /* 36X36.png */,
 				4B116C141B5C5889006A7166 /* 40x40.png */,
@@ -1474,6 +1501,7 @@
 				1332867B173CCB1700788D37 /* profile_icn.png in Resources */,
 				1332867C173CCB1700788D37 /* search_icn.png in Resources */,
 				1332867D173CCB1700788D37 /* settings_active.png in Resources */,
+				63B4715B1B67016B0030529D /* Target Field.gpx in Resources */,
 				1332867E173CCB1700788D37 /* settings_icn.png in Resources */,
 				1332867F173CCB1700788D37 /* socialradar_navicon.png in Resources */,
 				13328680173CCB1700788D37 /* splash.png in Resources */,
@@ -1524,6 +1552,7 @@
 				133286B7173CCB1700788D37 /* lightningbolt-568h@2x.png in Resources */,
 				133286B8173CCB1700788D37 /* login_btn-568h@2x.png in Resources */,
 				4B116D791B5C5B6F006A7166 /* tabbar@3x.png in Resources */,
+				63B471551B67016B0030529D /* Citizens Bank Park.gpx in Resources */,
 				133286B9173CCB1700788D37 /* login_table-568h@2x.png in Resources */,
 				4B116D3F1B5C5B6F006A7166 /* currentlocation_bttn@2x.png in Resources */,
 				133286BA173CCB1700788D37 /* logo-568h@2x.png in Resources */,
@@ -1612,9 +1641,11 @@
 				4B34DBDC1B5573B80043A0EA /* red_bubble@3x.png in Resources */,
 				138EEFF31761DB7E00F6E5EE /* check@2x.png in Resources */,
 				138EF0061762028B00F6E5EE /* blog@2x.png in Resources */,
+				63B4714B1B67006F0030529D /* Bush Stadium.gpx in Resources */,
 				4B116D751B5C5B6F006A7166 /* strike_btn_release@3x.png in Resources */,
 				138EF0071762028B00F6E5EE /* blog.png in Resources */,
 				138EF0091762126600F6E5EE /* arrow_grey.png in Resources */,
+				63B471541B67016B0030529D /* San Francisco Giants AT&T Park.gpx in Resources */,
 				4B116D731B5C5B6F006A7166 /* strike_btn_pressed@3x.png in Resources */,
 				138EF00C176224B300F6E5EE /* tabbar_selection_blank.png in Resources */,
 				138EF00D176224B300F6E5EE /* tabbar_selection_blank@2x.png in Resources */,
@@ -1633,11 +1664,14 @@
 				4B116D371B5C5B6F006A7166 /* bg@2x.png in Resources */,
 				4B116D411B5C5B6F006A7166 /* DarkOverlay@2x.png in Resources */,
 				1388DEA9177DBE2E0073A0BF /* no_image@2x.png in Resources */,
+				63B471561B67016B0030529D /* New York Yankee Stadium.gpx in Resources */,
 				4B116D431B5C5B6F006A7166 /* dont_share@2x.png in Resources */,
 				4B34DBF31B55ED0D0043A0EA /* doneEdit@3x.png in Resources */,
 				1388DEAA177DBE2E0073A0BF /* red_bubble@2x.png in Resources */,
+				63B471581B67016B0030529D /* Progressive Field.gpx in Resources */,
 				4B116D5F1B5C5B6F006A7166 /* profile_icn@2x.png in Resources */,
 				1388DEAB177DBE2E0073A0BF /* yellow_bubble@2x.png in Resources */,
+				63B4715A1B67016B0030529D /* Miller Park.gpx in Resources */,
 				13844593177E0252007DFC67 /* ShareViewController.xib in Resources */,
 				139104EA1782CFFD0041CA4C /* SearchResultView.xib in Resources */,
 				4B116D481B5C5B6F006A7166 /* favorited_icn@2x.png in Resources */,
@@ -1656,6 +1690,7 @@
 				4B116D491B5C5B6F006A7166 /* favorited_icn@3x.png in Resources */,
 				13EBA87517A24BA9001AE869 /* storm_small@2x.png in Resources */,
 				923F9F6917E191A800F7AF36 /* bgMap.png in Resources */,
+				63B471591B67016B0030529D /* Marlins Park.gpx in Resources */,
 				923F9F6A17E191A800F7AF36 /* bgMap@2x.png in Resources */,
 				4B116D4E1B5C5B6F006A7166 /* fblogin_btn@3x.png in Resources */,
 				4B34DBF41B55ED0D0043A0EA /* doneSetting@3x.png in Resources */,
@@ -1675,6 +1710,7 @@
 				13513C99193DFA6900A4267F /* no_image_location.png in Resources */,
 				63B0FB871B65692600079F9B /* Home.gpx in Resources */,
 				4B116D6C1B5C5B6F006A7166 /* socialradar_navicon@2x.png in Resources */,
+				63B471571B67016B0030529D /* Cleveland Indians Progressive Field.gpx in Resources */,
 				4B116D541B5C5B6F006A7166 /* lightningbolt@2x.png in Resources */,
 				13513C9A193DFA6900A4267F /* no_image_location@2x .png in Resources */,
 				4B116D721B5C5B6F006A7166 /* strike_btn_pressed@2x.png in Resources */,

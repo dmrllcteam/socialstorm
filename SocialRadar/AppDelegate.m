@@ -3,7 +3,7 @@
 //  SocialRadar
 //
 //  Created by Mohit Singh on 07/05/13.
-//  Copyright (c) 2013 Mohit Singh. All rights reserved.
+//  Copyright (c) 2013 RRInnovation LLC. All rights reserved.
 //
 //12 miles= 19312.08 meters
 //50 miles= 80467.0
@@ -82,7 +82,7 @@ AppDelegate* appDelegate = nil;
     [FBProfilePictureView class];
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
    
-    self.viewController = [[[ViewController alloc] initWithNibName:kViewController bundle:nil] autorelease];
+    self.viewController = [[[ViewController alloc] initWithNibName:@"ViewController" bundle:nil] autorelease];
     UINavigationController* navigation = [[UINavigationController alloc] initWithRootViewController:self.viewController];
     self.window.rootViewController=navigation;
     

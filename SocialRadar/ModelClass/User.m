@@ -3,7 +3,7 @@
 //  SocialRadar
 //
 //  Created by Mohit Singh on 18/06/13.
-//  Copyright (c) 2013 Mohit Singh. All rights reserved.
+//  Copyright (c) 2013 RRInnovation LLC. All rights reserved.
 //
 
 #import "User.h"
@@ -77,17 +77,21 @@
         self.UserName = [node objectForKey: @"UserName"];
         self.ActiveStatus =[[node objectForKey:@"ActiveUser"]boolValue];
     
-    if (![[node objectForKey: @"AutoStrikeInfoDtl"] isKindOfClass: [NSNull class]]) {
+    if (![[node objectForKey: @"AutoStrikeInfoDtl"] isKindOfClass: [NSNull class]])
+    {
         self.AutoStrikeInfoDetail = [node objectForKey:@"AutoStrikeInfoDtl"];
-     }
+    }
    
-        if (![[node objectForKey: @"FavourateLocationList"] isKindOfClass: [NSNull class]]) {
-         self.FavourateLocationList = [node objectForKey: @"FavourateLocationList"];
-         }
+        if (![[node objectForKey: @"FavourateLocationList"] isKindOfClass: [NSNull class]])
+        {
+            self.FavourateLocationList = [node objectForKey: @"FavourateLocationList"];
+        }
     
-        if (![[node objectForKey: @"Password"] isKindOfClass: [NSNull class]]) {
-        self.Password = [node objectForKey: @"Password"];
-        }else
+        if (![[node objectForKey: @"Password"] isKindOfClass: [NSNull class]])
+        {
+            self.Password = [node objectForKey: @"Password"];
+        }
+        else
         {
            self.Password = @"";
         }
