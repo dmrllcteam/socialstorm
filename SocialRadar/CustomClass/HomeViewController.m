@@ -223,7 +223,6 @@
     
     double miles = 20.0;
     double scalingFactor = ABS( (cos(2 * M_PI * currentLocations.coordinate.latitude / 360.0) ));
-    //double scalingFactor = ABS( (cos(2 * M_PI * -33.8678500 / 360.0) ));//comment todo
     MKCoordinateSpan span;
     
        
@@ -345,7 +344,6 @@
 
 - (void)viewDidUnload
 {
-     //[timer invalidate];
     [mapViewHome release];
     mapViewHome = nil;
     [mylocation release];
@@ -401,7 +399,7 @@
         CLLocationCoordinate2D locationCoordinate = CLLocationCoordinate2DMake(myLocation.coordinate.latitude, myLocation.coordinate.longitude);
        
         //comment todo This is Venues/Search
-        [Foursquare2 venueSearchNearByLatitude:[NSNumber numberWithFloat:locationCoordinate.latitude] longitude:[NSNumber numberWithFloat:locationCoordinate.longitude] query:nil limit:[NSNumber numberWithInt:50] intent:intentBrowse radius:@(SSGVenueSearch) categoryId:nil callback:^(BOOL success, id result)
+        [Foursquare2 venueSearchNearByLatitude:[NSNumber numberWithFloat:locationCoordinate.latitude] longitude:[NSNumber numberWithFloat:locationCoordinate.longitude] query:nil limit:[NSNumber numberWithInt:50] intent:intentBrowse radius:@(_WIDE_SEARCH_RADIUS) categoryId:nil callback:^(BOOL success, id result)
         {
             if (success)
             {
@@ -483,10 +481,8 @@
     //here call the foursquare api to get list of trending venues and replace it with the SR venue with matched foursquare id, combing venues of FS and SR
     CLLocation *myLocation = appDelegate.currentlocation;
     CLLocationCoordinate2D locationCoordinate = CLLocationCoordinate2DMake(myLocation.coordinate.latitude, myLocation.coordinate.longitude);
-    //comment todo
     
-    [Foursquare2 venueSearchNearByLatitude:[NSNumber numberWithFloat:locationCoordinate.latitude] longitude:[NSNumber numberWithFloat:locationCoordinate.longitude] query:nil limit:[NSNumber numberWithInt:50] intent:intentBrowse radius: @(SSGVenueSearch) categoryId:nil callback:^(BOOL success, id result) {
-//        [Foursquare2 venueSearchNearByLatitude:[NSNumber numberWithFloat:locationCoordinate.latitude] longitude:[NSNumber ////numberWithFloat:locationCoordinate.longitude] query:nil limit:[NSNumber numberWithInt:50] intent:intentBrowse radius:@(19312.08) categoryId:nil callback:^(BOOL success, id result) {
+    [Foursquare2 venueSearchNearByLatitude:[NSNumber numberWithFloat:locationCoordinate.latitude] longitude:[NSNumber numberWithFloat:locationCoordinate.longitude] query:nil limit:[NSNumber numberWithInt:50] intent:intentBrowse radius: @(_WIDE_SEARCH_RADIUS) categoryId:nil callback:^(BOOL success, id result) {
 
         
         if (success) {
@@ -695,28 +691,10 @@
     
 }
 
-// DAJ code not executed
-/*
--(void) bringCalloutInFront:(CalloutMapAnnotation*) ann
-{
-    for (id<MKAnnotation> annotation in mapViewHome.annotations)
-    {
-        MKAnnotationView* anView = [mapViewHome viewForAnnotation: ann];
-        if (anView)
-        {
-            [mapViewHome bringSubviewToFront:anView];
-        }
-    }
-}
-*/
 -(void)prepareAnnotationviewUser:(NSString*)username withObject:(Location*)looc WithTag:(NSInteger)tag withContentView:(UIView*)contentView
 {
     
     UIImageView *imageViewBackground = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"blog.png"]];
-//    UIImageView* imageViewBackground = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 117.4, 85)];
-   // [imageViewBackground setImage:[UIImage imageNamed:@"blog.png"]];
-    
-
     [contentView addSubview:imageViewBackground];
    
     locTotalstrike = looc.TotalStrike;
@@ -729,7 +707,6 @@
         userNameLabel.opaque           = NO;
         userNameLabel.textColor        = [UIColor whiteColor];
         userNameLabel.font             = [UIFont boldSystemFontOfSize:14.0];
-//        userNameLabel.textAlignment    = UITextAlignmentCenter;
         userNameLabel.textAlignment    = NSTextAlignmentCenter;     // DAJ UITextAlignmentCenter depracated
 
         userNameLabel.text =[NSString stringWithFormat:@"%@ STORM!",[self giveStrikeSymbolOnBasisOfStrike:looc.TotalStrike]];
@@ -739,7 +716,6 @@
     
     
     
-   // UILabel  *infoLabel        = [[UILabel alloc] initWithFrame:CGRectMake(12, 25, 93.4, 14)];
     UILabel  *infoLabel        = nil;
     if (looc.TotalStrike >= 20)
     {
@@ -806,7 +782,6 @@
 {
    currentLocation = mapViewHome.userLocation.location;
     double miles = 20.0;
-    //double scalingFactor = ABS( (cos(2 * M_PI * -33.8678500   / 360.0) ));//comment todo
    double scalingFactor = ABS( (cos(2 * M_PI * currentLocation.coordinate.latitude / 360.0) ));
     MKCoordinateSpan span;
     
@@ -816,10 +791,6 @@
     MKCoordinateRegion region;
     region.span = span;
     region.center = currentLocation.coordinate;
-    //to be commented
-    //region.center.latitude=-33.8678500  ;//comment todo
-    //region.center.longitude=151.2073200;//comment todo
-    // end
     [mapViewHome setRegion:region animated:YES];
 
 }
@@ -857,11 +828,9 @@
         if (addAnn.strikeNo < 5)
         {
             //Green STrike
-            //pinView.image = [UIImage imageNamed:@"storm_small.png"];//storm_small  //green_bubble.png
             UIImageView* imgViewTemp = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"green_bubble.png"]];
             [pinView setImgView:imgViewTemp];
             [imgViewTemp release];
-            //[pinView performSelector:@selector(rotate) withObject:self afterDelay:0.2];
             
             CGRect rect = pinView.frame;
             rect.size.width = imgViewTemp.frame.size.width;
@@ -871,7 +840,6 @@
         else if (addAnn.strikeNo < 10)
         {
             //Green STrike
-            //pinView.image = [UIImage imageNamed:@"storm_small.png"];//storm_small  //green_bubble.png
             UIImageView* imgViewTemp = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"yellow_bubble.png"]];
             [pinView setImgView:imgViewTemp];
             [imgViewTemp release];
@@ -885,12 +853,10 @@
         else if (addAnn.strikeNo < 20)
         {
             //Green STrike
-            //pinView.image = [UIImage imageNamed:@"storm_small.png"];//storm_small  //green_bubble.png
             UIImageView* imgViewTemp = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"red_bubble.png"]];
             [pinView setImgView:imgViewTemp];
             [imgViewTemp release];
-            //[pinView performSelector:@selector(rotate) withObject:self afterDelay:0.2];
-            
+           
             CGRect rect = pinView.frame;
             rect.size.width = imgViewTemp.frame.size.width;
             rect.size.height  = imgViewTemp.frame.size.height;
@@ -899,7 +865,6 @@
         else if (addAnn.strikeNo <= 110)
         {
             //Green STrike
-            //pinView.image = [UIImage imageNamed:@"storm_small.png"];//storm_small  //green_bubble.png
             UIImageView* imgViewTemp = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"storm_small.png"]];
             [pinView setImgView:imgViewTemp];
             [imgViewTemp release];
@@ -913,7 +878,6 @@
         else if (addAnn.strikeNo <=165)
         {
          //Yellow Strike
-          // pinView.image = [UIImage imageNamed:@"storm_mediun.png"];//storm_mediun//yellow_bubble.png
            UIImageView* imgViewTemp = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"storm_mediun.png"]];
            [pinView setImgView:imgViewTemp];
            [imgViewTemp release];
@@ -928,7 +892,6 @@
         else if (addAnn.strikeNo <= 500)
         {
             //Red Strike
- //          pinView.image = [UIImage imageNamed:@"storm_large.png"];//red_bubble.png
            UIImageView* imgViewTemp = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"storm_large.png"]];
           [pinView setImgView:imgViewTemp];
             [imgViewTemp release];
@@ -942,7 +905,6 @@
         }
        else
         {
-//            UIImageView* imgViewTemp = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"storm_icn-568h@2x.png"]];
             UIImageView* imgViewTemp = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"storm_largeest.png"]];
             [pinView setImgView:imgViewTemp];
             [imgViewTemp release];
@@ -960,8 +922,6 @@
         {
             [self performSelector:@selector(setAnnotationInOrder) withObject:nil afterDelay:0.6];
         }
-        
- //       [pinAnnotationView setObject:pinView forKey:[NSNumber numberWithInteger:addAnn.strikeNo]];
         
         return pinView;
         //as suggested by Squatch
@@ -1132,7 +1092,6 @@
 {
    // NSLog(@"before base 64=%@", str);
     NSString *base64String = nil;
-    // NSData *data=[UIImage base64DataFromString:str];
     NSData* data = [str dataUsingEncoding:NSUTF8StringEncoding];
     base64String=[UIImage base64forData:data];
    // NSLog(@"after base64=%@",base64String);
