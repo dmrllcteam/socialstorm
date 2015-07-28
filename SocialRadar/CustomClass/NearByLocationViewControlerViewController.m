@@ -189,7 +189,7 @@
     CLLocation *myLocation = appDelegate.currentlocation;
     CLLocationCoordinate2D locationCoordinate = CLLocationCoordinate2DMake(myLocation.coordinate.latitude, myLocation.coordinate.longitude);
     
-    [Foursquare2 venueSearchNearByLatitude:[NSNumber numberWithFloat:locationCoordinate.latitude] longitude:[NSNumber numberWithFloat:locationCoordinate.longitude]                                                                                                         query:@"" limit:[NSNumber numberWithInt:50] intent:intentBrowse radius:@(NearByLatitude) categoryId:nil callback:^(BOOL success, id result)
+    [Foursquare2 venueSearchNearByLatitude:[NSNumber numberWithFloat:locationCoordinate.latitude] longitude:[NSNumber numberWithFloat:locationCoordinate.longitude]                                                                                                         query:@"" limit:[NSNumber numberWithInt:50] intent:intentBrowse radius:@(_NEARBY_SEARCH_RADIUS) categoryId:nil callback:^(BOOL success, id result)
     {
         if (success)
         {
@@ -348,13 +348,9 @@
         hallOfFarame_Cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     
-    //NSInteger rows = indexPath.row + 1;
-    
     hallOfFarame_Cell.label_cell.text = [NSString stringWithFormat:@"%@",nearByLocationsCellRow.locationName];
     hallOfFarame_Cell.stornImage_cell.hidden = YES;
     hallOfFarame_Cell.bolt_imageView.image = [UIImage imageNamed:@"bolt_icn.png"];
-    
-    //hallOfFarame_Cell = [[HallOfFrameViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     
     
     return hallOfFarame_Cell;
@@ -373,11 +369,6 @@
     location.Photo = nearByLocationsDidSelect.photos_Refrence; // with the help of this refrence we get the photo
     location.LocationAddress = nearByLocationsDidSelect.contact_Refrence;// with the help of the refrence we get the contact
     
-    //    Strike *strike = [Strike new];
-    //    strike.LocationDetails = location;
-    //    strike.UserDetails = appDelegate.appdelegateUser;
-    
-    
     self.nearbyVenues= [[NSMutableArray alloc] init];
     
     [appDelegate startAnimatingIndicatorView];
@@ -390,19 +381,8 @@
     if (arrayResult.count>0) {
         NSString *checkinsCount=[[[arrayResult objectAtIndex:indexPath.row]valueForKey:@"hereNow"] valueForKey:@"count"];
          NSString *venueid=[[arrayResult objectAtIndex:indexPath.row] valueForKey:@"id"];
-       
-        // NSString *checkinsCount= [NSString stringWithFormat:@"%d",[self randomNumberBetween:21 maxNumber:31]];
-       // NSString *venueid=[[arrayResult objectAtIndex:indexPath.row] valueForKey:@"id"];
-        
-        //change to venue/explore
-       // NSString *checkinsCount=[[[[arrayResult objectAtIndex:indexPath.row]valueForKey:@"venue"] valueForKey:@"hereNow"] valueForKey:@"count"];
-       // NSString *venueid=[[[arrayResult objectAtIndex:indexPath.row] valueForKey:@"venue"]valueForKey:@"id"];
-        //
         NSLog(@"venueid=%@",venueid);
         NSLog(@" checkinsCount - %@",checkinsCount);
-        // FSConverter *converter = [[FSConverter alloc]init];
-        // self.nearbyVenues = [converter convertToObjects:venues];
-       // NSLog(@"%@",self.nearbyVenues);
         NSLog(@" --------- print ---------- %d",[nearbyVenues count]);
         
         NSMutableDictionary  *locationDetails=[[NSMutableDictionary alloc] init];
@@ -491,9 +471,6 @@
         return;
     }else
     {
-    //[appDelegate showAlertMessage:[response objectForKey:kMessage] tittle:nil];
-        
-        //Author Sanjay: Show the yellow trigger only when the strike has been made
         [appDelegate setbuttonImage:true];
         Location *location = [[Location alloc] initWithNode:[[response valueForKey:@"LocationDetails"] mutableCopy]];
         
