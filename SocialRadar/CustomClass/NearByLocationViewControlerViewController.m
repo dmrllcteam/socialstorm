@@ -20,7 +20,6 @@
 #import "Foursquare2.h"
 #import "FSVenue.h"
 #import "FSConverter.h"
-#import "Common_IPhone.h"
 #include <stdlib.h>
 #import "CLXURLConnection.h"
 
@@ -28,7 +27,8 @@
 
 @end
 
-@implementation NearByLocationViewControlerViewController{
+@implementation NearByLocationViewControlerViewController
+{
     int counter;
     float latSum;
     float longSum;
@@ -44,7 +44,8 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
+    if (self)
+    {
         // Custom initialization
     }
     return self;
@@ -72,18 +73,13 @@
     [back_btn release];
     
     mainArray = [[NSMutableArray alloc] init];
-         //self.arrayResult= [[NSMutableArray alloc]init];
-    
-       selected_filter=@"";
+    selected_filter=@"";
     isRecently_Opened=NO;
-    
-    
 }
--(void)filterTarget:(id)sender{
-    UIActionSheet *actionSheet = [[UIActionSheet alloc]initWithTitle:@"" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Nearby",@"Specials",@"Food",@"Nightlife",@"Coffee",@"Sights",@"Arts",@"Trending",@"Recently Opened", nil];
-    
-    //[actionSheet showFromTabBar:self.tabBarController.tabBar];
-    //[actionSheet showInView:self.view];
+
+-(void)filterTarget:(id)sender
+{
+    UIActionSheet *actionSheet = [[UIActionSheet alloc]initWithTitle:@"" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Nearby",@"Specials",@"Food",@"Nightlife",@"Coffee",@"Sights",@"Arts",@"Trending",@"Recently Opened",@"Bar", nil];
     [actionSheet showInView:[UIApplication sharedApplication].keyWindow];
     
 }
@@ -92,20 +88,24 @@
 
 -(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
 {
-    switch (buttonIndex) {
-        case 0:{
+    switch (buttonIndex)
+    {
+        case 0:
+        {
             selected_filter=@"";
             isRecently_Opened=NO;
             [self Averagelocations:nil];
             break;
         }
-        case 1:{
+        case 1:
+        {
             selected_filter=@"specials";
             isRecently_Opened=NO;
             [self Averagelocations:nil];
             break;
         }
-        case 2:{
+        case 2:
+        {
             selected_filter=@"food";
             isRecently_Opened=NO;
             [self Averagelocations:nil];
@@ -117,36 +117,47 @@
             [self Averagelocations:nil];
             break;
         }
-        case 4:{
+        case 4:
+        {
             selected_filter=@"coffee";
             isRecently_Opened=NO;
             [self Averagelocations:nil];
             break;
         }
-       
-        case 5:{
+        case 5:
+        {
             selected_filter=@"sights";
             isRecently_Opened=NO;
             [self Averagelocations:nil];
             break;
         }
-        case 6:{
+        case 6:
+        {
             selected_filter=@"arts";
             isRecently_Opened=NO;
             [self Averagelocations:nil];
             break;
         }
         
-        case 7:{
+        case 7:
+        {
             
             selected_filter=@"trending";
             isRecently_Opened=NO;
             [self Averagelocations:nil];
             break;
         }
-        case 8:{
+        case 8:
+        {
             selected_filter=@"Recently Opened";
             isRecently_Opened=YES;
+            [self Averagelocations:nil];
+            break;
+        }
+        case 9:
+        {
+            selected_filter = @"Bar";
+            isRecently_Opened = NO;
             [self Averagelocations:nil];
             break;
         }
@@ -167,150 +178,52 @@
     latSum=0;
     longSum=0;
     timer = [NSTimer scheduledTimerWithTimeInterval:01 target:self selector:@selector(Averagelocations:)  userInfo:nil repeats:NO];
-    
-     
-    //Uncommnent below to rollback CR-1,6
-    /*NSString *latitude = [NSString stringWithFormat:@"%f", currentLocationsProperty.coordinate.latitude];
-    NSString *longitude = [NSString stringWithFormat:@"%f", currentLocationsProperty.coordinate.longitude];
-
-    //28.413106,77.043557
-    NSString *stringGoogleApiNearBy=[NSString stringWithFormat:@"https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=%@,%@&radius=1609.34&sensor=true&key=AIzaSyAfXbpScWudV9n79teEzazPNkhqGZjjVJA",latitude,longitude];
-    
-    [self loadURL:stringGoogleApiNearBy];*/
-
 }
--(void)Averagelocations:(NSTimer *)Timer{
-    
-    //Author :Sanjay Done for CR 1,6 
-   /* while (counter) {
-        latSum=latSum+currentLocationsProperty.coordinate.latitude;
-        longSum=longSum+currentLocationsProperty.coordinate.longitude;
-        counter--;
-        if (counter==0) {
-            [timer invalidate];
-            // NSString *latitude = @"37.785834";
-            //  NSString *longitude =@"-122.406417";
-           NSString *latitude =  [NSString stringWithFormat:@"%.14f", latSum/10];
-            NSString *longitude =  [NSString stringWithFormat:@"%.14f", longSum/10];
-           //to be commendted
-          // NSString * latitude=@"37.3541079";
-          // NSString *  longitude=@"-121.95523559999998";
-           //end
-            NSLog(@"dLatitude : %f", [latitude floatValue]);
-            NSLog(@"dLongitude : %f",[longitude floatValue]);
-            
-           
 
-            
-        //Google location list fetch commented
-            28.413106,77.043557
-            NSString *stringGoogleApiNearBy=[NSString stringWithFormat:@"https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=%@,%@&radius=1609.34&sensor=true&key=AIzaSyAfXbpScWudV9n79teEzazPNkhqGZjjVJA",latitude,longitude];
-            NSLog(@"url=%@",stringGoogleApiNearBy);
-            [self loadURL:stringGoogleApiNearBy];*/
-            
-          
-           /* [Foursquare2 venueExploreRecommendedNearByLatitude:[NSNumber numberWithFloat:locationCoordinate.latitude
-                                                                ]  longitude:[NSNumber numberWithFloat:locationCoordinate.longitude
-                                                                              ] near:@"GurGaon,HR" accuracyLL:nil altitude:nil accuracyAlt:nil query:nil limit:[NSNumber numberWithInt:50] offset:nil radius:@(1609.34) section:nil novelty:nil sortByDistance:YES openNow:YES venuePhotos:YES price:nil callback:^(BOOL success, id result){
-            
-           */
-    
+-(void)Averagelocations:(NSTimer *)Timer
+{
+   
    
     
    //Venue/Search
     CLLocation *myLocation = appDelegate.currentlocation;
     CLLocationCoordinate2D locationCoordinate = CLLocationCoordinate2DMake(myLocation.coordinate.latitude, myLocation.coordinate.longitude);
     
-          [Foursquare2 venueSearchNearByLatitude:[NSNumber numberWithFloat:locationCoordinate.latitude                                               ]  longitude:[NSNumber numberWithFloat:locationCoordinate.longitude
-                                                                ]                                                                                                         query:@"" limit:[NSNumber numberWithInt:50] intent:intentBrowse radius:@(NearByLatitude) categoryId:nil callback:^(BOOL success, id result) { //RAR changes strike location distance ******
-                if (success) {
-                   // @try {
-                        [appDelegate stopAnimatingIndicatorView];
-                      //  NSLog(@"foursquare result=%@",result);
-                        NSDictionary *jsonObject = result;
-                        NSMutableArray *venues = [jsonObject valueForKeyPath:@"response.venues"];
-                    
-                    
-                    if ([venues  count]!=0)
-                    {
-                       
-                        if ([mainArray count])
-                        {
-                            [mainArray removeAllObjects];
-                        }
-                        for (int i =0 ; i < [venues count]; i++)
-                        {
-                            NearByLocation *nearByLocation = [[NearByLocation alloc] initWithDict:[venues objectAtIndex:i]];
-                            [mainArray addObject:nearByLocation];
-                            [nearByLocation release];
-                        }
-                        
-                        _RELEASE(arrayResult)
-                        arrayResult=[[NSMutableArray alloc] initWithArray:venues];
-                        [nearByLocation_TableView reloadData];
-                    }
-                        //[arrayResult release];
-                    }
-                   // @catch (NSException *exception) {
-                    //    NSLog(@"exception=%@",exception.reason);
-                   // }
-                    
-                    
-                    
-                //}
-                else {
-                    [appDelegate stopAnimatingIndicatorView];
-                    
-                    NSLog(@"fetch location list failed-foursquare");
-                }
-
-                
-            }];
-    
-    
-    //Venue/Explore
-    /* [Foursquare2 venueExploreRecommendedNearByLatitude:[NSNumber numberWithFloat:locationCoordinate.latitude] longitude:[NSNumber numberWithFloat:locationCoordinate.longitude] near:nil accuracyLL:[NSNumber numberWithFloat:10000.0] altitude:[NSNumber numberWithInt:0] accuracyAlt:[NSNumber numberWithFloat:10000.0] query:nil limit:[NSNumber numberWithInt:50] offset:nil radius:[NSNumber numberWithFloat:19312.08] section:nil novelty:nil sortByDistance:NO openNow:NO venuePhotos:NO price:nil callback:^(BOOL success, id result){
-        
-        //https://foursquare.com/explore?ll=28.413404%2C77.04353&mode=url&novelty=new
-        
-        NSDictionary *jsonObject = result;
-        NSMutableArray *venues2 = [jsonObject valueForKeyPath:@"response.groups.items"];
-        NSMutableArray *venues=[venues2 objectAtIndex:0];
-        if (success) {
+    [Foursquare2 venueSearchNearByLatitude:[NSNumber numberWithFloat:locationCoordinate.latitude] longitude:[NSNumber numberWithFloat:locationCoordinate.longitude]                                                                                                         query:@"" limit:[NSNumber numberWithInt:50] intent:intentBrowse radius:@(NearByLatitude) categoryId:nil callback:^(BOOL success, id result)
+    {
+        if (success)
+        {
+            [appDelegate stopAnimatingIndicatorView];
+            //  NSLog(@"foursquare result=%@",result);
+            NSDictionary *jsonObject = result;
+            NSMutableArray *venues = [jsonObject valueForKeyPath:@"response.venues"];
             if ([venues  count]!=0)
             {
-                
+                       
                 if ([mainArray count])
                 {
                     [mainArray removeAllObjects];
                 }
                 for (int i =0 ; i < [venues count]; i++)
                 {
-                   // NSMutableDictionary *catDict=[[[[venues objectAtIndex:i] objectForKey:@"venue"] objectForKey:@"categories"] objectAtIndex:0];
-                  // NSString *prefix= [[catDict objectForKey:@"icon"] valueForKey:@"prefix"];
-                   // if ([prefix rangeOfString:@"outdoors"].location == NSNotFound) {
-                        NearByLocation *nearByLocation = [[NearByLocation alloc] initWithDict:[[venues objectAtIndex:i] objectForKey:@"venue"]];
-                        [mainArray addObject:nearByLocation];
-                        [nearByLocation release];
-                   // }
-                   
+                    NearByLocation *nearByLocation = [[NearByLocation alloc] initWithDict:[venues objectAtIndex:i]];
+                    [mainArray addObject:nearByLocation];
+                    [nearByLocation release];
                 }
-                
-                _RELEASE(arrayResult)
-                arrayResult=[[NSMutableArray alloc] initWithArray:venues];
-                [nearByLocation_TableView reloadData];
-                NSIndexPath* top = [NSIndexPath indexPathForRow:NSNotFound inSection:0];
-                [nearByLocation_TableView scrollToRowAtIndexPath:top atScrollPosition:UITableViewScrollPositionTop animated:YES];
-               
+                        
+                    _RELEASE(arrayResult)
+                    arrayResult=[[NSMutableArray alloc] initWithArray:venues];
+                    [nearByLocation_TableView reloadData];
+                }
+                        //[arrayResult release];
             }
-        }
-        else{
-            
-        }
-         [appDelegate stopAnimatingIndicatorView];
-      }];*/
-   
-
+            else
+            {
+                [appDelegate stopAnimatingIndicatorView];
+                    
+                NSLog(@"fetch location list failed-foursquare");
+            }
+    }];
 }
 
 
@@ -325,11 +238,13 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)dealloc {
+- (void)dealloc
+{
        [nearByLocation_TableView release];
     [super dealloc];
 }
-- (void)viewDidUnload {
+- (void)viewDidUnload
+{
     [nearByLocation_TableView release];
     nearByLocation_TableView = nil;
     [super viewDidUnload];
@@ -337,29 +252,29 @@
 
 #pragma mark - Table view data source
 
-- (void)loadURL:(NSString *)ur {
+- (void)loadURL:(NSString *)ur
+{
     NSURL *myURL = [NSURL URLWithString:ur];
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:myURL
-                                                           cachePolicy:NSURLRequestReloadIgnoringLocalCacheData
-                                                       timeoutInterval:60];
-    
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:myURL cachePolicy:NSURLRequestReloadIgnoringLocalCacheData timeoutInterval:60];
     [[NSURLConnection alloc] initWithRequest:request delegate:self];
 }
 
-- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
+- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
+{
     responseData = [[NSMutableData alloc] init];
 }
 
-- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
+{
     [responseData appendData:data];
 }
 
-- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
+- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
+{
     
     [appDelegate stopAnimatingIndicatorView];
     [responseData release];
     [connection release];
-    //[textView setString:@"Unable to fetch data"];
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection
@@ -370,24 +285,26 @@
     NSString *dicstr=txt ;
     NSDictionary *jsonObject = [dicstr JSONValue];
     
-    if ([[jsonObject valueForKey:@"status"]isEqualToString:@"OVER_QUERY_LIMIT"]) {
-        
-        
+    if ([[jsonObject valueForKey:@"status"]isEqualToString:@"OVER_QUERY_LIMIT"])
+    {
         UIAlertView * errorAlert = [[UIAlertView alloc] initWithTitle:@"" message:@"Google Map response exceeded the daily limit." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
         errorAlert.tag=1001;
         [errorAlert show];
         _RELEASE(errorAlert);
     }
-    else if ([[jsonObject valueForKey:@"status"]isEqualToString:@"ZERO_RESULTS"]){
+    else if ([[jsonObject valueForKey:@"status"]isEqualToString:@"ZERO_RESULTS"])
+    {
         UIAlertView * errorAlert = [[UIAlertView alloc] initWithTitle:@"" message:@"No result found." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [errorAlert show];
         _RELEASE(errorAlert);
         
     }
-    else{
+    else
+    {
         NSMutableArray *arrayResult2 = [jsonObject valueForKey:@"results"];
         
-        if (mainArray) {
+        if (mainArray)
+        {
             [mainArray removeAllObjects];
         }
         
@@ -401,11 +318,6 @@
         [nearByLocation_TableView reloadData];
         
     }
-    
-    
-   
-    
-    
 }
 
 #pragma mark - Table view data source
