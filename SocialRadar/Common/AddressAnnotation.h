@@ -1,9 +1,9 @@
 //
 //  AddressAnnotation.h
-//  NEWDUBAI
+//
 //
 //  Created by prakash raj on 25/07/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//  Copyright 2011 RRInnovation. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

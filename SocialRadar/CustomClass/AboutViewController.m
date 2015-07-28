@@ -3,7 +3,7 @@
 //  SocialStorm
 //
 //  Created by Sanjay Kumar on 17/04/14.
-//  Copyright (c) 2014 Mohit Singh. All rights reserved.
+//  Copyright (c) 2014 RRInnovation LLC All rights reserved.
 //
 
 #import "AboutViewController.h"

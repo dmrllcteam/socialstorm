@@ -3,7 +3,7 @@
 //  SocialRadar
 //
 //  Created by Mohit Singh on 20/06/13.
-//  Copyright (c) 2013 Mohit Singh. All rights reserved.
+//  Copyright (c) 2013 RRInnovation LLC. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

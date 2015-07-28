@@ -29,19 +29,19 @@
 #define SCREEN_MIN_LENGTH (MIN(SCREEN_WIDTH, SCREEN_HEIGHT))
 
 // Search Radius
-#define SSGVenueSearch 19312.123  // HomeViewControler GetUpdateResponse
-#define NearByLatitude 19312.123  // HomeViewControler
+#define SSGVenueSearch 24140.16  // HomeViewControler GetUpdateResponse
+#define NearByLatitude 3218.688  // HomeViewControler
 #define SSGlobal3 = 19312.123
 
 
-#define kLaunchScreen @"LaunchScreen"
-#define kViewController @"ViewController"
+//#define kLaunchScreen @"LaunchScreen"
+//#define kViewController @"ViewController"
 #define kLoginViewControler @"LoginViewController"
 #define kRegisterViewControler @"RegisterViewController"
 
-#define kEditProfileViewController @"EditProfileViewController"
+//#define kEditProfileViewController @"EditProfileViewController"
 #define kHallOfFrameViewController @"HallOfFrameViewController"
-#define kHomeViewController @"HomeViewController"
+//#define kHomeViewController @"HomeViewController"
 #define kMyProfileViewController @"MyProfileViewController"
 #define kSettingViewController @"SettingViewController"
 #define kSearchViewController @"SearchViewController"

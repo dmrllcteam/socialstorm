@@ -282,10 +282,9 @@
         UIAlertView * errorAlert = [[UIAlertView alloc] initWithTitle:@""message:[response objectForKey:kMessage]  delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [errorAlert show];
         _RELEASE(errorAlert);
-        //[appDelegate showAlertMessage:[response objectForKey:kMessage] tittle:nil];
-        //[appDelegate showAlertMessage:@"Invalid username or password" tittle:nil];
         return;
-    }else
+    }
+    else
     {
                    
          appDelegate.appdelegateUser = [[User alloc] initWithDict:response];
@@ -368,31 +367,22 @@
 /*
  * Helper method to show alert results or errors
  */
-- (NSString *)checkErrorMessage:(NSError *)error {
+- (NSString *)checkErrorMessage:(NSError *)error
+{
     NSString *errorMessage = @"";
-    if (error) {
+    if (error)
+    {
         errorMessage = @"Operation failed, retry later.";//[error localizedDescription];
     }
-    //    } else {
-    //        errorMessage = @"Operation failed due to a connection problem, retry later.";
-    //    }
     return errorMessage;
 }
 
 /*
  * Helper method to check for the posted ID
  */
-- (NSString *) checkPostId:(NSDictionary *)results {
+- (NSString *) checkPostId:(NSDictionary *)results
+{
     NSString *message = @"Posted successfully.";
-    // Share Dialog
-    /*NSString *postId = results[@"postId"];
-     if (!postId) {
-     // Web Dialog
-     postId = results[@"post_id"];
-     }
-     if (postId) {
-     message = [NSString stringWithFormat:@"Posted story, id: %@", postId];
-     }*/
     return message;
 }
 
@@ -400,14 +390,10 @@
 
 -(void)showAlert
 {
-    //dispatch_async(dispatch_get_main_queue(), ^{
-        
         UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"No Facebook Account" message:@"There are no Facebook accounts configured.You can add or create a Facebook accounts in Settings." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
         alertView.tag=102;
         [alertView show];
         [alertView release];
-   //     });
-    
 }
 
 

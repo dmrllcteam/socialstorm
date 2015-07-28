@@ -3,7 +3,7 @@
 //  SocialRadar
 //
 //  Created by Mohit Singh on 07/05/13.
-//  Copyright (c) 2013 Mohit Singh. All rights reserved.
+//  Copyright (c) 2013 RRInnovation LLC. All rights reserved.
 //
 
 #import "ViewController.h"
@@ -49,17 +49,13 @@
         return;
     }
 }
+
 -(void)callLogin
 {
     
     LoginViewController *login = [[LoginViewController alloc] initWithNibName:kLoginViewControler bundle:nil];
     [self.navigationController pushViewController:login animated:YES];
     _RELEASE(login);
-    
-
-
-    
-    
 }
 
 

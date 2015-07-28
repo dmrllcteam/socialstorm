@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" promptedForUpgradeToXcode5="NO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <development version="6000" identifier="xcode"/>
@@ -14,14 +14,14 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="1">
-            <rect key="frame" x="0.0" y="64" width="320" height="480"/>
+            <rect key="frame" x="0.0" y="64" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="bgMap.png" translatesAutoresizingMaskIntoConstraints="NO" id="4">
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" ambiguous="YES" misplaced="YES" image="bgMap.png" translatesAutoresizingMaskIntoConstraints="NO" id="4">
                     <rect key="frame" x="0.0" y="-56" width="320" height="480"/>
                 </imageView>
-                <webView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7">
-                    <rect key="frame" x="0.0" y="0.0" width="321" height="480"/>
+                <webView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7">
+                    <rect key="frame" x="0.0" y="-64" width="0.0" height="0.0"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </webView>
             </subviews>
@@ -40,26 +40,26 @@
             <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
             <variation key="default">
                 <mask key="constraints">
-                    <exclude reference="8JR-J6-oOo"/>
-                    <exclude reference="bFQ-4y-Go7"/>
-                    <exclude reference="bHk-hG-Fke"/>
-                    <exclude reference="bbc-UP-3uJ"/>
                     <exclude reference="5dD-bw-YZ6"/>
                     <exclude reference="OSS-8d-wHM"/>
                     <exclude reference="dC2-45-QYt"/>
                     <exclude reference="hTS-gD-qOp"/>
+                    <exclude reference="8JR-J6-oOo"/>
+                    <exclude reference="bFQ-4y-Go7"/>
+                    <exclude reference="bHk-hG-Fke"/>
+                    <exclude reference="bbc-UP-3uJ"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular-widthClass=compact">
                 <mask key="constraints">
-                    <include reference="8JR-J6-oOo"/>
-                    <include reference="bFQ-4y-Go7"/>
-                    <include reference="bHk-hG-Fke"/>
-                    <include reference="bbc-UP-3uJ"/>
                     <include reference="5dD-bw-YZ6"/>
                     <include reference="OSS-8d-wHM"/>
                     <include reference="dC2-45-QYt"/>
                     <include reference="hTS-gD-qOp"/>
+                    <include reference="8JR-J6-oOo"/>
+                    <include reference="bFQ-4y-Go7"/>
+                    <include reference="bHk-hG-Fke"/>
+                    <include reference="bbc-UP-3uJ"/>
                 </mask>
             </variation>
             <point key="canvasLocation" x="287" y="319"/>

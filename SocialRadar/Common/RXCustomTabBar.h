@@ -3,7 +3,7 @@
 //  Nuyeek
 //
 //  Created by Sanjiv Saran on 22/06/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2012 RRInnovation LLC. All rights reserved.
 //
 
 

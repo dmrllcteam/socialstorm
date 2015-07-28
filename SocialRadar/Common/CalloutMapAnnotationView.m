@@ -34,7 +34,8 @@
 @synthesize contentHeight = _contentHeight;
 @synthesize tag;
 
-- (id) initWithAnnotation:(id <MKAnnotation>)annotation reuseIdentifier:(NSString *)reuseIdentifier {
+- (id) initWithAnnotation:(id <MKAnnotation>)annotation reuseIdentifier:(NSString *)reuseIdentifier
+{
 	if (self = [super initWithAnnotation:annotation reuseIdentifier:reuseIdentifier])
     {
 		self.contentHeight = 74.0;

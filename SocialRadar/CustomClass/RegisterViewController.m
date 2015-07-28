@@ -3,7 +3,7 @@
 //  SocialRadar
 //
 //  Created by Mohit Singh on 08/05/13.
-//  Copyright (c) 2013 Mohit Singh. All rights reserved.
+//  Copyright (c) 2013 RRInnovation LLC. All rights reserved.
 //
 
 #import "RegisterViewController.h"
@@ -201,14 +201,7 @@
 
 -(void) keyboardDissmiss
 {
-//    if (IS_IPHONE_5) {
-//        registerScroll_View.contentSize = CGSizeMake(320, register_TableView.frame.size.height+180);
-        
-        //
-//    }else
-//    {
         registerScroll_View.contentSize = CGSizeMake(320, register_TableView.frame.size.height+320);
-//    }
 }
 
 

@@ -3,7 +3,7 @@
 //  SocialRadar
 //
 //  Created by Mohit Singh on 20/06/13.
-//  Copyright (c) 2013 Mohit Singh. All rights reserved.
+//  Copyright (c) 2013 RRInnovation LLC. All rights reserved.
 //
 
 #import "NearByLocation.h"
@@ -35,59 +35,35 @@
 
 
 
-- (id) initWithDict: (NSDictionary*) dictonary {
-    /*self.dictGeometry = [dictonary objectForKey:@"geometry"] ;
-    self.latitude = [[self.dictGeometry valueForKey:@"location"] valueForKey:@"lat"];
-    self.logitude = [[self.dictGeometry valueForKey:@"location"] valueForKey:@"lng"];
+- (id) initWithDict: (NSDictionary*) dictonary
+{
+    self.latitude = [[dictonary valueForKey:@"location"] valueForKey:@"lat"];
+    self.logitude = [[dictonary valueForKey:@"location"] valueForKey:@"lng"];
     self.locationName = [dictonary valueForKey:@"name"];
-    self.photos_Refrence = [[[dictonary valueForKey:@"photos"] objectAtIndex:0] valueForKey:@"photo_reference"];
-    self.contact_Refrence = [dictonary valueForKey:@"reference"];*/
-    
-     self.latitude = [[dictonary valueForKey:@"location"] valueForKey:@"lat"];
-     self.logitude = [[dictonary valueForKey:@"location"] valueForKey:@"lng"];
-     self.locationName = [dictonary valueForKey:@"name"];
     if ([[dictonary valueForKey:@"contact"] valueForKey:@"formattedPhone"]!=nil) {
         self.contact_Refrence = [self converToBase64:[[dictonary valueForKey:@"contact"] valueForKey:@"formattedPhone"]];
     }
-    else{
+    else
+    {
         self.contact_Refrence = @"";
     }
     
-   /* [Foursquare2 getPhotosForVenue:[dictonary valueForKey:@"id"] limit:[NSNumber numberWithInteger:1] offset:nil callback:^(BOOL success, id result) {
-        if (success) {
-            
+    [Foursquare2 venueGetPhotos:[dictonary valueForKey:@"id"] limit:[NSNumber numberWithInteger:1] offset:nil callback:^(BOOL success, id result)
+    {
+        if (success)
+        {
             NSDictionary *resultDictionry= result;
             NSArray *array=[[[resultDictionry objectForKey:@"response"] objectForKey:@"photos"]objectForKey:@"items"];
             
-            if (array!=nil&&array.count) {
+            if (array!=nil&&array.count)
+            {
                 NSDictionary *imageDict=[array objectAtIndex:0];
                 self.photos_Refrence=[self converToBase64:[NSString stringWithFormat:@"%@%@%@",[imageDict objectForKey:@"prefix"],@"300x300",[imageDict objectForKey:@"suffix"]]];
                
             }
         }
-        else{
-            self.photos_Refrence=@"";
-        }
-    }];*/
-    
-    [Foursquare2 venueGetPhotos:[dictonary valueForKey:@"id"] limit:[NSNumber numberWithInteger:1] offset:nil callback:^(BOOL success, id result) {
-        if (success) {
-            NSDictionary *resultDictionry= result;
-            NSArray *array=[[[resultDictionry objectForKey:@"response"] objectForKey:@"photos"]objectForKey:@"items"];
-            
-            if (array!=nil&&array.count) {
-                NSDictionary *imageDict=[array objectAtIndex:0];
-                self.photos_Refrence=[self converToBase64:[NSString stringWithFormat:@"%@%@%@",[imageDict objectForKey:@"prefix"],@"300x300",[imageDict objectForKey:@"suffix"]]];
-               
-                
-                //NSURL *imageUrl=[NSURL URLWithString:[NSString stringWithFormat:@"%@%@%@",[imageDict objectForKey:@"prefix"],@"300x300",[imageDict objectForKey:@"suffix"]]];
-                
-//                NSData* data = [NSData dataWithContentsOfURL:imageUrl];
-//             
-              //  self.photos_Refrence=[NearByLocation base64forData:[NSData dataWithContentsOfURL:imageUrl]];
-                
-            }
-        } else {
+        else
+        {
              self.photos_Refrence=@"";
         }
     }];
@@ -95,7 +71,8 @@
     return self;
 }
 
-+ (NSString*)base64forData:(NSData*)theData {
++ (NSString*)base64forData:(NSData*)theData
+{
     
     const uint8_t* input = (const uint8_t*)[theData bytes];
     NSInteger length = [theData length];
@@ -106,13 +83,16 @@
     uint8_t* output = (uint8_t*)data.mutableBytes;
     
     NSInteger i;
-    for (i=0; i < length; i += 3) {
+    for (i=0; i < length; i += 3)
+    {
         NSInteger value = 0;
         NSInteger j;
-        for (j = i; j < (i + 3); j++) {
+        for (j = i; j < (i + 3); j++)
+        {
             value <<= 8;
             
-            if (j < length) {
+            if (j < length)
+            {
                 value |= (0xFF & input[j]);
             }
         }
@@ -132,7 +112,6 @@
 {
     //NSLog(@"before base 64=%@", str);
     NSString *base64String = nil;
-   // NSData *data=[UIImage base64DataFromString:str];
     NSData* data = [str dataUsingEncoding:NSUTF8StringEncoding];
     base64String=[UIImage base64forData:data];
    // NSLog(@"after base64=%@",base64String);
