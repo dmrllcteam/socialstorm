@@ -28,10 +28,11 @@
 #define SCREEN_MAX_LENGTH (MAX(SCREEN_WIDTH, SCREEN_HEIGHT))
 #define SCREEN_MIN_LENGTH (MIN(SCREEN_WIDTH, SCREEN_HEIGHT))
 
+// DAJ 20150723
 // Search Radius
-#define SSGVenueSearch 24140.16  // HomeViewControler GetUpdateResponse
-#define NearByLatitude 3218.688  // HomeViewControler
-#define SSGlobal3 = 19312.123
+#define _WIDE_SEARCH_RADIUS 24140.16        // HomeViewController GetUpdateResponse
+#define _NEARBY_SEARCH_RADIUS 3218.688      // HomeViewController
+#define _SEARCHVIEW_SEARCH_RADIUS 19312.123 //SearchViewController
 
 
 //#define kLaunchScreen @"LaunchScreen"
