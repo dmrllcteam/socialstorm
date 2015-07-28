@@ -43,10 +43,6 @@ static bool checkShareTweet;
     self.title = @"Share strike";
     
     self.navigationItem.hidesBackButton = YES;
-    /*UIImage* buttonImage1 = [UIImage imageNamed:@"back_btn.png"];
-    UIButton *leftButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    leftButton.frame= CGRectMake(0, 0,buttonImage1.size.width, buttonImage1.size.height);
-    [leftButton setImage:buttonImage1 forState:UIControlStateNormal];*/
     
     
     UIButton *leftButton = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -57,30 +53,11 @@ static bool checkShareTweet;
     self.navigationItem.leftBarButtonItem=back_btn;
     [back_btn release];
     
-   // [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(getfaceBookId:) name:@"postOnFacebook" object:nil];
 }
 
 
 -(void)getfaceBookId:(NSNotificationCenter *)notif
 {
-//    // Ask for publish_actions permissions in context
-//    if ([FBSession.activeSession.permissions
-//         indexOfObject:@"publish_actions"] == NSNotFound) {
-//        // No permissions found in session, ask for it
-//        [FBSession.activeSession
-//         requestNewPublishPermissions:
-//         [NSArray arrayWithObject:@"publish_actions"]
-//         defaultAudience:FBSessionDefaultAudienceFriends
-//         completionHandler:^(FBSession *session, NSError *error) {
-//             if (!error) {
-//                 // If permissions granted, publish the story
-//                 [self publishStory];
-//             }
-//         }];
-//    } else {
-//        // If permissions present, publish the story
-//        [self publishStory];
-//    }
     [APPDELEGATE hidetabView];
     ShareViewController *viewController =[[ShareViewController alloc] initWithNibName:kShareViewController
                                                                                bundle:nil];
@@ -95,7 +72,6 @@ static bool checkShareTweet;
 
 
 -(void)viewDidUnload{
-    //[[NSNotificationCenter defaultCenter]removeObserver:self];
 }
 
 -(void)backTarget:(id)sender
@@ -146,48 +122,7 @@ static bool checkShareTweet;
         [self publishStory];
     }
     
-   
-    /*//new code
-    
-    // Check for publish permissions
-    [FBRequestConnection startWithGraphPath:@"/me/permissions"
-                          completionHandler:^(FBRequestConnection *connection, id result, NSError *error) {
-                             // __block NSString *alertText;
-                             // __block NSString *alertTitle;
-                                
-                              if (!error){
-                                  BOOL  isfind;
-                                  NSArray *dataArr=(NSArray *)[result data];
-                                  for(NSDictionary *permissions in  dataArr)
-                                  {
-                                      isfind=NO;
-                                 // NSDictionary *permissions= [(NSArray *)[result data] objectAtIndex:0];
-                                      if (![FBSession.activeSession.permissions
-                                           indexOfObject:@"publish_actions"] == NSNotFound){
-                                      // Publish permissions not found, ask for publish_actions
-                                     // [self requestPublishPermissions];
-                                      isfind=YES;
-                                      NSLog(@"mil gaya");
-                                      break;
-                                      
-                                  } }
-                                  
-                                  if(isfind)
-                                  {
-                                      [self publishStory];
-                                  }
-                                  else{
-                                      // Publish permissions not found, ask for publish_actions
-                                       [self requestPublishPermissions];
-
-                                  }
-                                  
-                              } else {
-                                  NSLog(@"%@",[error localizedDescription]);
-                                  // There was an error, handle it
-                                  // See https://developers.facebook.com/docs/ios/errors/
-                              }
-}];*/
+ 
 }
 
 
@@ -274,29 +209,7 @@ static bool checkShareTweet;
              
          }];
         
-    
-    /*[FBRequestConnection startForPostStatusUpdate:text_str
-                                    completionHandler:^(FBRequestConnection *connection, id result, NSError *error)
-         {
-             NSString *alertText;
-             if (error) {
-
-                                  alertText = [NSString stringWithFormat:
-                                              @"Facebook is not allowing Posting on you Timeline Currently.Please try after some time!!"
-                                               ];
-
-                 
-             }
-             else {
-                 alertText = @"Message Posted Succesfully";
-             }
-             
-             UIAlertView  *textalert=[[UIAlertView alloc] initWithTitle:@"" message:alertText delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
-             [textalert show];
-             
-               [appDelegate stopAnimatingIndicatorView];
-             
-         }];*/
+ 
    }
     
 }
@@ -321,11 +234,8 @@ static bool checkShareTweet;
 //    if ([TWTweetComposeViewController canSendTweet])
     if([SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter])
     {
-//        TWTweetComposeViewController *tweetSheet =
-//        [[TWTweetComposeViewController alloc] init];
         SLComposeViewController* tweetSheet =[SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter ];
         [tweetSheet setInitialText:text_str];
-//	    [self presentModalViewController:tweetSheet animated:YES];
 
         // DAJ 20150622 replace above deprecated method
         [self presentViewController:tweetSheet animated:YES completion:nil];
